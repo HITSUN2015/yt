@@ -59,11 +59,15 @@ order_id  buyer_name  cost  ware_name
 互联网公司 常用的是 Mybatis 理由TODO
 所以 接下来 我们要实现的就是 用Mybatis来把对象 存储在 Mysql里~
 
-
-
-
-
-
-
-
-
+预先数据库里建立表
+use mytest;
+create table `order` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `order_id` varchar(64) NOT NULL COMMENT '订单Id',
+  `buyer_name` varchar(64) NOT NULL COMMENT '购买人 姓名',
+  `cost` int(11) NOT NULL COMMENT '金额',
+  `ware_name` varchar(64) NOT NULL COMMENT '用户名',
+  `create_time` datetime DEFAULT NULL COMMENT '更新时间',
+  `update_time` datetime DEFAULT NULL COMMENT '更新时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='订单信息表';
