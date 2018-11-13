@@ -71,3 +71,6 @@ create table `order` (
   `update_time` datetime DEFAULT NULL COMMENT '更新时间',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='订单信息表';
+
+二、为了让你养成良好的习惯 还是学下测试吧
+    testng
