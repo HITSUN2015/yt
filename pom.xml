@@ -84,12 +84,6 @@
 			<!--<artifactId>assertj-core</artifactId>-->
 			<!--<scope>test</scope>-->
 		<!--</dependency>-->
-		<dependency>
-			<groupId>org.testng</groupId>
-			<artifactId>testng</artifactId>
-			<version>6.8.7</version>
-			<scope>test</scope>
-		</dependency>
 		<!-- reportNG -->
 		<!--<dependency>-->
 			<!--<groupId>org.uncommons</groupId>-->
