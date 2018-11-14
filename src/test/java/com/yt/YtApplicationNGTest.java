@@ -18,7 +18,7 @@ public class YtApplicationNGTest extends AbstractTestNGSpringContextTests {
     private MybatisOperationService mybatisOperationService;
 
     @Test
-    public void getHealthCheckIntegrationTest() throws Exception{
+    public void testTest() throws Exception{
         int addedCount = mybatisOperationService.addDuiXiang(null);
         Assert.assertEquals(0, addedCount);
     }
