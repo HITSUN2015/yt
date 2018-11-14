@@ -20,8 +20,10 @@ public class MybatisOperationServiceImpl implements MybatisOperationService {
 
     @Override
     public int addDuiXiang(DuiXiang duiXiang) {
-        slf4jLogger.error("slf4jLogger test slf4jLogger");
-        classSlf4jLogger.error("classSlf4jLogger test classSlf4jLogger");
+        //测试 slf4j 数字替换
+        slf4jLogger.error("slf4jLogger test slf4jLogger {}", 431423);
+        //测试 slf4j string 替换， 异常打印
+        classSlf4jLogger.error("classSlf4jLogger test {} classSlf4jLogger", "test431423test", new Exception("testException"));
         log4j2Logger.error("log4j2Logger test log4j2Logger");
         classLog4j2Logger.error("classLog4j2Logger test classLog4j2Logger");
         return 0;
