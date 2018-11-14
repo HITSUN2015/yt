@@ -11,7 +11,5 @@ public class log4j2Slf4jUtil {
 
     String demoString = "LOG.debug(String.format(\"countLeaveMessage:userId:%s,deviceSerial:%s,msgStatus:%s,interactiveMode:%s\", userId,deviceSerial,msgStatus,interactiveMode));";
 
-    private void tranceSingleLine() {
-        System.out.println();
-    }
+
 }
