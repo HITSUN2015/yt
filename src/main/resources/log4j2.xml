@@ -4,11 +4,11 @@
         <Property name="filepath">D:\log\log4j2</Property>
     </Properties>
     <Appenders>
-        <Console name="STDOUT" target="SYSTEM_OUT">
-            <PatternLayout>
-                <Pattern>[%d] - [%c] - [%highlight{%level}] - [%method] - [%t] - %msg%n</Pattern>
-            </PatternLayout>
-        </Console>
+        <!--<Console name="STDOUT" target="SYSTEM_OUT">-->
+            <!--<PatternLayout>-->
+                <!--<Pattern>[%d] - [%c] - [%highlight{%level}] - [%method] - [%t] - %msg%n</Pattern>-->
+            <!--</PatternLayout>-->
+        <!--</Console>-->
         <RollingFile name="logService"
                      fileName="${filepath}/logService.log"
                      filePattern="${filepath}/bak/logService-%d{yy-MM-dd HH:mm:ss}.log.gz">
@@ -23,11 +23,12 @@
     <Loggers>
         <Logger name="fileLogger" level="debug" additivity="false">
             <AppenderRef ref="logService"/>
-            <AppenderRef ref="STDOUT"/>
+            <!--<AppenderRef ref="STDOUT"/>-->
         </Logger>
 
-        <Root level="trace">
-            <AppenderRef ref="STDOUT"/>
+        <!-- 这里 定义了 root logger 为 logService这个 appender 才能 LogFactory拿的class logger 输出到日志文件 -->
+        <Root level="info">
+            <AppenderRef ref="logService"/>
         </Root>
     </Loggers>
 
