@@ -91,6 +91,7 @@
 			<version>6.8.7</version>
 			<scope>test</scope>
 		</dependency>
+
 		<!--<dependency>-->
 			<!--<groupId>org.assertj</groupId>-->
 			<!--<artifactId>assertj-core</artifactId>-->
@@ -115,6 +116,11 @@
 			<artifactId>spring-boot-starter-log4j2</artifactId>
 		</dependency>
 
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.39</version>
+		</dependency>
 	</dependencies>
 
 	<build>
