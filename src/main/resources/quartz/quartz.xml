@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean lazy-init="false" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <property name="triggers">
+            <list>
+                <ref bean="testTaksTrigger"/>
+            </list>
+        </property>
+        <property name="autoStartup" value="true"/>
+    </bean>
+
+    <!-- 定时更新 激活 过期时间 -->
+    <bean id="testTaksTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+        <property name="jobDetail" ref="testTaskJobDetail"/>
+        <property name="cronExpression" value="1 1 1 * * ?"/>
+        <!--这个设置的比较大 每分钟执行一次是：1 * * * * ?-->
+    </bean>
+
+    <bean id="testTaskJobDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject" ref="testTask"/>
+        <property name="targetMethod" value="doTask"/>
+        <property name="concurrent" value="false"/>
+    </bean>
+</beans>
