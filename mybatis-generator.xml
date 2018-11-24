@@ -24,7 +24,7 @@
         </javaTypeResolver>
 
         <!-- 生成vo对象 -->
-        <javaModelGenerator targetPackage="com.ezviz.******.domain" targetProject="src\main\java">
+        <javaModelGenerator targetPackage="com.yt.db.mybatis.domain" targetProject="src\main\java">
             <property name="enableSubPackages" value="true" />
             <property name="trimStrings" value="true" />
         </javaModelGenerator>
@@ -36,7 +36,7 @@
 
         <!-- 采用ANNOTATEDMAPPER这种类型的Client，是不需要生成SQLMap文件的，这样比较方便一些;
              采用XMLMAPPER这种类型的Client，需要生成SQLMap文件的,但是定制比较方便一些-->
-        <javaClientGenerator type="ANNOTATEDMAPPER" targetPackage="com.ezviz.******.dao" targetProject="src\main\java"> <!--\src\main\java">-->
+        <javaClientGenerator type="ANNOTATEDMAPPER" targetPackage="com.yt.db.mybatis.dao" targetProject="src\main\java"> <!--\src\main\java">-->
             <property name="enableSubPackages" value="true" />
         </javaClientGenerator>
 
