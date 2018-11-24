@@ -13,13 +13,6 @@ import org.testng.annotations.Test;
  * Created by yantong on 2018/11/13.
  */
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class YtApplicationNGTest extends AbstractTestNGSpringContextTests {
-    @Autowired
-    private MybatisOperationService mybatisOperationService;
+public class BaseTest extends AbstractTestNGSpringContextTests {
 
-    @Test
-    public void testTest() throws Exception{
-        int addedCount = mybatisOperationService.addDuiXiang(null);
-        Assert.assertEquals(0, addedCount);
-    }
 }

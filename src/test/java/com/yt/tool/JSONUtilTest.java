@@ -1,7 +1,6 @@
 package com.yt.tool;
 
 import com.alibaba.fastjson.JSONObject;
-import com.yt.YtApplicationNGTest;
 import org.testng.annotations.Test;
 
 /**
