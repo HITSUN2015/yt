@@ -1,11 +1,7 @@
 package com.yt;
 
-import com.yt.db.mybatis.MybatisOperationService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
-import org.testng.Assert;
-import org.testng.annotations.Test;
 
 /**
  * testng demo

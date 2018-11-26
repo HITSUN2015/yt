@@ -1,4 +1,4 @@
-package com.yt.tool;
+package com.yt.tool.modal;
 
 /**
  * Created by yantong on 2018/11/21.
@@ -19,6 +19,53 @@ public class TestClass {
 //    protected transient boolean shouldCancelRedisIfSuccess = false;
 
 
+    public Long getOpTime() {
+        return opTime;
+    }
+
+    public void setOpTime(Long opTime) {
+        this.opTime = opTime;
+    }
+
+    public Integer getRetryTime() {
+        return retryTime;
+    }
+
+    public void setRetryTime(Integer retryTime) {
+        this.retryTime = retryTime;
+    }
+
+    public String getDataIds() {
+        return dataIds;
+    }
+
+    public void setDataIds(String dataIds) {
+        this.dataIds = dataIds;
+    }
+
+    public String getEventEnum() {
+        return eventEnum;
+    }
+
+    public void setEventEnum(String eventEnum) {
+        this.eventEnum = eventEnum;
+    }
+
+    public String getDeviceSerial() {
+        return deviceSerial;
+    }
+
+    public void setDeviceSerial(String deviceSerial) {
+        this.deviceSerial = deviceSerial;
+    }
+
+    public String getEventId() {
+        return eventId;
+    }
+
+    public void setEventId(String eventId) {
+        this.eventId = eventId;
+    }
 
     @Override
     public String toString() {
@@ -32,4 +79,5 @@ public class TestClass {
 //                ", shouldCancelRedisIfSuccess=" + shouldCancelRedisIfSuccess +
                 '}';
     }
+
 }

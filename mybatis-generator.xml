@@ -14,9 +14,9 @@
         <plugin type="org.mybatis.generator.plugins.SerializablePlugin"/>
 
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL=""
-                        userId=""
-                        password="">
+                        connectionURL="jdbc:mysql://127.0.0.1:3306/mytest"
+                        userId="root"
+                        password="Myheart">
         </jdbcConnection>
 
         <javaTypeResolver >
@@ -40,6 +40,6 @@
             <property name="enableSubPackages" value="true" />
         </javaClientGenerator>
 
-        <table schema="" tableName="order" domainObjectName="OrderDO" />
+        <table schema="mytest" tableName="order" domainObjectName="OrderDO" />
     </context>
 </generatorConfiguration>

@@ -1,10 +1,8 @@
 package com.yt.db.mybatis;
 
-import com.yt.db.mybatis.domain.DuiXiang;
-//import org.apache.logging.log4j.Logger;Logger
-import org.apache.logging.log4j.LogManager;
-//import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.yt.db.mybatis.dao.OrderDOMapper;
+import com.yt.db.mybatis.domain.OrderDO;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -13,10 +11,12 @@ import org.springframework.stereotype.Service;
 @Service
 public class MybatisOperationServiceImpl implements MybatisOperationService {
 
+    @Autowired
+    private OrderDOMapper orderDOMapper;
 
     @Override
-    public int addDuiXiang(DuiXiang duiXiang) {
-
+    public int addDuiXiang(OrderDO orderDO) {
+        orderDOMapper.insertSelective(orderDO);
         return 0;
     }
 }
