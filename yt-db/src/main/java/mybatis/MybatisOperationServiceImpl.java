@@ -1,0 +1,20 @@
+package mybatis;
+
+import mybatis.domain.OrderDO;
+import org.springframework.stereotype.Service;
+
+/**
+ * Created by yantong on 2018/11/12.
+ */
+@Service
+public class MybatisOperationServiceImpl implements MybatisOperationService {
+
+//    @Autowired
+//    private OrderDOMapper orderDOMapper;
+
+    @Override
+    public int addDuiXiang(OrderDO orderDO) {
+//        orderDOMapper.insertSelective(orderDO);
+        return 0;
+    }
+}

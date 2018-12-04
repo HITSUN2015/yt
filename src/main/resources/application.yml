@@ -1,8 +1,0 @@
-spring:
-  profiles:
-    active: test
-  datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/mytest
-    username: root
-    password: Myheart

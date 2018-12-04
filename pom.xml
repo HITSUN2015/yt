@@ -3,10 +3,16 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.yt</groupId>
+	<groupId>yt</groupId>
 	<artifactId>yt</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<modules>
+		<module>yt-db</module>
+		<module>yt-util</module>
+		<module>yt-web</module>
+		<module>yt-test</module>
+	</modules>
+	<packaging>pom</packaging>
 
 	<name>yt</name>
 	<description>for you</description>
