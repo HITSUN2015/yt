@@ -28,15 +28,20 @@ public abstract class RetryData {
         return failDetails;
     }
 
-    public boolean addFailDetails(String failDetail) {
-        if (null == failDetail) {
-            return false;
-        }
-        if (null == failDetails) {
+    protected void initOneMoreTime() {
+        if (failDetails == null) {
             failDetails = new ArrayList<FailDetail>();
         }
+        failDetails.add(new FailDetail());
+    }
 
-        failDetails.add()failDetails = failDetails;
+    public boolean addFailDetails(String failDetail) {
+        if (null == this.failDetails ||failDetails.size() == 0) {
+            return false;
+        }
+        FailDetail failDetail1 = failDetails.get(failDetails.size() -1);
+        failDetail1.setReason(failDetail);
+        return true;
     }
 
     public Map<String, Object> getAppendDatas() {

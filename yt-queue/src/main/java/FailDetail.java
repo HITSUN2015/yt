@@ -9,8 +9,8 @@ public class FailDetail implements Serializable{
     private Date time;
     private String reason;
 
-    public FailDetail(String reason) {
-        this.reason = reason;
+    public FailDetail() {
+        this.time = new Date();
     }
 
     public Date getTime() {

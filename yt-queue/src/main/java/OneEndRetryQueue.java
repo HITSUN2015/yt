@@ -18,7 +18,7 @@ public abstract class OneEndRetryQueue {
     abstract void enQueue(RetryData retryData);
 
     public void excute() {
-        while(true){
+        while(true){// TODO: 2018/12/5 这个 循环 机制 有待 商榷
             RetryData retryData = deQueue();
             if (LOG.isDebugEnabled()) {
                 LOG.debug("BEGIN TO HANDLE DATA {}", retryData);
@@ -31,11 +31,14 @@ public abstract class OneEndRetryQueue {
                 String id = generateId();
                 retryData.setId(id);
             }
-            Date date = new Date();
-            boolean result = doBusiness(retryData);
+            retryData.initOneMoreTime();
+            boolean result = false;
+            try {
+                result = doBusiness(retryData);
+            } catch (Exception e) {
+                LOG.error("DO BUSINESS FAILURE,DATA {}", retryData);
+            }
             if (!result) {
-                // TODO: 2018/12/4 装填 失败 数据 处理 框架和 用户的操作权限
-                
                 boolean isToRetry = isToRetry(retryData);
                 if (LOG.isDebugEnabled()) {
                     LOG.debug("HANDLE DATA FAIL{},isToRetry {}", retryData, isToRetry);
