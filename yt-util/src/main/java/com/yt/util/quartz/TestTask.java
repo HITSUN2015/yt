@@ -1,4 +1,4 @@
-package quartz;
+package com.yt.util.quartz;
 
 import org.springframework.stereotype.Service;
 

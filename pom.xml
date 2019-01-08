@@ -12,7 +12,8 @@
 		<module>yt-web</module>
 		<module>yt-test</module>
 		<module>yt-queue</module>
-	</modules>
+        <module>lamda</module>
+    </modules>
 	<packaging>pom</packaging>
 
 	<name>yt</name>

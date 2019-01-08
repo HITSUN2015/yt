@@ -1,4 +1,5 @@
-import mybatis.MybatisOperationServiceImpl;
+package com.yt.util;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,7 +13,7 @@ import java.util.List;
  */
 public class FileUtil {
 
-    private static Logger LOG = LoggerFactory.getLogger(MybatisOperationServiceImpl.class);
+    private static Logger LOG = LoggerFactory.getLogger(FileUtil.class);
 
     public static synchronized List<File> syncListFileByPath(String path) {
         List<File> result = new ArrayList<File>();

@@ -1,3 +1,5 @@
+package com.yt.util;
+
 import java.util.List;
 
 /**
@@ -43,5 +45,17 @@ public class StringUtil {
             }
         }
         return lineContent;
+    }
+
+    private static final int INCREASE_COMPARE_RESULT = 1;
+
+    public static int compareIntegerString(String s1, String s2) {
+        if (null == s2) {
+            return INCREASE_COMPARE_RESULT;
+        }
+        if (null == s1) {
+            return -INCREASE_COMPARE_RESULT;
+        }
+        return s1.compareToIgnoreCase(s2);
     }
 }

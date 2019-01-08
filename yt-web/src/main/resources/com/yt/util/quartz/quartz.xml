@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean lazy-init="false" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+    <bean lazy-init="false" class="org.springframework.scheduling.com.yt.util.quartz.SchedulerFactoryBean">
         <property name="triggers">
             <list>
                 <ref bean="testTaksTrigger"/>
@@ -13,13 +13,13 @@
     </bean>
 
     <!-- 定时更新 激活 过期时间 -->
-    <bean id="testTaksTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+    <bean id="testTaksTrigger" class="org.springframework.scheduling.com.yt.util.quartz.CronTriggerBean">
         <property name="jobDetail" ref="testTaskJobDetail"/>
         <property name="cronExpression" value="1 1 1 * * ?"/>
         <!--这个设置的比较大 每分钟执行一次是：1 * * * * ?-->
     </bean>
 
-    <bean id="testTaskJobDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+    <bean id="testTaskJobDetail" class="org.springframework.scheduling.com.yt.util.quartz.MethodInvokingJobDetailFactoryBean">
         <property name="targetObject" ref="testTask"/>
         <property name="targetMethod" value="doTask"/>
         <property name="concurrent" value="false"/>

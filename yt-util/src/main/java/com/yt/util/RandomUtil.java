@@ -1,3 +1,5 @@
+package com.yt.util;
+
 import java.util.concurrent.ThreadLocalRandom;
 
 /**
