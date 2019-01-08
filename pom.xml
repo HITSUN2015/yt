@@ -13,7 +13,8 @@
 		<module>yt-test</module>
 		<module>yt-queue</module>
         <module>lamda</module>
-    </modules>
+		<module>yt-intelligence</module>
+	</modules>
 	<packaging>pom</packaging>
 
 	<name>yt</name>
