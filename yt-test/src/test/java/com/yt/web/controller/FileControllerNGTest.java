@@ -1,4 +1,4 @@
-package controller;
+package com.yt.web.controller;
 
 import yt.BaseWebNGTest;
 import org.junit.Assert;

@@ -14,7 +14,8 @@
 		<module>yt-queue</module>
         <module>lamda</module>
 		<module>yt-intelligence</module>
-	</modules>
+        <module>yt-kafka</module>
+    </modules>
 	<packaging>pom</packaging>
 
 	<name>yt</name>
