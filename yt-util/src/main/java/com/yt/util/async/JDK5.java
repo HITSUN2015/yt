@@ -48,6 +48,7 @@ public class JDK5 {
      *      我要是 Doug Lea 面对下面代码也蛋疼
      *      归其原因：thread 和 runnable 都没返回值
      *      那如果对应一个Runnalbe接口有返回值那？ {@link Callable}
+     *      这里面我看操作系统级，线程是可以返回一个指针的，不知道为什么没有在thread类里加一个传入Callable的接口。。。TODO
      */
     private static void testFutureTaskRunnableMethod() {
         final String[]  result = new String[1];

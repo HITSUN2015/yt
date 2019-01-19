@@ -1,7 +1,7 @@
 package mybatis;
 
 import yt.BaseNGTest;
-import mybatis.domain.OrderDO;
+//import mybatis.domain.OrderDO;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Date;
@@ -11,15 +11,15 @@ import java.util.Date;
  */
 public class MybatisOperationServiceNGTest extends BaseNGTest {
 
-    @Autowired
-    private MybatisOperationService mybatisOperationService;
+//    @Autowired
+//    private MybatisOperationService mybatisOperationService;
 
     public void test(){
-        OrderDO orderDO = new OrderDO();
-        orderDO.setBuyerName("lala");
-        orderDO.setCost(1);
-        orderDO.setCreateTime(new Date());
-        orderDO.setOrderId("testOrderID");
+//        OrderDO orderDO = new OrderDO();
+//        orderDO.setBuyerName("lala");
+//        orderDO.setCost(1);
+//        orderDO.setCreateTime(new Date());
+//        orderDO.setOrderId("testOrderID");
     }
 
 }

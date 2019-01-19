@@ -12,7 +12,7 @@ public class FileUtilTest {
 
     @Test
     public void testDelete(){
-        List<File> files = FileUtil.syncListFileByPath("D:\\tmp\\test");
-        FileUtil.sycnDeleteFilesBeforeMinutesByLastModifyTime(files, 1);
+//        List<File> files = FileUtil.syncListFileByPath("D:\\tmp\\test");
+//        FileUtil.sycnDeleteFilesBeforeMinutesByLastModifyTime(files, 1);
     }
 }
