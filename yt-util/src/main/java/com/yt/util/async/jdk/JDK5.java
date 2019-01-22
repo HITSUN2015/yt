@@ -1,4 +1,4 @@
-package com.yt.util.async;
+package com.yt.util.async.jdk;
 
 import java.util.concurrent.*;
 
@@ -10,7 +10,11 @@ import java.util.concurrent.*;
 public class JDK5 {
 
     public static void main(String[] args) {
-        testFutureTaskRunnableMethod();
+//        testFutureTaskRunnableMethod();
+
+//        testCallable();
+
+        testThreadPool();
     }
 
     /**
@@ -80,5 +84,89 @@ public class JDK5 {
         }
         System.out.println("result" + result[0]);
         System.out.println("result2" + result2[0]);
+    }
+
+    /**
+     * 其实按照上面我的疑问，如果是我在开发，可能就想方设法把callable塞到thread中，让thread能实现runnable和callable
+     *
+     * 但是其实按照我目前的项目经验，这么做，如果遇到需求不断在变更，让原有的thread 兼容各种新功能的开发，在考虑兼容性时，还是比较蛋疼的
+     *
+     * 那么我们来看下，callable 和 runnable到底有什么不同
+     *
+     * \--------\--------\--------\
+     * \        \callable\runnable\
+     * \--------\--------\--------\
+     * \返回值  \   有   \   无   \
+     * \--------\--------\--------\
+     * \异常    \   外部 \   内部 \
+     * \--------\--------\--------\
+     */
+    public static void testCallable(){
+        Callable callable = new Callable() {
+            @Override
+            public Object call() throws Exception {
+                System.out.println("start call");
+                for(int i = 0; i < 5 ; i++) {
+                    TimeUnit.SECONDS.sleep(1);
+                }
+                int i = 5 / 0;
+                return "call sleep ok";
+            }
+        };
+        FutureTask<String> futureTask = new FutureTask<String>(callable);
+        Thread t = new Thread(futureTask);
+        t.start();
+        try {
+            System.out.println(futureTask.get());
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     *
+     * 各种线程池有其特性，统一用 Excutors来封装
+     * 别记忆线程池，用 执行器集合 来记 轻松易懂
+     *
+     * 额 上面的问题，TODO 可能是由于 线程池的引入，作者并未采用Thread兼容 Runnable 和 Callable
+     * 而是建立了ExcutorService 来兼容二者
+     * what is Excutor?
+     */
+    public static void testThreadPool(){
+        /**
+         * 多线程时，二者可并发
+         */
+        ExecutorService executorService = Executors.newCachedThreadPool();
+
+        System.out.println("start runable");
+
+        executorService.execute(()->{
+            try {
+                TimeUnit.SECONDS.sleep(5);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println("excutorService for runnable");});
+
+        System.out.println("start callalbe");
+
+        Future<String> future = executorService.submit(()->{
+            try {
+                TimeUnit.SECONDS.sleep(10);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println("excutorService for callable");
+            return "ok";
+        });
+        try {
+            System.out.println(future.get());
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        }
     }
 }
