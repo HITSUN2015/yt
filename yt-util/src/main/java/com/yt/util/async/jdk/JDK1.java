@@ -34,11 +34,8 @@ public class JDK1 {
 
     private static void testThreadRunAndStart() {
         //Runnable只是一个接口 单独执行只会作为一个普通的类，而非分配子线程
-        Runnable runnable = new Runnable() {
-            @Override
-            public void run() {
-                System.out.println("["+ Thread.currentThread().getName() + "] test Runnable instance");
-            }
+        Runnable runnable = () -> {
+            System.out.println("[" + Thread.currentThread().getName() + "] test Runnable instance");
         };
         runnable.run();
 
