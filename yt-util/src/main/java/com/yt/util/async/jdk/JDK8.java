@@ -10,6 +10,7 @@ import java.util.concurrent.*;
  * 此类 主要来测试这个类的使用
  * {@link java.util.concurrent.CompletableFuture}
  *
+ * 总结 CompletableFuture实现方法
  */
 public class JDK8 {
 
@@ -28,7 +29,9 @@ public class JDK8 {
 
 //        testThenCompose()
 
-        testExceptionally();
+//        testExceptionally();
+
+        testWhenComplete();
     }
 
     /**
@@ -55,7 +58,7 @@ public class JDK8 {
      */
     private static void testThenApply() {
         printFuture(null);
-        CompletableFuture future1 = CompletableFuture.supplyAsync(() -> "Hello");
+        CompletableFuture future1 = CompletableFuture.completedFuture("Hello");
         CompletableFuture future2 = future1.thenApply(x ->{
             sleepSecond(5);
             return x + " World";});
@@ -87,7 +90,7 @@ public class JDK8 {
      */
     private static void testThenApplyAsync() {
         printFuture(null);
-        CompletableFuture future1 = CompletableFuture.supplyAsync(() -> "Hello");
+        CompletableFuture future1 = CompletableFuture.completedFuture("Hello");
         CompletableFuture future2 = future1.thenApplyAsync(x ->{
             sleepSecond(5);
             return x + " World";});
@@ -174,8 +177,34 @@ public class JDK8 {
         printFuture(cf2);
     }
 
+    /**
+     * 简单来看就 是能分别处理 返回的结果和 异常
+     *
+     * TODO
+     */
+    private static void testWhenComplete(){
+        CompletableFuture cf = CompletableFuture.supplyAsync(() -> 9 / 0)
+                .whenCompleteAsync((x, e) -> {
+                    System.out.println(x);
+                    System.out.println(e);
+                });
+        printFuture(cf);
+    }
 
+    /**
+     * TODO
+     */
+    private static void testHandle() {
 
+    }
+
+    /**
+     * 静态方法提供了一些 类似 Completable 接口中 both、ether、无入参但是有返回、是否异步的方法、直接返回结果的方法
+     */
+    private static void testComletableStaticFunction() {
+        CompletableFuture completableFuture = CompletableFuture.completedFuture("test");
+        // 略
+    }
 
 
     private static void printFuture(Future future) {
