@@ -18,6 +18,10 @@ import java.util.concurrent.TimeUnit;
  *                  也挺多说这个 不好的
  * 维度4：状态Thread.State https://blog.csdn.net/jiangguojian0320/article/details/53247113
  *
+ * 警告：这个类的代码，在实际应用中 均不采纳使用
+ * 1：显示的调用线程，并发量大的时候，增大线程资源的切换
+ * 2：如果匿名建立线程，排错、性能分析，不便
+ *
  */
 public class JDK1 {
     public static void main(String[] args) {

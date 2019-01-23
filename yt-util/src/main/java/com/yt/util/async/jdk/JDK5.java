@@ -1,6 +1,9 @@
 package com.yt.util.async.jdk;
 
+import java.io.IOException;
+import java.util.Random;
 import java.util.concurrent.*;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * Created by yantong on 2019/1/19.
@@ -14,7 +17,9 @@ public class JDK5 {
 
 //        testCallable();
 
-        testThreadPool();
+//        testThreadPool();
+
+        testThreadPoolExecutor();
     }
 
     /**
@@ -132,7 +137,12 @@ public class JDK5 {
      *
      * 额 上面的问题，TODO 可能是由于 线程池的引入，作者并未采用Thread兼容 Runnable 和 Callable
      * 而是建立了ExcutorService 来兼容二者
-     * what is Excutor?
+     * what is Excutor？
+     *
+     * 警告：有文章表示 禁止用Executors的方法来new线程池
+     * 因为等待队列等信息均未知 可能造成OOM
+     *
+     *
      */
     public static void testThreadPool(){
         /**
@@ -167,6 +177,71 @@ public class JDK5 {
             e.printStackTrace();
         } catch (ExecutionException e) {
             e.printStackTrace();
+        }
+    }
+
+    /**
+     * 显示的创建线程池
+     * {@link ThreadPoolExecutor}
+     * https://www.jianshu.com/p/ae67972d1156 这个网址对参数的解读 是可以懂的。
+     * 总的来说：
+     * 先起核心线程，再入等待队列，等待队列满了，再起非核心线程
+     */
+    public static void testThreadPoolExecutor(){
+
+//        int NUMBER_OF_CORES = Runtime.getRuntime().availableProcessors();
+//        int KEEP_ALIVE_TIME = 1;
+//        TimeUnit KEEP_ALIVE_TIME_UNIT = TimeUnit.SECONDS;
+        BlockingQueue queue = new ArrayBlockingQueue(2);
+        //TODO 这里我建立如下的 threadFactory 不会 返回线程
+        final AtomicInteger mThreadNum = new AtomicInteger(0);
+        ThreadFactory factory = new ThreadFactory() {
+            @Override
+            public Thread newThread(Runnable r) {
+                //TODO 这里一定要把runnable传进去。。。否则没效果。。。
+                Thread t = new Thread(r, "my-thread-" + mThreadNum.incrementAndGet());
+                System.out.println(t.getName() + " has been created");
+                return t;
+            }
+        };
+
+        RejectedExecutionHandler executionHandler = new RejectedExecutionHandler() {
+            @Override
+            public void rejectedExecution(Runnable r, ThreadPoolExecutor executor) {
+                //什么都不干
+                System.out.println("异常" + r);
+            }
+        };
+
+        ThreadPoolExecutor poolExecutor = new ThreadPoolExecutor(
+                1,3,10,TimeUnit.SECONDS,queue,factory,executionHandler);
+
+        /**
+         * 建立10个任务 结果：
+         my-thread-1 has been created
+         my-thread-2 has been created
+         my-thread-3 has been created
+         异常com.yt.util.async.jdk.JDK5$$Lambda$1/1109371569@506c589e
+         异常com.yt.util.async.jdk.JDK5$$Lambda$1/1109371569@506c589e
+         异常com.yt.util.async.jdk.JDK5$$Lambda$1/1109371569@506c589e
+         异常com.yt.util.async.jdk.JDK5$$Lambda$1/1109371569@506c589e
+         异常com.yt.util.async.jdk.JDK5$$Lambda$1/1109371569@506c589e
+         my-thread-2
+         my-thread-1
+         my-thread-3
+         my-thread-1
+         my-thread-2
+
+         为了确定 先进队列的任务不会启动备用线程，所以启动2个任务测试 结果：
+         my-thread-1 has been created
+         my-thread-1
+         my-thread-1
+         */
+        for(int i = 0 ; i < 2 ; i++) {
+            poolExecutor.execute(()->{
+                JDK8.sleepSecond(5);
+                System.out.println(Thread.currentThread().getName());
+            });
         }
     }
 }

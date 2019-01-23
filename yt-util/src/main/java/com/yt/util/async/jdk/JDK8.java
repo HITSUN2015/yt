@@ -222,7 +222,7 @@ public class JDK8 {
         }
     }
 
-    private static void sleepSecond(int i) {
+    public static void sleepSecond(int i) {
         if (i > 0) {
             try {
                 TimeUnit.SECONDS.sleep(i);
