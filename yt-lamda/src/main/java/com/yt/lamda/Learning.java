@@ -1,9 +1,7 @@
-package java;
+package com.yt.lamda;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Predicate;
-import java.util.stream.Collectors;
 
 /**
  * Created by yantong on 2019/1/7.

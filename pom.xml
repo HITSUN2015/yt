@@ -12,7 +12,7 @@
 		<module>yt-web</module>
 		<module>yt-test</module>
 		<module>yt-queue</module>
-        <module>lamda</module>
+        <module>yt-lamda</module>
 		<module>yt-intelligence</module>
         <module>yt-kafka</module>
     </modules>
