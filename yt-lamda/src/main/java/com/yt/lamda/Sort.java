@@ -17,6 +17,10 @@ public class Sort {
     private static Logger logger = LoggerFactory.getLogger(Sort.class);
 
     public static void main(String[] args) {
+        testStringSort();
+    }
+
+    private void testNormalSort() {
         List<Teacher> teachers = new ArrayList<>();
         teachers.add(new Teacher(2, 30, "张三"));
         teachers.add(new Teacher(2, 19, "张si"));
@@ -41,4 +45,17 @@ public class Sort {
         teachers.forEach(x -> logger.error(x.toString()));
     }
 
+    private static void testStringSort() {
+        String sortString = "2,3,1";
+        Teacher.setSortString(sortString);
+        List<Teacher> teachers = new ArrayList<>();
+        teachers.add(new Teacher(3, 30, "张三"));
+        teachers.add(new Teacher(2, 19, "张si"));
+        teachers.add(new Teacher(1, 45, "zhangwu"));
+        teachers.add(new Teacher(5, 43, "zhangw3213u"));
+        teachers.sort(Comparator.comparing(Teacher::getSortIndex));
+        teachers.forEach(x -> logger.error(x.toString()));
+    }
+    
+    
 }

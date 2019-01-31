@@ -1,9 +1,15 @@
 package com.yt.lamda.model;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created by yantong on 2019/1/29.
  */
 public class Teacher {
+
+    private static Map<Integer, Integer> sortMap = new HashMap<>();
+
     Integer id;
     Integer age = 0;
     String name;
@@ -50,5 +56,24 @@ public class Teacher {
                 ", age=" + age +
                 ", name='" + name + '\'' +
                 '}';
+    }
+
+    public static void setSortString(String sortString) {
+        sortMap = new HashMap<>();
+        if (null != sortString && sortString.trim().length() != 0) {
+            String[] values = sortString.split(",");
+            for(int i = 0; i < values.length ; i++) {
+                sortMap.put(Integer.parseInt(values[i]), i);
+            }
+        }
+    }
+
+    public int getSortIndex() {
+        Integer index = sortMap.get(id);
+        if (null == index) {
+            return Integer.MAX_VALUE;
+        } else {
+            return index;
+        }
     }
 }
