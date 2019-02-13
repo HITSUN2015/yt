@@ -17,10 +17,11 @@ public class Sort {
     private static Logger logger = LoggerFactory.getLogger(Sort.class);
 
     public static void main(String[] args) {
-        testStringSort();
+        testNormalSort();
+//        testStringSort();
     }
 
-    private void testNormalSort() {
+    private static void testNormalSort() {
         List<Teacher> teachers = new ArrayList<>();
         teachers.add(new Teacher(2, 30, "张三"));
         teachers.add(new Teacher(2, 19, "张si"));
