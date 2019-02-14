@@ -1,5 +1,7 @@
 package com.yt.datastruct;
 
+import com.yt.datastruct.baseModel.NodeWithNext;
+
 /**
  * Created by yantong on 2019/2/14.
  *

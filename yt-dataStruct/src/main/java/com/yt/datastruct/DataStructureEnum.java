@@ -7,6 +7,7 @@ public enum DataStructureEnum {
     ARRAY("数组"),
     STACK("栈"),
     QUEUE("队列"),
+    LINK("链表")
     ;
     private String name;
 

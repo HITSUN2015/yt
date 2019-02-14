@@ -13,6 +13,8 @@ public class DataStructureFactory {
                 return new Stack();
             case QUEUE:
                 return new Queue();
+            case LINK:
+                return new Link();
             default:
                 return null;
         }

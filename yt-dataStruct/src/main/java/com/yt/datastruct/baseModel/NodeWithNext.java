@@ -1,4 +1,4 @@
-package com.yt.datastruct;
+package com.yt.datastruct.baseModel;
 
 /**
  * Created by yantong on 2019/2/14.
