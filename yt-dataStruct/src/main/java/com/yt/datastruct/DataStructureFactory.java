@@ -9,7 +9,10 @@ public class DataStructureFactory {
         switch (dataStructureEnum) {
             case ARRAY:
                 return new Array();
-
+            case STACK:
+                return new Stack();
+            case QUEUE:
+                return new Queue();
             default:
                 return null;
         }

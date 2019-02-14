@@ -5,7 +5,8 @@ package com.yt.datastruct;
  */
 public enum DataStructureEnum {
     ARRAY("数组"),
-
+    STACK("栈"),
+    QUEUE("队列"),
     ;
     private String name;
 
