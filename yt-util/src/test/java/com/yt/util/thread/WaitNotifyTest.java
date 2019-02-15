@@ -8,30 +8,30 @@ import java.util.concurrent.TimeUnit;
  * Created by yantong on 2019/2/15.
  */
 @Test
-public class WaitTest {
+public class WaitNotifyTest {
 
     @Test
     public void testImplByWait() {
         Object outterLock = new Object();
-        Wait wait1 = new Wait(outterLock, "waiter-");
+        WaitNotify waitNotify1 = new WaitNotify(outterLock, "waiter-");
 
         /**
          如果不起线程 直接调用，main线程会被阻塞
-         wait1.runWaitWithLock();
-         wait1.runWaitWithLock();
-         wait1.runWaitWithLock();
-         wait1.runWaitWithLock();
-         wait1.runWaitWithLock();
-         wait1.runWaitWithLock();
-         wait1.runWaitWithLock();
+         waitNotify1.runWaitWithLock();
+         waitNotify1.runWaitWithLock();
+         waitNotify1.runWaitWithLock();
+         waitNotify1.runWaitWithLock();
+         waitNotify1.runWaitWithLock();
+         waitNotify1.runWaitWithLock();
+         waitNotify1.runWaitWithLock();
          */
 
-        Thread t1 = new Thread(() -> wait1.runWaitWithLock());
-        Thread t2 = new Thread(() -> wait1.runWaitWithLock());
-        Thread t3 = new Thread(() -> wait1.runWaitWithLock());
-        Thread t4 = new Thread(() -> wait1.runWaitWithLock());
-        Thread t5 = new Thread(() -> wait1.runWaitWithLock());
-        Thread t6 = new Thread(() -> wait1.runWaitWithLock());
+        Thread t1 = new Thread(() -> waitNotify1.runWaitWithLock());
+        Thread t2 = new Thread(() -> waitNotify1.runWaitWithLock());
+        Thread t3 = new Thread(() -> waitNotify1.runWaitWithLock());
+        Thread t4 = new Thread(() -> waitNotify1.runWaitWithLock());
+        Thread t5 = new Thread(() -> waitNotify1.runWaitWithLock());
+        Thread t6 = new Thread(() -> waitNotify1.runWaitWithLock());
 
         t1.start();
         t2.start();
@@ -41,9 +41,9 @@ public class WaitTest {
         t6.start();
 
         new Thread(() -> {
-            while (true) {
+//            while (true) {
                 notifyTest(outterLock);
-            }
+//            }
         }).start();
 
          //这个join调用 会 由wait的线程 直接阻塞住main线程
@@ -67,7 +67,7 @@ public class WaitTest {
 
     private void notifyTest(Object lock) {
         synchronized (lock) {
-            lock.notify();
+            lock.notifyAll();
         }
     }
 }

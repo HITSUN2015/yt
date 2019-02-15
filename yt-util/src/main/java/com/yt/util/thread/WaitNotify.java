@@ -8,24 +8,24 @@ import java.util.concurrent.atomic.AtomicInteger;
  * 如果测试代码 时间上 在wait之前 调用的notify 而之后没再调用 则 wait线程不会被唤醒
  */
 @Signal
-public class Wait {
+public class WaitNotify {
 
-    private Object objectLock = new Object();// TODO: 2019/2/15 这个lock到底是否可以由外部传入
+    private Object objectLock = new Object();
 
     private String name;
     private AtomicInteger i = new AtomicInteger(0);
 
-    public Wait(String name) {
+    public WaitNotify(String name) {
         this.name = name;
     }
 
-    public Wait(Object objectLock, String name) {
+    public WaitNotify(Object objectLock, String name) {
         this.objectLock = objectLock;
         this.name = name;
     }
 
     /**
-     * 如果这段代码 不被 synchronized包围，则 Wait 对象没有持有objectLock这个对象的锁
+     * 如果这段代码 不被 synchronized包围，则 WaitNotify 对象没有持有objectLock这个对象的锁
      * TODO 以上解释对吗？
      * 会抛出异常：IllegalMonitorStateException
      */
