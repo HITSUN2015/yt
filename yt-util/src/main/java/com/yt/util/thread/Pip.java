@@ -1,5 +1,7 @@
 package com.yt.util.thread;
 
+import com.yt.util.thread.baseModel.PipReader;
+
 import java.io.PipedInputStream;
 import java.io.PipedOutputStream;
 
@@ -13,7 +15,8 @@ public class Pip implements Message{
     //管道输出流
     private static PipedOutputStream outputStream = new PipedOutputStream();
     //管道输入流
-    private static PipedInputStream inputStream = new PipedInputStream();
+    private static PipedInputStream inputStream1 = new PipedInputStream();
+    private static PipedInputStream inputStream2 = new PipedInputStream();
 
     /**
      * 这个方法里 while循环时，主线程并没有停
@@ -34,23 +37,22 @@ public class Pip implements Message{
                 e.printStackTrace();
             }
         };
-        //输入线程
-        Runnable in = ()-> {
-            try {
-                byte[] bytes = new byte [1024];
-                int len;
-                while ((len = inputStream.read(bytes)) != -1) {
-                    System.out.println(new String(bytes,0,len));
-                }
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        };
+
         //连接管道
-        inputStream.connect(outputStream);
+        inputStream1.connect(outputStream);
+        //一个管道 只有一个进口和出口 否则抛出 java.io.IOException: Already connected
+//        inputStream2.connect(outputStream);
+
         //启动线程
         new Thread(out).start();
-        new Thread(in).start();
+        new Thread(() ->{
+            PipReader pipReader = new PipReader("thread-1", inputStream1);
+            pipReader.read();
+        }).start();
+//        new Thread(() ->{
+//            PipReader pipReader = new PipReader("thread-1", inputStream2);
+//            pipReader.read();
+//        }).start();
     }
 
 }
