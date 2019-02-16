@@ -68,6 +68,7 @@ public class WaitNotifyTest {
     private void notifyTest(Object lock) {
         synchronized (lock) {
             lock.notifyAll();
+            //跳出这个代码块，才会激活lock在wait的线程
         }
     }
 }

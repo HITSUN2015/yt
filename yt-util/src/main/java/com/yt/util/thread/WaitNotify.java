@@ -7,8 +7,8 @@ import java.util.concurrent.atomic.AtomicInteger;
  * lock.wait,lock.notify,lock.notifyAll方法必须被 synchronized(lock)包围
  * 如果测试代码 时间上 在wait之前 调用的notify 而之后没再调用 则 wait线程不会被唤醒
  */
-@Signal
-public class WaitNotify {
+
+public class WaitNotify implements Signal{
 
     private Object objectLock = new Object();
 

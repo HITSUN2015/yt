@@ -7,8 +7,8 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by yantong on 2019/2/15.
  */
-@Signal
-public class Synchronize {
+
+public class Synchronize implements Signal{
 
     /**
      * 这个关键字 锁住的是 Synchronize 这个对象，而非传入的 info对象
