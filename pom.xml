@@ -16,6 +16,7 @@
 		<module>yt-intelligence</module>
         <module>yt-kafka</module>
         <module>yt-dataStruct</module>
+        <module>yt-net</module>
     </modules>
 	<packaging>pom</packaging>
 
