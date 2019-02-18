@@ -46,6 +46,9 @@ package com.yt.design.pattern.decorator;
  *       和 {@link com.yt.design.pattern.decorator.simpler.CompoundClassB}
  * 有重复的 持有接口的代码，和调用持有对象方法的方法，
  * 简化抽象之，就诞生了我们模式里的 Decorator 抽象类
+ *
+ * demo：JAVA IO系列类
+ *       DUBBO ChannelHandler https://cloud.tencent.com/developer/article/1109467
  */
 public interface Introduce {
 
