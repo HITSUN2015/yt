@@ -17,6 +17,7 @@
         <module>yt-kafka</module>
         <module>yt-dataStruct</module>
         <module>yt-net</module>
+        <module>yt-design-patterns</module>
     </modules>
 	<packaging>pom</packaging>
 
