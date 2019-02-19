@@ -18,6 +18,7 @@
         <module>yt-dataStruct</module>
         <module>yt-net</module>
         <module>yt-design-patterns</module>
+        <module>yt-serialize</module>
     </modules>
 	<packaging>pom</packaging>
 
