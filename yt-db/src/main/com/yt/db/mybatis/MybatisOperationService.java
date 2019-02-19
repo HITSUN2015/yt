@@ -1,6 +1,7 @@
-package mybatis;
+package com.yt.db.mybatis;
 
-import mybatis.domain.OrderDO;
+import com.yt.db.mybatis.domain.OrderDO;
+import com.yt.db.mybatis.domain.OrderDO;
 
 /**
  * Created by yantong on 2018/11/12.

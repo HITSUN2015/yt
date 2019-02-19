@@ -1,4 +1,4 @@
-package mybatis.domain;
+package com.yt.db.mybatis.domain;
 
 /**
  * Created by yantong on 2018/11/12.

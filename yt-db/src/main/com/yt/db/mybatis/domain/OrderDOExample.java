@@ -1,4 +1,4 @@
-package mybatis.domain;
+package com.yt.db.mybatis.domain;
 
 import java.util.ArrayList;
 import java.util.Date;

@@ -1,10 +1,8 @@
-package mybatis;
+package com.yt.db.mybatis;
 
 import yt.BaseNGTest;
 //import mybatis.domain.OrderDO;
-import org.springframework.beans.factory.annotation.Autowired;
 
-import java.util.Date;
 
 /**
  * Created by yantong on 2018/11/24.

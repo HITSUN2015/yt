@@ -1,6 +1,6 @@
-package mybatis;
+package com.yt.db.mybatis;
 
-import mybatis.domain.OrderDO;
+import com.yt.db.mybatis.domain.OrderDO;
 import org.springframework.stereotype.Service;
 
 /**

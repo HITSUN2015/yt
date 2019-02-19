@@ -1,24 +1,16 @@
-package mybatis.dao;
+package com.yt.db.mybatis.dao;
 
-import static org.apache.ibatis.jdbc.SqlBuilder.BEGIN;
-import static org.apache.ibatis.jdbc.SqlBuilder.DELETE_FROM;
-import static org.apache.ibatis.jdbc.SqlBuilder.FROM;
-import static org.apache.ibatis.jdbc.SqlBuilder.INSERT_INTO;
-import static org.apache.ibatis.jdbc.SqlBuilder.ORDER_BY;
-import static org.apache.ibatis.jdbc.SqlBuilder.SELECT;
-import static org.apache.ibatis.jdbc.SqlBuilder.SELECT_DISTINCT;
-import static org.apache.ibatis.jdbc.SqlBuilder.SET;
-import static org.apache.ibatis.jdbc.SqlBuilder.SQL;
-import static org.apache.ibatis.jdbc.SqlBuilder.UPDATE;
-import static org.apache.ibatis.jdbc.SqlBuilder.VALUES;
-import static org.apache.ibatis.jdbc.SqlBuilder.WHERE;
+import com.yt.db.mybatis.domain.OrderDO;
+import com.yt.db.mybatis.domain.OrderDOExample;
+import com.yt.db.mybatis.domain.OrderDOExample.Criteria;
+import com.yt.db.mybatis.domain.OrderDOExample.Criterion;
+import com.yt.db.mybatis.domain.OrderDO;
+import com.yt.db.mybatis.domain.OrderDOExample;
 
-import mybatis.domain.OrderDO;
-import mybatis.domain.OrderDOExample.Criteria;
-import mybatis.domain.OrderDOExample.Criterion;
-import mybatis.domain.OrderDOExample;
 import java.util.List;
 import java.util.Map;
+
+import static org.apache.ibatis.jdbc.SqlBuilder.*;
 
 public class OrderDOSqlProvider {
 

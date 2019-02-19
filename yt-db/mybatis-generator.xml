@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<!DOCTYPE generatorConfiguration PUBLIC "-//com.yt.db.mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://com.yt.db.mybatis.org/dtd/com.yt.db.mybatis-generator-config_1_0.dtd" >
 <generatorConfiguration >
 
     <!-- 这里就是 项目已提供mysql-connector-java-5.1.34.jar（网上可以下载别的版本） 放在硬盘上 路径写到这里-->
@@ -11,7 +11,7 @@
         <property name="beginningDelimiter" value="`"/>
         <property name="endingDelimiter" value="`"/>
 
-        <plugin type="org.mybatis.generator.plugins.SerializablePlugin"/>
+        <plugin type="org.com.yt.db.mybatis.generator.plugins.SerializablePlugin"/>
 
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
                         connectionURL="jdbc:mysql://127.0.0.1:3306/mytest"
@@ -24,7 +24,7 @@
         </javaTypeResolver>
 
         <!-- 生成vo对象 -->
-        <javaModelGenerator targetPackage="mybatis.domain" targetProject="src\main\java">
+        <javaModelGenerator targetPackage="com.yt.db.mybatis.domain" targetProject="src\main\java">
             <property name="enableSubPackages" value="true" />
             <property name="trimStrings" value="true" />
         </javaModelGenerator>
@@ -36,7 +36,7 @@
 
         <!-- 采用ANNOTATEDMAPPER这种类型的Client，是不需要生成SQLMap文件的，这样比较方便一些;
              采用XMLMAPPER这种类型的Client，需要生成SQLMap文件的,但是定制比较方便一些-->
-        <javaClientGenerator type="ANNOTATEDMAPPER" targetPackage="mybatis.dao" targetProject="src\main\java"> <!--\src\main\java">-->
+        <javaClientGenerator type="ANNOTATEDMAPPER" targetPackage="com.yt.db.mybatis.dao" targetProject="src\main\java"> <!--\src\main\java">-->
             <property name="enableSubPackages" value="true" />
         </javaClientGenerator>
 
