@@ -31,7 +31,9 @@ public class JDK8 {
 
 //        testExceptionally();
 
-        testWhenComplete();
+//        testWhenComplete();
+
+        test();
     }
 
     /**
@@ -229,6 +231,44 @@ public class JDK8 {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
+        }
+    }
+
+    public static void test(){
+        ExecutorService executorService = Executors.newFixedThreadPool(2);
+
+        FutureTask parentFuture = new FutureTask(new Callable() {
+            @Override
+            public Object call() throws Exception {
+                FutureTask futureTask = new FutureTask(new Callable() {
+                    @Override
+                    public Object call() throws Exception {
+                        while (true) {
+                            TimeUnit.SECONDS.sleep(1);
+                            System.out.println("inner");
+                        }
+                    }
+                });
+                executorService.submit(futureTask);
+                try {
+                    futureTask.get(2, TimeUnit.SECONDS);
+                } catch (Exception e) {
+//                    e.printStackTrace();
+                }
+                futureTask.cancel(true);// TODO: 2019/1/31 这里还是应该停下来的 主要看 任务 是否 完成
+                TimeUnit.SECONDS.sleep(20);
+                return null;
+            }
+        });
+        executorService.submit(parentFuture);
+        try {
+            parentFuture.get(40, TimeUnit.SECONDS);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } catch (ExecutionException e) {
+            e.printStackTrace();
+        } catch (TimeoutException e) {
+            e.printStackTrace();
         }
     }
 }

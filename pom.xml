@@ -15,6 +15,10 @@
         <module>yt-lamda</module>
 		<module>yt-intelligence</module>
         <module>yt-kafka</module>
+		<module>yt-dataStruct</module>
+		<module>yt-net</module>
+		<module>yt-design-patterns</module>
+		<module>yt-serialize</module>
 		<module>yt-thread</module>
 	</modules>
 	<packaging>pom</packaging>
@@ -37,7 +41,7 @@
 		<!--数据库方面版本配置-->
 		<spring-version>3.2.5.RELEASE</spring-version>
 		<druid-version>1.1.12</druid-version>
-		<com.yt.db.mybatis-spring-boot-starter-version>1.3.2</com.yt.db.mybatis-spring-boot-starter-version>
+		<mybatis-spring-boot-starter-version>1.3.2</mybatis-spring-boot-starter-version>
 		<mysql-connector-java-version>5.1.34</mysql-connector-java-version>
 	</properties>
 
@@ -65,11 +69,11 @@
 			</exclusions>
 		</dependency>
 
-		<!-- com.yt.db.mybatis-spring-boot-starter depend on:com.yt.db.mybatis,com.yt.db.mybatis-spring-->
+		<!-- mybatis-spring-boot-starter depend on:mybatis,mybatis-spring-->
 		<dependency>
-			<groupId>org.com.yt.db.mybatis.spring.boot</groupId>
-			<artifactId>com.yt.db.mybatis-spring-boot-starter</artifactId>
-			<version>${com.yt.db.mybatis-spring-boot-starter-version}</version>
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
+			<version>${mybatis-spring-boot-starter-version}</version>
 		</dependency>
 
 		<!--数据库监控 数据库连接池-->

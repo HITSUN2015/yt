@@ -21,4 +21,11 @@ public class UUIDUtil {
         }
         return ss;
     }
+
+    public static String getUUIDByLength(int length) {
+        if (length <= 0) {
+            return null;
+        }
+        return getUUID().substring(0, length);
+    }
 }
