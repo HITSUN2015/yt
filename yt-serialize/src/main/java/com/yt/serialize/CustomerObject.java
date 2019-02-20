@@ -9,6 +9,10 @@ import java.io.Serializable;
  *      ->Settings
  *      ->搜索：Serialization class without 'serialVersionUID'
  *      ->打上勾
+ *
+ * 　　显式地定义serialVersionUID有两种用途：
+ 　　　　1、 在某些场合，希望类的不同版本对序列化兼容，因此需要确保类的不同版本具有相同的serialVersionUID；
+ 　　　　2、 在某些场合，不希望类的不同版本对序列化兼容，因此需要确保类的不同版本具有不同的serialVersionUID。
  */
 public class CustomerObject implements Serializable {
 
