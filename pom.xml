@@ -20,6 +20,7 @@
 		<module>yt-design-patterns</module>
 		<module>yt-serialize</module>
 		<module>yt-thread</module>
+		<module>yt-restful</module>
 	</modules>
 	<packaging>pom</packaging>
 

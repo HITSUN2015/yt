@@ -1,4 +1,4 @@
-package com.yt.web.restful;
+package com.yt.restful;
 
 /**
  * Created by yantong on 2019/2/19.
@@ -15,6 +15,8 @@ package com.yt.web.restful;
  *
  * 一种软件架构风格、设计风格，而不是标准
  * 软件可以更简洁，更有层次，更易于实现缓存等机制
+ *
+ * 这个项目，用来从论文中，用装饰者模式 描绘出restful风格解决超媒体系统架构关注点
  */
 public interface Introduce {
 }
