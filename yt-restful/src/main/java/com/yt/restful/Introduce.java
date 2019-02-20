@@ -9,7 +9,10 @@ package com.yt.restful;
  *      XML-RPC（）
  *
  * RestFull by Roy Fielding 博士
- * 论文：https://www.docin.com/p-525700155.html
+ * 论文：
+ *  原文：https://www.ics.uci.edu/~fielding/pubs/dissertation/net_arch_styles.htm#sec_3_9
+ *  译文：https://www.docin.com/p-525700155.html
+ *
  * 实践：https://www.cnblogs.com/csj007523/p/10396829.html
  *       https://blog.csdn.net/han_ying_ying/article/details/79558538
  *
