@@ -9,5 +9,6 @@ import com.yt.restful.evolution.ArchitecturalProperties;
 
  ScalabilityProperties is also impacted by the frequency of interactions, whether the load on a component is distributed evenly over time or occurs in peaks, whether an interaction requires guaranteed delivery or a best-effort, whether a request involves synchronous or asynchronous handling, and whether the environment is controlled or anarchic (i.e., can you trust the other components?).
  */
-public interface ScalabilityProperties extends ArchitecturalProperties {
+@ArchitecturalProperties
+public interface ScalabilityProperties{
 }

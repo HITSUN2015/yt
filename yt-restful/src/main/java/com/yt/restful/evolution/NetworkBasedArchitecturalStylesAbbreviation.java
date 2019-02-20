@@ -5,5 +5,5 @@ package com.yt.restful.evolution;
  */
 public interface NetworkBasedArchitecturalStylesAbbreviation {
 
-    String getAbbreviation();
+    String getFullName();
 }

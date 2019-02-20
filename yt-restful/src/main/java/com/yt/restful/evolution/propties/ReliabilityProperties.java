@@ -7,5 +7,6 @@ import com.yt.restful.evolution.ArchitecturalProperties;
  * 可靠性
  * ReliabilityProperties, within the perspective of application architectures, can be viewed as the degree to which an architecture is susceptible to failure at the system level in the presence of partial failures within components, connectors, or data. Styles can improve reliability by avoiding single points of failure, enabling redundancy, allowing monitoring, or reducing the scope of failure to a recoverable action.
  */
-public interface ReliabilityProperties extends ArchitecturalProperties {
+@ArchitecturalProperties
+public interface ReliabilityProperties {
 }

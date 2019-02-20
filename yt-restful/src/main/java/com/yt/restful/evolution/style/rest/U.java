@@ -7,9 +7,9 @@ import com.yt.restful.evolution.style.RestStyles;
  *
  *
  */
-public interface UniformInterfaceStyle extends RestStyles {
+public interface U extends RestStyles {
 
-    default String getAbbreviation(){
-        return "U";
+    default String getFullName(){
+        return "Uniform Interface";
     }
 }

@@ -9,5 +9,6 @@ import com.yt.restful.evolution.ArchitecturalProperties;
 
  Even if it were possible to build a software system that perfectly matches the requirements of its users, those requirements will change over time just as society changes over time. Because the components participating in a network-based application may be distributed across multiple organizational boundaries, the system must be prepared for gradual and fragmented change, where old and new implementations coexist, without preventing the new implementations from making use of their extended capabilities.
  */
-public interface ModifiabilityProperties extends ArchitecturalProperties{
+@ArchitecturalProperties
+public interface ModifiabilityProperties{
 }
