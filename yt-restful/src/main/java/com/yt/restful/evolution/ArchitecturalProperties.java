@@ -8,5 +8,4 @@ package com.yt.restful.evolution;
  */
 public interface ArchitecturalProperties {
 
-    void impl();
 }

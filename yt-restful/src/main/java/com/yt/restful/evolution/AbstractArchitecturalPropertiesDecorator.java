@@ -7,6 +7,8 @@ public abstract class AbstractArchitecturalPropertiesDecorator implements Networ
 
     private NetworkBasedApplication networkApplication;
 
+    protected EvaluateResultModel evaluateResult = new EvaluateResultModel();
+
     public void setNetworkApplication(NetworkBasedApplication networkApplication) {
         this.networkApplication = networkApplication;
     }
@@ -14,5 +16,8 @@ public abstract class AbstractArchitecturalPropertiesDecorator implements Networ
     @Override
     public void evaluate() {
         networkApplication.evaluate();
+        decorate();
     }
+
+    protected abstract void decorate();
 }

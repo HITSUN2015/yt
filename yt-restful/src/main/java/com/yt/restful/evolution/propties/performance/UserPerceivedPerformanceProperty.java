@@ -1,6 +1,6 @@
 package com.yt.restful.evolution.propties.performance;
 
-import com.yt.restful.evolution.propties.Performance;
+import com.yt.restful.evolution.propties.PerformanceProperties;
 
 /**
  * Created by yantong on 2019/2/20.
@@ -13,5 +13,5 @@ import com.yt.restful.evolution.propties.Performance;
 
  It is important to note that design considerations for optimizing latency will often have the side-effect of degrading completion time, and vice versa. For example, compression of a data stream can produce a more efficient encoding if the algorithm samples a significant portion of the data before producing the encoded transformation, resulting in a shorter completion time to transfer the encoded data across the network. However, if this compression is being performed on-the-fly in response to a user action, then buffering a large sample before transfer may produce an unacceptable latency. Balancing these trade-offs can be difficult, particularly when it is unknown whether the recipient cares more about latency (e.g., Web browsers) or completion (e.g., Web spiders).
  */
-public interface UserPerceivedPerformance extends Performance {
+public interface UserPerceivedPerformanceProperty extends PerformanceProperties {
 }

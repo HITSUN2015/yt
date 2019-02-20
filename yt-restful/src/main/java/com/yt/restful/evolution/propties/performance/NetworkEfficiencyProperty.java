@@ -1,6 +1,6 @@
 package com.yt.restful.evolution.propties.performance;
 
-import com.yt.restful.evolution.propties.Performance;
+import com.yt.restful.evolution.propties.PerformanceProperties;
 
 /**
  * Created by yantong on 2019/2/20.
@@ -9,5 +9,5 @@ import com.yt.restful.evolution.propties.Performance;
 
  The impact of the various performance issues is often related to the scope of distribution for the application. The benefits of a style under local conditions may become drawbacks when faced with global conditions. Thus, the properties of a style must be framed in relation to the interaction distance: within a single process, across processes on a single host, inside a local-area network (LAN), or spread across a wide-area network (WAN). Additional concerns become evident when interactions across a WAN, where a single organization is involved, are compared to interactions across the Internet, involving multiple trust boundaries.
  */
-public interface NetworkEfficiency extends Performance {
+public interface NetworkEfficiencyProperty extends PerformanceProperties {
 }

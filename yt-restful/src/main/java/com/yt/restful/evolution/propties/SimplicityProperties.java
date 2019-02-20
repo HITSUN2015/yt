@@ -9,5 +9,5 @@ import com.yt.restful.evolution.ArchitecturalProperties;
 
  Applying the principle of generality to architectural elements also improves simplicity, since it decreases variation within an architecture. Generality of connectors leads to middleware [22].
  */
-public interface Simplicity extends ArchitecturalProperties {
+public interface SimplicityProperties extends ArchitecturalProperties {
 }

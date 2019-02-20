@@ -1,7 +1,6 @@
 package com.yt.restful.evolution.propties.performance;
 
-import com.yt.restful.evolution.ArchitecturalProperties;
-import com.yt.restful.evolution.propties.Performance;
+import com.yt.restful.evolution.propties.PerformanceProperties;
 
 /**
  * Created by yantong on 2019/2/20.
@@ -10,5 +9,5 @@ import com.yt.restful.evolution.propties.Performance;
 
  Styles impact network performance by their influence on the number of interactions per user action and the granularity of data elements. A style that encourages small, strongly typed interactions will be efficient in an application involving small data transfers among known components, but will cause excessive overhead within applications that involve large data transfers or negotiated interfaces. Likewise, a style that involves the coordination of multiple components arranged to filter a large data stream will be out of place in an application that primarily requires small control messages.
  */
-public interface NetworkPerformance extends Performance{
+public interface NetworkPerformanceProperty extends PerformanceProperties {
 }
