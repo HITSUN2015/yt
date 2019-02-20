@@ -33,7 +33,7 @@ public class JavaIOSerialize implements SerializeUtil{
     }
 
     @Override
-    public <T> Object deserialize(String source, Class<T> clazz) {
+    public <T> T deserialize(String source, Class<T> clazz) {
         Object result = null;
         try {
             ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(source.getBytes("ISO-8859-1"));
@@ -46,6 +46,6 @@ public class JavaIOSerialize implements SerializeUtil{
         } catch (ClassNotFoundException e) {
             logger.error("反序列化异常 source {} clazz {}", source, Optional.ofNullable(clazz.getName()).orElse(null), e);
         }
-        return result;
+        return (T)result;// TODO: 2019/2/20 这里的强转 略 草率
     }
 }

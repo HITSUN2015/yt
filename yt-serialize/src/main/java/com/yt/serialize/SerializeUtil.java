@@ -7,5 +7,5 @@ public interface SerializeUtil {
 
     String serialize(Object object);
 
-    <T>Object deserialize(String source, Class<T> clazz);
+    <T>T deserialize(String source, Class<T> clazz);
 }

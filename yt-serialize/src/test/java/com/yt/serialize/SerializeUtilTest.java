@@ -16,7 +16,7 @@ public class SerializeUtilTest {
         String serializedString = serializeUtil.serialize(customerObject);
         System.out.println(serializedString);
 
-        Object deserializedObject = serializeUtil.deserialize(serializedString, CustomerObject.class);
+        CustomerObject deserializedObject = serializeUtil.deserialize(serializedString, CustomerObject.class);
         System.out.println(deserializedObject);
     }
 }
