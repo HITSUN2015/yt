@@ -1,4 +1,4 @@
-package com.yt.thread.threadpool;/**
+package com.yt.util.threadpool;/**
  * Created by SUN on 19/1/14.
  */
 

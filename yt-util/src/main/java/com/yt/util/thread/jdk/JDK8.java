@@ -1,4 +1,4 @@
-package com.yt.thread.jdk;
+package com.yt.util.thread.jdk;
 
 import java.util.Random;
 import java.util.concurrent.CompletableFuture;
