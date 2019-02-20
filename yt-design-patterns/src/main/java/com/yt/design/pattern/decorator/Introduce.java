@@ -49,6 +49,8 @@ package com.yt.design.pattern.decorator;
  *
  * demo：JAVA IO系列类
  *       DUBBO ChannelHandler https://cloud.tencent.com/developer/article/1109467
+ *
+ * 由项目 yt-rest可知，装饰者模式 要求 这些装饰之间是独立的
  */
 public interface Introduce {
 
