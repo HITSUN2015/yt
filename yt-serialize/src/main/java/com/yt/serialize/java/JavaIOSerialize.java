@@ -9,6 +9,15 @@ import java.util.Optional;
 
 /**
  * Created by yantong on 2019/2/19.
+ *
+ *
+ 可以 在 实现 Serializable 接口的勒种 添加 这两个方法 来自定义 序列化及 反序列化
+ private void writeObject(ObjectOutputStream stream) throws IOException{
+ //TODO
+ }
+ private void readObject(ObjectInputStream stream) throws IOException , ClassNotFoundException{
+ //TODO
+ }
  */
 public class JavaIOSerialize implements SerializeUtil{
 
