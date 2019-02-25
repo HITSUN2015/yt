@@ -21,7 +21,8 @@
 		<module>yt-serialize</module>
 		<module>yt-thread</module>
 		<module>yt-restful</module>
-	</modules>
+        <module>yt-spring-redis</module>
+    </modules>
 	<packaging>pom</packaging>
 
 	<name>yt</name>
