@@ -7,7 +7,7 @@ public interface Arithmetic {
 
     String question();
 
-    Object showInput();
-
-    Object showSolution();
+//    Object showInput();
+//
+//    Object showSolution();
 }

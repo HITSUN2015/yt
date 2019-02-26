@@ -1,4 +1,4 @@
-package com.yt.arithmetic.dynamicPrograming.Coin;
+package com.yt.arithmetic.dynamicPrograming;
 
 import org.testng.annotations.Test;
 
@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
  * 假设有几种硬币，如1、3、5，并且数量无限。请找出能够组成某个数目的找零所使用最少的硬币数。
  */
 @Test
-public class Solution {
+public class CoinSolution {
 
     //需要凑的 硬币数
     private static final int TOTAL_COUNT = 27;

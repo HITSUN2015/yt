@@ -1,4 +1,6 @@
-package com.yt.arithmetic;
+package com.yt.arithmetic.dynamicProgramming;
+
+import com.yt.arithmetic.Arithmetic;
 
 /**
  * Created by yantong on 2019/2/20.
@@ -12,4 +14,6 @@ package com.yt.arithmetic;
  * 阶段
  */
 public interface DynamicProgramming extends Arithmetic{
+
+    void danamicProgrammingSolution();
 }
