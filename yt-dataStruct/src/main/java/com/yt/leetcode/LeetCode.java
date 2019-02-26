@@ -8,4 +8,6 @@ public interface LeetCode {
     int getProblemNumber();
 
     String performResult();
+
+    long getSoluteTime();
 }

@@ -3,6 +3,8 @@ package com.yt.solutions;
 import com.yt.arithmetic.dynamicProgramming.DynamicProgramming;
 import com.yt.leetcode.LeetCode;
 
+import java.util.Date;
+
 /**
  * Created by yantong on 2019/2/26.
  */
@@ -71,5 +73,10 @@ public class JumpGame  implements LeetCode, DynamicProgramming{
     public String performResult() {
         return "Runtime: 175 ms, faster than 29.15% of Java online submissions for Jump Game.\n" +
                 "Memory Usage: 41.1 MB, less than 27.28% of Java online submissions for Jump Game.";
+    }
+
+    @Override
+    public long getSoluteTime() {
+        return 1551147733749l;
     }
 }
