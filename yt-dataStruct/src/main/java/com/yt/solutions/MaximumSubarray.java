@@ -35,6 +35,7 @@ public class MaximumSubarray implements LeetCode, DynamicProgramming {
         return 1551160386856l;
     }
 
+    //TODO 一些其他的设计 https://blog.csdn.net/seagal890/article/details/79439201
     @Override
     public void danamicProgrammingSolution() {
         int[] nums = new int[]{-2,1,-3,4,-1,2,1,-5,4};
