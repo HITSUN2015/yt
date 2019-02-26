@@ -5,6 +5,10 @@ package com.yt.leetcode;
  */
 public interface LeetCode {
 
+    default String transCArrayToJava(String source) {
+        return source.replace("[", "{").replace("]", "}").replace("\"","");
+    }
+
     int getProblemNumber();
 
     String performResult();
