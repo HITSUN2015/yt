@@ -1,6 +1,8 @@
 package com.yt.solutions;
 
+import com.sun.xml.internal.bind.v2.TODO;
 import com.yt.arithmetic.dynamicProgramming.DynamicProgramming;
+import com.yt.arithmetic.greedy.Greedy;
 import com.yt.leetcode.LeetCode;
 
 import java.util.Date;
@@ -8,7 +10,7 @@ import java.util.Date;
 /**
  * Created by yantong on 2019/2/26.
  */
-public class JumpGame  implements LeetCode, DynamicProgramming{
+public class JumpGame  implements LeetCode, DynamicProgramming, Greedy{
 
     @Override
     public int getProblemNumber() {
@@ -62,6 +64,7 @@ public class JumpGame  implements LeetCode, DynamicProgramming{
             for(; startIndex < i ; startIndex++) {
                 if (nums[startIndex] >= i - startIndex  && result[startIndex]) {
                     curResult = true;
+                    //这里可以加 break
                 }
             }
             result[i] = curResult;
@@ -78,5 +81,10 @@ public class JumpGame  implements LeetCode, DynamicProgramming{
     @Override
     public long getSoluteTime() {
         return 1551147733749l;
+    }
+
+    @Override
+    public void greedySolution() {
+        // TODO: 2019/2/26  
     }
 }
