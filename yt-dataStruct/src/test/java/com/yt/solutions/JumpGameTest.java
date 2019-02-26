@@ -14,4 +14,9 @@ public class JumpGameTest {
         DynamicProgramming jg = new JumpGame();
         jg.danamicProgrammingSolution();
     }
+
+    @Test
+    public void testAnotherDPSolution() {
+        JumpGame.anotherDPSolution();
+    }
 }
