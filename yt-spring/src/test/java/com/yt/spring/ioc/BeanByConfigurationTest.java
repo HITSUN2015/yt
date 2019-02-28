@@ -1,13 +1,6 @@
 package com.yt.spring.ioc;
 
-import com.yt.spring.application.CodingSringContainer;
-import com.yt.spring.ioc.annotation.BeanByAnnotation;
-import com.yt.spring.ioc.config.BeanByConfiger;
 import com.yt.spring.ioc.config.ConfigurationBeanModel;
-import org.springframework.beans.factory.config.BeanDefinition;
-import org.springframework.beans.factory.support.DefaultListableBeanFactory;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 import org.testng.annotations.Test;
 
