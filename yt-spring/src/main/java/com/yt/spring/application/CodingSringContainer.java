@@ -1,4 +1,4 @@
-package com.yt.spring.coding;/**
+package com.yt.spring.application;/**
  * Created by SUN on 19/2/27.
  */
 
@@ -13,9 +13,9 @@ import org.springframework.core.io.ClassPathResource;
  */
 public class CodingSringContainer {
 
-    public DefaultListableBeanFactory createSpringApplication() {
-        //获取 resources/coding/codingBean.xml 文件
-        ClassPathResource res = new ClassPathResource("/coding/codingBean.xml");
+    public DefaultListableBeanFactory createSpringApplication(String applicationXMLPropertiePath) {
+        //获取 resources/application/applicaton_ioc_xml.xml 文件
+        ClassPathResource res = new ClassPathResource(applicationXMLPropertiePath);
 
         //new 空对象
         DefaultListableBeanFactory factory = new DefaultListableBeanFactory();
@@ -25,6 +25,7 @@ public class CodingSringContainer {
 
         //加载配置文件 bean的初始化
         reader.loadBeanDefinitions(res);
+
         return factory;
     }
 }

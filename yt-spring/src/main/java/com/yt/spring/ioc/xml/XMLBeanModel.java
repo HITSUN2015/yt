@@ -1,11 +1,11 @@
-package com.yt.spring.coding;
+package com.yt.spring.ioc.xml;
 
 /**
  * @author SUN
  * @create 2019-02-27 下午9:34
  * @desc 用于编程实现IOC的演示
  */
-public class CodingModel {
+public class XMLBeanModel {
 
     private String name;
     private int age;
@@ -28,7 +28,7 @@ public class CodingModel {
 
     @Override
     public String toString() {
-        return "CodingModel{" +
+        return "XMLBeanModel{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 '}';

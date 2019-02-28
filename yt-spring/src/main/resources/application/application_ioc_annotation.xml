@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- 这里如果 超过来以下配置报错，是上面需要引入 xmlns:context="http://www.springframework.org/schema/context" -->
+    <!-- 只有base-package包下 注释功能才好使 -->
+    <context:component-scan base-package="com.yt.spring.ioc.annotation" use-default-filters="true">
+        <!-- 这里 use-default-filters 为true 会装进一些默认的include-filter
+         实现在：ClassPathScanningCandidateComponentProvider.isCandidateComponent
+         有 includeFilters 和 excludeFilters 来选取加载的文件是否由 MetadataReader 生成 BeanDefinition 再生成 Bean-->
+        <!-- use-default-filters为true的时候 会默认载入两个 注释：
+         org.springframework.stereotype.Component
+         javax.annotation.ManagedBean
+         其中Component子类（建议自己查一下）有常用注解：Repository,Service, Controller,RestController，Configuration等
+         -->
+        <!-- 另外这个base-package 路径 * 什么的需要 再确定下 TODO annotation.*是不可以的 -->
+    </context:component-scan>
+</beans>

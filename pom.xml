@@ -19,9 +19,10 @@
 		<module>yt-net</module>
 		<module>yt-design-patterns</module>
 		<module>yt-serialize</module>
-		<module>yt-thread</module>
+		<module>yt-spring</module>
 		<module>yt-restful</module>
         <module>yt-spring-redis</module>
+        <module>yt-rpc</module>
     </modules>
 	<packaging>pom</packaging>
 

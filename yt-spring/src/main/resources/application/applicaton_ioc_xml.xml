@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean name="codingIOCBeanName" class="com.yt.spring.coding.CodingModel">
+    <bean name="codingIOCBeanName" class="com.yt.spring.ioc.xml.XMLBeanModel">
         <property name="age" value="3"></property>
         <property name="name" value="test"></property>
     </bean>
