@@ -2,9 +2,6 @@ package com.yt.spring.ioc;
 
 import com.yt.spring.application.CodingSringContainer;
 import com.yt.spring.ioc.annotation.BeanByAnnotation;
-import com.yt.spring.ioc.xml.BeanByXML;
-import com.yt.spring.ioc.xml.XMLBeanModel;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.testng.annotations.Test;
