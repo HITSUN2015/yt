@@ -1,11 +1,16 @@
 package com.yt.rpc.dubbo.provider.ServiceBeanRegist;
 
+import com.alibaba.dubbo.config.ModuleConfig;
+import com.alibaba.dubbo.config.MonitorConfig;
+import com.alibaba.dubbo.config.ProtocolConfig;
+import com.alibaba.dubbo.config.ProviderConfig;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.ApplicationEvent;
 import org.springframework.context.ApplicationListener;
+import org.springframework.context.event.ContextRefreshedEvent;
 
 /**
  * Created by yantong on 2019/3/1.
@@ -34,15 +39,43 @@ public class Step1setProperties implements ApplicationContextAware, Initializing
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         System.out.println("调用 ApplicationContextAware.setApplicationContext 方法");
+        //dubbo这张表里 为 serviceBean调用了 我看实现了context的addApplicationListener/addListener 接口 具体的调用对象 TODO
+        //具体的内容有：
     }
 
     @Override
     public void afterPropertiesSet() throws Exception {
         System.out.println("调用 InitializingBean.afterPropertiesSet");
+
+        //统一方法：在application 里 查找 某个类的接口
+        //这部分代码 可以写的更漂亮
+        //TODO  是不是这里 就可以看出 rpc 涉及的相关参数
+
+        /**
+         * 1.{@link ProviderConfig 子类}
+         *
+         * 2.{@link com.alibaba.dubbo.config.ApplicationConfig }\
+         *
+         * 3.{@link ModuleConfig}
+         *
+         * 4.{@link MonitorConfig}
+         *
+         * 5.{@link ProtocolConfig}
+         *
+         * 6.beanName
+         *
+         * 7.export
+         */
     }
 
     @Override
     public void onApplicationEvent(ApplicationEvent event) {
         System.out.println("调用 ApplicationListener.onApplicationEvent");
+        /**
+         * 监听了这个事件
+         * {@link ContextRefreshedEvent}
+         * &&条件 TODO
+         * 会执行export()
+         */
     }
 }
