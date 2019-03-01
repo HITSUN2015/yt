@@ -3,7 +3,6 @@ package com.yt.javassist;
 import org.apache.ibatis.javassist.*;
 
 import java.io.IOException;
-import java.util.Date;
 
 /**
  * Created by yantong on 2019/3/1.
@@ -14,7 +13,7 @@ public class AddToConstructor {
         try {
             ClassPool pool = ClassPool.getDefault();
             CtClass ctClass = null;
-            ctClass = pool.getCtClass("java.util.Date");
+            ctClass = pool.getCtClass(classPath);
             CtConstructor[] constructors = ctClass.getConstructors();
             constructors[0].insertAfter(insertString, true);
             //不写明路径，则生成到 项目的根目录了
