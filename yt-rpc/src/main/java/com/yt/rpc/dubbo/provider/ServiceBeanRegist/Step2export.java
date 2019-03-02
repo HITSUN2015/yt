@@ -94,6 +94,8 @@ public class Step2export {
     /**
      * 上面 是 用 {@link com.alibaba.dubbo.rpc.proxy.javassist.JavassistProxyFactory}
      * 通过 {@link Wrapper} 生成的类
+     *
+     * TODO 这里我其实 没太明白 为什么让Wrapper直接继承自 Invoker，而是通过 原作者的 AbstractProxyInvoker 来封了一层
      */
     public void makeWraper() {
         //TODO 这里 我本想 用 javassist 给wraper方法加行代码 输出wrapper之后的代码，但是，需要provider，就暂时没弄
