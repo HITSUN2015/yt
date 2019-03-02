@@ -24,6 +24,7 @@
         <module>yt-spring-redis</module>
         <module>yt-rpc</module>
         <module>yt-java-class</module>
+        <module>yt-spi</module>
     </modules>
 	<packaging>pom</packaging>
 
