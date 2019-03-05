@@ -16,10 +16,9 @@ public class BitwiseUtil {
         if (null == source) {
             return bit * value;
         }
-        if (null == bit || value == null) {
+        if (null == bit || value == null || value == 0) {
             return source;
         }
-        // TODO: 2019/3/5 这个实现比较蛋疼
-        return (source & (~bit)) | (bit * value);
+        return source | bit;
     }
 }
