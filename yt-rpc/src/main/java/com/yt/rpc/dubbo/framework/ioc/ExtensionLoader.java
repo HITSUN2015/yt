@@ -52,5 +52,5 @@ import com.alibaba.dubbo.common.extension.Adaptive;
  * |从而生成了Protocol实例：名称：Protocol$Adpative （这单词可能打错了。。。）{@link com.alibaba.dubbo.common.extension.ExtensionLoader} search($Adpative)
  *      我查下了下master 已经对着部分代码做了 更偏向面向对象编程的重构 TODO 可以自己先想想如何重构，再对比下
  */
-public class ExtensionLoader {
+public interface ExtensionLoader {
 }
