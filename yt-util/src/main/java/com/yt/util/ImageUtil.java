@@ -93,7 +93,7 @@ public class ImageUtil {
             }
             int imageWidth = orgBufferedImage.getWidth();
             nailBufferedImage = Thumbnails.of(orgBufferedImage).scale((float)thumbnailWidth/imageWidth).asBufferedImage();
-            boolean flag = ImageIO.write(nailBufferedImage, StringUtil.isBlank(imageType) ?"jpg":imageType, outputStream);
+            boolean flag = ImageIO.write(nailBufferedImage, StringUtil.isBlankNoExactly(imageType) ?"jpg":imageType, outputStream);
             if (flag){
                 imageByte = outputStream.toByteArray();
             }
@@ -142,7 +142,7 @@ public class ImageUtil {
             int imageWidth = orgBufferedImage.getWidth();
             nailBufferedImage = Thumbnails.of(orgBufferedImage).scale((float) thumbnailWidth / imageWidth)
                     .asBufferedImage();
-            boolean flag = ImageIO.write(nailBufferedImage, StringUtil.isBlank(imageType) ? "jpg" : imageType,
+            boolean flag = ImageIO.write(nailBufferedImage, StringUtil.isBlankNoExactly(imageType) ? "jpg" : imageType,
                     outputStream);
             if (flag) {
                 imageByte = outputStream.toByteArray();
@@ -202,7 +202,7 @@ public class ImageUtil {
             int height = Math.round(inHeight * imageOrgHeight);
             nailBufferedImage = Thumbnails.of(orgBufferedImage).sourceRegion(x, y, width, height)/** 裁剪人脸图像 */
                     .scale((float)avatarWidth / imageOrgWidth).asBufferedImage();
-            boolean flag = ImageIO.write(nailBufferedImage, StringUtil.isBlank(imageType) ? "jpg" : imageType, thumbnailOutputStream);
+            boolean flag = ImageIO.write(nailBufferedImage, StringUtil.isBlankNoExactly(imageType) ? "jpg" : imageType, thumbnailOutputStream);
             if (flag) {
                 imageByte = thumbnailOutputStream.toByteArray();
             }
@@ -266,7 +266,7 @@ public class ImageUtil {
             int height = Math.round(inHeight * imageOrgHeight);
             nailBufferedImage = Thumbnails.of(orgBufferedImage).sourceRegion(x, y, width, height)/** 裁剪人脸图像 */
                     .scale((float)avatarWidth / imageOrgWidth).asBufferedImage();
-            boolean flag = ImageIO.write(nailBufferedImage, StringUtil.isBlank(imageType) ? "jpg" : imageType, thumbnailOutputStream);
+            boolean flag = ImageIO.write(nailBufferedImage, StringUtil.isBlankNoExactly(imageType) ? "jpg" : imageType, thumbnailOutputStream);
             if (flag) {
                 imageByte = thumbnailOutputStream.toByteArray();
             }

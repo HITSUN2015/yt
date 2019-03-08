@@ -1,5 +1,7 @@
 package com.yt.util;
 
+import com.google.common.base.Joiner;
+
 import java.util.List;
 
 /**
@@ -11,11 +13,18 @@ public class StringUtil {
 
     public static final String EMPTY = "";
 
-    public static boolean isBlank(String content) {
+    public static boolean isBlankNoExactly(String content) {
         if (content == null || content.length() == 0) {
             return true;
         }
         if (content.trim().length() == 0) {
+            return true;
+        }
+        return false;
+    }
+
+    public static boolean isBlankExactly(String content) {
+        if (null == content || content.length() == 0) {
             return true;
         }
         return false;
@@ -32,7 +41,7 @@ public class StringUtil {
     }
 
     public static String replaces(String lineContent, List<String> replaces, String toString) {
-        if (isBlank(lineContent)) {
+        if (isBlankNoExactly(lineContent)) {
             return lineContent;
         }
 //        List<String> replacePatterns = new ArrayList<>();
@@ -49,6 +58,7 @@ public class StringUtil {
 
     private static final int INCREASE_COMPARE_RESULT = 1;
 
+
     public static int compareIntegerString(String s1, String s2) {
         if (null == s2) {
             return INCREASE_COMPARE_RESULT;
@@ -57,5 +67,24 @@ public class StringUtil {
             return -INCREASE_COMPARE_RESULT;
         }
         return s1.compareToIgnoreCase(s2);
+    }
+
+    /**
+     * 空格会作为一个输入
+     * @param s1
+     * @param s2
+     * @return
+     */
+    public static String joinWithSeperator(String[] str, String seperator) {
+        if (null == str) {
+            return EMPTY;
+        }
+        Joiner joiner = Joiner.on(seperator);
+        return joiner.join(str);
+    }
+
+    public static String joinWithSeperator(List<String> str, String seperator) {
+        Joiner joiner = Joiner.on(seperator);
+        return joiner.join(str);
     }
 }
