@@ -53,6 +53,6 @@ package com.yt.design.pattern.decorator;
  * 由项目 yt-rest可知，装饰者模式 要求 这些装饰之间是独立的
  *  该项目的Style是树形结构，并且父节点并不是简单的将子节点的属性累加，所以不适合装饰者模式
  */
-public interface Introduce {
+public @interface Introduce {
 
 }

@@ -1,5 +1,6 @@
 package com.yt.util;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
@@ -28,5 +29,21 @@ public class SpringUtilTest {
         for (String s : testString) {
             System.out.println(s);
         }
+    }
+
+    @Test
+    public void testJoin() {
+        String[] strs = new String[]{"aaa", "bbb", "ccc"};
+        String result = StringUtil.joinWithSeperator(strs, ",");
+        Assert.assertEquals(result, "aaa,bbb,ccc");
+        strs = new String[]{""};
+        result = StringUtil.joinWithSeperator(strs, ",");
+        Assert.assertEquals(result, "");
+        strs = null;
+        result = StringUtil.joinWithSeperator(strs, ",");
+        Assert.assertEquals(result, "");
+        strs = new String[]{};
+        result = StringUtil.joinWithSeperator(strs, ",");
+        Assert.assertEquals(result, "");
     }
 }

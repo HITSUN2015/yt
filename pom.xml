@@ -25,6 +25,7 @@
         <module>yt-rpc</module>
         <module>yt-java-class</module>
         <module>yt-spi</module>
+        <module>yt-jvm</module>
     </modules>
 	<packaging>pom</packaging>
 
@@ -162,6 +163,11 @@
 			<version>${spring-version}</version>
 		</dependency>
 
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>27.0.1-jre</version>
+		</dependency>
 
 	</dependencies>
 
