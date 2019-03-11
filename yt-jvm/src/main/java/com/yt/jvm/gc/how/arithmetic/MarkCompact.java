@@ -12,5 +12,5 @@ package com.yt.jvm.gc.how.arithmetic;
  *
  * 应用：老年代
  */
-public interface MarkCompact extends Copying, MarkSweep {
+public interface MarkCompact {
 }

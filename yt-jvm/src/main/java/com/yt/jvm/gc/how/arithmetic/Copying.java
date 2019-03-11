@@ -14,5 +14,5 @@ package com.yt.jvm.gc.how.arithmetic;
  *
  * 应用：商业JVM用这个方法 回收 新生代 TODO
  */
-public interface Copying extends MarkSweep {
+public interface Copying {
 }
