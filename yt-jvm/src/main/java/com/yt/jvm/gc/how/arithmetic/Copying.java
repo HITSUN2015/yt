@@ -1,4 +1,4 @@
-package com.yt.jvm.gc.how;
+package com.yt.jvm.gc.how.arithmetic;
 
 /**
  * Created by yantong on 2019/3/11.
