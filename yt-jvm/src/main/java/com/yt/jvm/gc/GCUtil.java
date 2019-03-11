@@ -1,5 +1,9 @@
 package com.yt.jvm.gc;
 
+import java.lang.management.GarbageCollectorMXBean;
+import java.lang.management.ManagementFactory;
+import java.util.List;
+
 /**
  * Created by yantong on 2019/3/11.
  *
@@ -36,5 +40,37 @@ public class GCUtil {
 
     public static void gc() {
         System.gc();
+    }
+
+    /**
+     *  方法一：java -XX:+PrintFlagsFinal -version | grep :
+     *          ":="代表是用户或jvm设置的参数
+     demo:
+     intx CICompilerCount                          := 2                                   {product}
+     uintx InitialHeapSize                          := 31457280                            {product}
+     uintx MaxHeapSize                              := 492830720                           {product}
+     uintx MaxNewSize                               := 164102144                           {product}
+     uintx MinHeapDeltaBytes                        := 524288                              {product}
+     uintx NewSize                                  := 10485760                            {product}
+     uintx OldSize                                  := 20971520                            {product}
+     bool PrintFlagsFinal                          := true                                {product}
+     bool UseCompressedClassPointers               := true                                {lp64_product}
+     bool UseCompressedOops                        := true                                {lp64_product}
+     bool UseParallelGC                            := true                                {product}
+     *
+     *  方法二：java -XX:+PrintCommandLineFlags -version
+     demo:
+     -XX:InitialHeapSize=30753344 -XX:MaxHeapSize=492053504 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC
+     openjdk version "1.8.0_141"
+     OpenJDK Runtime Environment (build 1.8.0_141-b16)
+     OpenJDK 64-Bit Server VM (build 25.141-b16, mixed mode)
+     */
+    public static void getGCCollector() {
+        //方法三 这个方法返回的是 算法，而非 collector ？ TODO
+        List<GarbageCollectorMXBean> l;
+        l = ManagementFactory.getGarbageCollectorMXBeans();
+        for(GarbageCollectorMXBean b : l) {
+            System.out.println(b.getName());
+        }
     }
 }
