@@ -25,6 +25,7 @@
         <module>yt-rpc</module>
         <module>yt-java-class</module>
         <module>yt-spi</module>
+        <module>yt-jvm</module>
     </modules>
 	<packaging>pom</packaging>
 
