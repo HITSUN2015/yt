@@ -26,7 +26,8 @@
         <module>yt-java-class</module>
         <module>yt-spi</module>
         <module>yt-jvm</module>
-    </modules>
+		<module>yt-java-collection</module>
+	</modules>
 	<packaging>pom</packaging>
 
 	<name>yt</name>
