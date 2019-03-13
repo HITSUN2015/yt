@@ -1,4 +1,4 @@
-package com.yt.collection;/**
+package com.yt.collection.datastruct;/**
  * Created by SUN on 18/3/20.
  */
 

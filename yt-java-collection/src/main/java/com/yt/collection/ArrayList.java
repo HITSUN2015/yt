@@ -1,5 +1,8 @@
 package com.yt.collection;
 
+import com.yt.collection.datastruct.数组;
+import com.yt.collection.tread.FailFast机制;
+
 /**
  * @author SUN
  * @create 2018-03-20 下午12:48

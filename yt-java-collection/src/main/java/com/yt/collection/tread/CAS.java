@@ -1,4 +1,4 @@
-package com.yt.collection;/**
+package com.yt.collection.tread;/**
  * Created by SUN on 18/3/20.
  */
 
