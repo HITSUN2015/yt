@@ -13,6 +13,7 @@ import java.util.List;
  * @create 2019-03-13 下午6:52
  * @desc
  */
+@Deprecated
 public class Delete {
 
     public void iteratorDelete() {

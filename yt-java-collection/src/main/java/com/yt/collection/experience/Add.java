@@ -12,6 +12,7 @@ import java.util.stream.Collectors;
  * @create 2019-03-13 下午5:26
  * @desc
  */
+@Deprecated
 public class Add {
 
     public void addOneElement(String str) {
