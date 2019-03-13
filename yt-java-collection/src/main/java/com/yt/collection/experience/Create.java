@@ -1,4 +1,4 @@
-package com.yt.collection.experience.create;
+package com.yt.collection.experience;
 
 import com.google.common.collect.Lists;
 
@@ -12,7 +12,7 @@ import java.util.List;
  * @desc 这个类只是用来 演示代码
  */
 @Deprecated
-public class ListCreate {
+public class Create {
 
     public static List createWithGuava() {
         return Lists.newArrayList();

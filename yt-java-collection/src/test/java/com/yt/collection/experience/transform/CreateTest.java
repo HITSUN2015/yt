@@ -2,7 +2,7 @@ package com.yt.collection.experience.transform;/**
  * Created by SUN on 19/3/13.
  */
 
-import com.yt.collection.experience.create.ListCreate;
+import com.yt.collection.experience.Create;
 import org.testng.annotations.Test;
 
 import java.util.List;
@@ -13,12 +13,12 @@ import java.util.List;
  * @desc
  */
 @Test
-public class ListCreateTest {
+public class CreateTest {
 
     @Test
     public void testCreate() {
         try {
-            List listTransform = ListCreate.createWithCollections1();
+            List listTransform = Create.createWithCollections1();
             listTransform.add("t");
         } catch (UnsupportedOperationException ex) {
             ex.printStackTrace();

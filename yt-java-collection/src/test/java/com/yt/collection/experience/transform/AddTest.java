@@ -4,7 +4,7 @@ package com.yt.collection.experience.transform;/**
 
 import com.beust.jcommander.internal.Lists;
 import com.google.common.base.Stopwatch;
-import com.yt.collection.experience.add.ListAdd;
+import com.yt.collection.experience.Add;
 import org.testng.annotations.Test;
 
 import java.util.List;
@@ -16,7 +16,7 @@ import java.util.concurrent.TimeUnit;
  * @desc
  */
 @Test
-public class ListAddTest {
+public class AddTest {
 
     private static int SIZE = 20;
     private static Integer[] source = new Integer[SIZE];
@@ -31,10 +31,14 @@ public class ListAddTest {
     public void testAddElements() {
         List list = Lists.newArrayList();
         Stopwatch stopwatch = Stopwatch.createStarted();
-        ListAdd.addElementsByCollections(list, source);
-//        ListAdd.addElementsByObject(list,source);
+        Add.addElementsByCollections(list, source);
+//        Add.addElementsByObject(list,source);
         stopwatch.stop();
         long time = stopwatch.elapsed(TimeUnit.NANOSECONDS);
         System.out.println(time);
+    }
+
+    @Test
+    public void arrayAsListAdd() {
     }
 }

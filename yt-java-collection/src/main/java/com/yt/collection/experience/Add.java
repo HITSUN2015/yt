@@ -1,4 +1,4 @@
-package com.yt.collection.experience.add;
+package com.yt.collection.experience;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
  * @create 2019-03-13 下午5:26
  * @desc
  */
-public class ListAdd {
+public class Add {
 
     public void addOneElement(String str) {
         List<String> list = Lists.newArrayList();
@@ -53,6 +53,16 @@ public class ListAdd {
                 put(2, 2);
             }
         };
+    }
+
+    /**
+     * 还有这种 只建立一个元素的
+     * 不可改变
+     */
+    public void createOneElement() {
+        List list = Collections.singletonList("test");
+        Set set = Collections.singleton("test");
+        Map map = Collections.singletonMap("testKey", "testValue");
     }
 
     /**
