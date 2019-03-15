@@ -26,8 +26,8 @@ public class DateUtilTest {
 
         String endString = "2019-03-22 00:00:01";
         Date end = sdf.parse(endString);
-        int days = DateUtil.periodOfDate(start, end).getDays();
-//        System.out.println(DateUtil.periodOfDate(start, end).getMonths());
+        long days = DateUtil.daysOfDate(start, end);
+//        System.out.println(DateUtil.daysOfDate(start, end).getMonths());
         Assert.assertEquals(1, days);
     }
 
@@ -37,7 +37,7 @@ public class DateUtilTest {
 
         String endString = "2018-03-21 17:43:45";
         Date end = sdf.parse(endString);
-        long seconds = DateUtil.durationOfDate(start, end).getSeconds();
+        long seconds = DateUtil.secondsOfDate(start, end);
         Assert.assertEquals(2, seconds);
     }
 

@@ -1,6 +1,7 @@
 package com.yt.util;
 
 import java.time.*;
+import java.time.temporal.ChronoUnit;
 import java.util.Date;
 
 /**
@@ -56,18 +57,16 @@ public class DateUtil {
      * @param endTime
      * @return
      */
-    public static Period periodOfDate(Date startTime, Date endTime) {
+    public static long daysOfDate(Date startTime, Date endTime) {
         LocalDate startLocalDate = localDateOf(startTime);
         LocalDate endLocalDate = localDateOf(endTime);
-        Period period = Period.between(startLocalDate, endLocalDate);
-        return period;
+        return ChronoUnit.DAYS.between(startLocalDate, endLocalDate);
     }
 
-    public static Duration durationOfDate(Date startTime, Date endTime) {
+    public static long secondsOfDate(Date startTime, Date endTime) {
         LocalDateTime startLocalDateTime = localDateTimeOf(startTime);
         LocalDateTime endLocalDateTime = localDateTimeOf(endTime);
-        Duration duration = Duration.between(startLocalDateTime, endLocalDateTime);
-        return duration;
+        return ChronoUnit.SECONDS.between(startLocalDateTime, endLocalDateTime);
     }
 
     public static long getSecondsFromNowToTomorrow() {
