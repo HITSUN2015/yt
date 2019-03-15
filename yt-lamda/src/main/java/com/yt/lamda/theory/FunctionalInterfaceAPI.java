@@ -25,7 +25,7 @@ import java.util.stream.Collectors;
  *
  * 本类列举一些，函数接口 提供的默认方法，自己造函数接口时，可以利用
  */
-public class FunctionalInterface {
+public class FunctionalInterfaceAPI {
 
     /**
      * {@link java.util.function.Function}
