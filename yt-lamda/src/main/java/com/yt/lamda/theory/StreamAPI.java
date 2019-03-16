@@ -1,14 +1,18 @@
 package com.yt.lamda.theory;
 
-import java.util.Comparator;
-import java.util.Iterator;
-import java.util.Objects;
-import java.util.Optional;
+import com.google.common.collect.Lists;
+
+import java.util.*;
 import java.util.function.BinaryOperator;
 import java.util.stream.*;
 
 /**
  * Created by yantong on 2019/3/15.
+ *
+ * streams have three parts: a data source, zero or more intermediate operations, and zero or one terminal operation.
+ * All intermediate operations are lazy
+ * {@link Stream}
+ * 分类：并行流 parallel() 会启动多线程
  */
 public class StreamAPI {
 
@@ -75,59 +79,185 @@ public class StreamAPI {
 
     /**
      * 参数一：Collector<? super T, A, R> collector
-     *
+     * {@link Collector} TODO
+     * {@link Collectors} TODO
      * 参数二：Supplier<R> supplier,BiConsumer<R, ? super T> accumulator,BiConsumer<R, R> combiner
      * @param constructor
      */
     public void collect(StreamConstructor<String> constructor) {
         //Collector<? super T, A, R> collector
         //工具类
-        makeDemo(constructor).collect(Collectors.);
-
-        makeDemo(constructor).collect();
-
+//        makeDemo(constructor).collect(Collectors.);
+//
+//        makeDemo(constructor).collect();
 
     }
 
     public void toArray(StreamConstructor<String> constructor) {
-
+        Object[] objectValues = makeDemo(constructor).toArray();
+        /**
+         * {@link java.util.function.IntFunction#apply(int)}
+         * 这个 函数 只是 输入一个数字 返回一个对象
+         *
+         * 这里是返回的 Array对象，仅用来初始化 数组
+         * 正如 demo，应该是完全用来输出 准确数组类型的
+         * 否则上面的写法 toArray需要传入 class参数
+         */
+        String[] stringValues = makeDemo(constructor).toArray(String[]::new);
+        for (int i = 0; i < stringValues.length; i++) {
+            System.out.println(stringValues[i]);
+        }
+        //如下写法会报：java.lang.IllegalStateException: Begin size 3 is not equal to fixed size 0
+//        String[] stringValues = makeDemo(constructor).toArray((x) -> {
+//            System.out.println(x);
+//            return new String[0];
+//        });
     }
 
+    /**
+     * {@link Comparator}
+     * {@link java.util.Comparators}
+     * @param constructor
+     */
     public void sort(StreamConstructor<String> constructor) {
+        //自然String升序
+        Stream<String> sortedStream = makeDemo(constructor).sorted();
+        printStream(sortedStream);
 
+        /**
+         * {@link Comparator} static method
+         */
+        /**
+         * {@link java.util.Comparators.NaturalOrderComparator} 枚举型实现接口 并提供方法实现 是 Singleton？TODO
+         */
+        Stream<String> ascStream = makeDemo(constructor).sorted(Comparator.naturalOrder());
+        printStream(ascStream);
+
+        Stream<String> descSortedStream = makeDemo(constructor).sorted(Comparator.reverseOrder());
+        printStream(descSortedStream);
+
+        //控制 null 的顺序
+        Stream<String> nullFirstAscStream = constructor.generateStream(null, "213", "fasdf").sorted(Comparator.nullsFirst(Comparator.naturalOrder()));
+        printStream(nullFirstAscStream);
+        Stream<String> nullLasAscStream = constructor.generateStream(null, "213", "fasdf").sorted(Comparator.nullsLast(Comparator.naturalOrder()));
+        printStream(nullLasAscStream);
+
+        // 这里的参数名称 keyExtractor key代表要比较的对象 所以一个参数是 比较对象抽取器
+        Stream<String> comparingStream = makeDemo(constructor).sorted(Comparator.comparing(String::length));
+        printStream(comparingStream);
+
+        //这个方法比上个方法 二外需要传入一个比较器
+        Stream<String> comparingAndComparatorStream = makeDemo(constructor).sorted(Comparator.comparing(String::length, Comparator.naturalOrder()));
+        printStream(comparingAndComparatorStream);
+
+        //只是 具化一下 Comparator.comparing，comparingLong，comparingDouble 略
+        Stream<String> comparing2Int = makeDemo(constructor).sorted(Comparator.comparingInt(Integer::parseInt));
+        printStream(comparing2Int);
+
+        // TODO: 2019/3/16   Comparators
     }
 
+    /**
+     * 参数要求：输入任意，输出是Stream类型，
+     * 可以把多个Stream或可以转换为Stream（各种集合）联合成一个Stream
+     * @param constructor
+     */
     public void flatMap(StreamConstructor<String> constructor) {
+        //这个demo 有点特殊
+        Stream<String> flatMapStream = makeDemo(constructor).flatMap(Stream::of);
+        printStream(flatMapStream);
 
+        List<List<String>> complexList = Lists.newArrayList();
+        for (int i = 0; i < 10; i++) {
+            List<String> insideStringList = Lists.newArrayList();
+            insideStringList.add(i + "-1str");
+            insideStringList.add(i + "-2str");
+            complexList.add(insideStringList);
+        }
+        flatMapStream = complexList.stream().flatMap(List::stream);
+        printStream(flatMapStream);
     }
 
+    //[非并行模] forEach与forEachOrdered一致
     public void foreach(StreamConstructor<String> constructor) {
+        //[并行下]，打印顺序会 改变
+        makeDemo(constructor).parallel().forEach(System.out::println);
 
+        //[并行下]，打印顺序一致
+        makeDemo(constructor).forEachOrdered(System.out::println);
     }
 
     public void match(StreamConstructor<String> constructor) {
+        //用来判断 全部符合？ 存在一个符合？ 均不符合（全部符合取反 ）？
+        boolean allLengthBiggerThanFour = makeDemo(constructor).allMatch(x -> x.length() > 4);
+        System.out.println(allLengthBiggerThanFour);
 
+        boolean existsOneLengthBiggerThanFour = makeDemo(constructor).anyMatch(x -> x.length() > 4);
+        System.out.println(existsOneLengthBiggerThanFour);
+
+        boolean noOneLengthBiggerThanFour = makeDemo(constructor).noneMatch(x -> x.length() > 4);
+        System.out.println(noOneLengthBiggerThanFour);
     }
 
     public void mix(StreamConstructor<String> constructor) {
-        makeDemo(constructor).max();
-        makeDemo(constructor).distinct();
-        makeDemo(constructor).findFirst();
-        makeDemo(constructor).count();
-        makeDemo(constructor).findAny();
-        makeDemo(constructor).limit();
-        makeDemo(constructor).min();
-        makeDemo(constructor).peek();
-        makeDemo(constructor).skip();
+        Optional<String> testSingleValue = null;
+        Stream<String> testStreamValue = null;
+        testSingleValue = makeDemo(constructor).max(Comparator.naturalOrder());
+        System.out.println(testSingleValue);
+        testSingleValue = makeDemo(constructor).min(Comparator.naturalOrder());
+        System.out.println(testSingleValue);
+
+        testStreamValue = constructor.generateStream("asfdf", "a", "a").distinct();
+        printStream(testStreamValue);
+
+        //这个是什么场景。。。anyMatch是判断，filter + findFirst取值？
+        //如果是 最大值，直接用max了，实在没想到好的场景
+        testSingleValue = makeDemo(constructor).findFirst();
+        System.out.println(testSingleValue);
+        //单线程下 应该是返回第一个，但是并没有保证，多线程下，返回任意一个
+        testSingleValue = makeDemo(constructor).findAny();
+        System.out.println(testSingleValue);
+
+        long counter = makeDemo(constructor).count();
+        System.out.println(counter);
+
+        testStreamValue = makeDemo(constructor).limit(2);
+        printStream(testStreamValue);
+        testStreamValue = makeDemo(constructor).skip(2);
+        printStream(testStreamValue);
+
+        //推荐https://www.baeldung.com/java-streams-peek-api
+        //注意事项：这个是一个intermediate操作，如果没有terminal操作，懒计算不会执行，与spark一样
+        //用法1：debug
+        //用法2：有些映射是 将 原对象完全 映射 为另一个对象：map
+        //       有些映射是 将 原对象的一部分 映射为另一个值（原对象不变）:peek（不需要返回值）
+        testStreamValue = makeDemo(constructor).peek(String::toLowerCase);
+        printStream(testStreamValue);
 
         makeDemo(constructor).close();
-        makeDemo(constructor).isParallel();
+
+        //测试是 有teminal operation 不能触发onClose方法，必须调用close方法
+        makeDemo(constructor).onClose(() ->{
+            System.out.println("finish run");
+        }).close();
+
+        boolean isParallel = makeDemo(constructor).isParallel();
+        System.out.println(isParallel);
+
         makeDemo(constructor).iterator();
-        makeDemo(constructor).onClose();
+
+        //并行化
         makeDemo(constructor).parallel();
+        //串行化
         makeDemo(constructor).sequential();
-        makeDemo(constructor).spliterator();
+
+        // TODO: 2019/3/16  
         makeDemo(constructor).unordered();
+    }
+
+    public void spliterator(StreamConstructor<String> constructor) {
+        // TODO: 2019/3/16
+        makeDemo(constructor).spliterator();
     }
 
     private static Stream<String> makeDemo(StreamConstructor<String> streamConstructor) {

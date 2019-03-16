@@ -22,4 +22,40 @@ public class StreamAPITest {
         StreamAPI streamAPI = new StreamAPI();
         streamAPI.reduce(x -> Stream.of(x));
     }
+
+    @Test
+    public void testToArray() {
+        StreamAPI streamAPI = new StreamAPI();
+        streamAPI.toArray(x -> Stream.of(x));
+    }
+
+    @Test
+    public void testSort() {
+        StreamAPI streamAPI = new StreamAPI();
+        streamAPI.sort(x -> Stream.of(x));
+    }
+
+    @Test
+    public void testForeach() {
+        StreamAPI streamAPI = new StreamAPI();
+        streamAPI.foreach(x -> Stream.of(x));
+    }
+
+    @Test
+    public void testMatch() {
+        StreamAPI streamAPI = new StreamAPI();
+        streamAPI.match(x -> Stream.of(x));
+    }
+
+    @Test
+    public void testFlatMap() {
+        StreamAPI streamAPI = new StreamAPI();
+        streamAPI.flatMap(x -> Stream.of(x));
+    }
+
+    @Test
+    public void testMix() {
+        StreamAPI streamAPI = new StreamAPI();
+        streamAPI.mix(x -> Stream.of(x));
+    }
 }
