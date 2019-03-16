@@ -21,6 +21,7 @@ public class StreamAPI {
      */
     public void map(StreamConstructor<String> constructor) {
         Stream<String> stream = makeDemo(constructor);
+        //filter 与这个类似
         Stream<String> mapStream = stream.map(x -> x + "laal");
         printStream(mapStream);
 
@@ -70,6 +71,63 @@ public class StreamAPI {
          */
         String value = makeDemo(constructor).reduce("(每个分区的初始值)", (x, y) -> "[分区外合并" + x + y + "分区外合并]");
         System.out.println(value);
+    }
+
+    /**
+     * 参数一：Collector<? super T, A, R> collector
+     *
+     * 参数二：Supplier<R> supplier,BiConsumer<R, ? super T> accumulator,BiConsumer<R, R> combiner
+     * @param constructor
+     */
+    public void collect(StreamConstructor<String> constructor) {
+        //Collector<? super T, A, R> collector
+        //工具类
+        makeDemo(constructor).collect(Collectors.);
+
+        makeDemo(constructor).collect();
+
+
+    }
+
+    public void toArray(StreamConstructor<String> constructor) {
+
+    }
+
+    public void sort(StreamConstructor<String> constructor) {
+
+    }
+
+    public void flatMap(StreamConstructor<String> constructor) {
+
+    }
+
+    public void foreach(StreamConstructor<String> constructor) {
+
+    }
+
+    public void match(StreamConstructor<String> constructor) {
+
+    }
+
+    public void mix(StreamConstructor<String> constructor) {
+        makeDemo(constructor).max();
+        makeDemo(constructor).distinct();
+        makeDemo(constructor).findFirst();
+        makeDemo(constructor).count();
+        makeDemo(constructor).findAny();
+        makeDemo(constructor).limit();
+        makeDemo(constructor).min();
+        makeDemo(constructor).peek();
+        makeDemo(constructor).skip();
+
+        makeDemo(constructor).close();
+        makeDemo(constructor).isParallel();
+        makeDemo(constructor).iterator();
+        makeDemo(constructor).onClose();
+        makeDemo(constructor).parallel();
+        makeDemo(constructor).sequential();
+        makeDemo(constructor).spliterator();
+        makeDemo(constructor).unordered();
     }
 
     private static Stream<String> makeDemo(StreamConstructor<String> streamConstructor) {
