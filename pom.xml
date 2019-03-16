@@ -27,6 +27,7 @@
         <module>yt-spi</module>
         <module>yt-jvm</module>
 		<module>yt-java-collection</module>
+		<module>yt-distributed</module>
 	</modules>
 	<packaging>pom</packaging>
 
