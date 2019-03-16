@@ -77,22 +77,6 @@ public class StreamAPI {
         System.out.println(value);
     }
 
-    /**
-     * 参数一：Collector<? super T, A, R> collector
-     * {@link Collector} TODO
-     * {@link Collectors} TODO
-     * 参数二：Supplier<R> supplier,BiConsumer<R, ? super T> accumulator,BiConsumer<R, R> combiner
-     * @param constructor
-     */
-    public void collect(StreamConstructor<String> constructor) {
-        //Collector<? super T, A, R> collector
-        //工具类
-//        makeDemo(constructor).collect(Collectors.);
-//
-//        makeDemo(constructor).collect();
-
-    }
-
     public void toArray(StreamConstructor<String> constructor) {
         Object[] objectValues = makeDemo(constructor).toArray();
         /**
@@ -250,14 +234,33 @@ public class StreamAPI {
         makeDemo(constructor).parallel();
         //串行化
         makeDemo(constructor).sequential();
-
-        // TODO: 2019/3/16  
-        makeDemo(constructor).unordered();
     }
 
     public void spliterator(StreamConstructor<String> constructor) {
         // TODO: 2019/3/16
         makeDemo(constructor).spliterator();
+    }
+
+    public void unordered(StreamConstructor<String> constructor) {
+        //对串行流，几乎没有影响
+        //并行 流 会影响 性能、输出，如果数据源
+        makeDemo(constructor).unordered();
+    }
+
+    /**
+     * 参数一：Collector<? super T, A, R> collector
+     * {@link Collector} TODO
+     * {@link Collectors} TODO
+     * 参数二：Supplier<R> supplier,BiConsumer<R, ? super T> accumulator,BiConsumer<R, R> combiner
+     * @param constructor
+     */
+    public void collect(StreamConstructor<String> constructor) {
+        //Collector<? super T, A, R> collector
+        //工具类
+//        makeDemo(constructor).collect(Collectors.);
+//
+//        makeDemo(constructor).collect();
+
     }
 
     private static Stream<String> makeDemo(StreamConstructor<String> streamConstructor) {
