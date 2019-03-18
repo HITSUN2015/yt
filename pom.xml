@@ -28,7 +28,8 @@
         <module>yt-jvm</module>
 		<module>yt-java-collection</module>
 		<module>yt-distributed</module>
-	</modules>
+        <module>yt-breakdown</module>
+    </modules>
 	<packaging>pom</packaging>
 
 	<name>yt</name>
