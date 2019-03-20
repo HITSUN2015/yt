@@ -13,6 +13,21 @@ public class ListNode implements Iterable<ListNode> {
     public ListNode next;
     public ListNode(int x) { val = x; }
 
+    public static ListNode build(String nodeString) {
+        if (null == nodeString || nodeString.isEmpty()) {
+            return null;
+        }
+        String[] nodes = nodeString.split(",");
+        ListNode pre = new ListNode(Integer.MIN_VALUE);
+        ListNode index = pre;
+        for (int i = 0; i < nodes.length; i++) {
+            ListNode curNode = new ListNode(Integer.parseInt(nodes[i]));
+            index.next = curNode;
+            index = index.next;
+        }
+        return pre.next;
+    }
+
     @Override
     public Iterator<ListNode> iterator() {
         return new Iterator() {

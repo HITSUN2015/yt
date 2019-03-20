@@ -1,6 +1,7 @@
 package com.yt.solutions;
 
 import com.yt.solutions.help.ListNode;
+import com.yt.solutions.link.ReverseLinkedListII;
 import org.testng.annotations.Test;
 
 /**
@@ -12,9 +13,8 @@ public class ReverseLinkedListIITest {
     public void testReverseLinkedListII() {
         ReverseLinkedListII solution = new ReverseLinkedListII();
 
-        ListNode header = new ListNode(3);
-        header.next = new ListNode(5);
+        ListNode head = ListNode.build("3,5");
 
-        solution.reverseBetween(header, 1, 2);
+        solution.reverseBetween(head, 1, 2);
     }
 }

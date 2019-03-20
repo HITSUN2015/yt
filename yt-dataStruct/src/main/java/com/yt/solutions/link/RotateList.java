@@ -1,4 +1,4 @@
-package com.yt.solutions;
+package com.yt.solutions.link;
 
 import com.yt.leetcode.LeetCode;
 import com.yt.solutions.help.ListNode;

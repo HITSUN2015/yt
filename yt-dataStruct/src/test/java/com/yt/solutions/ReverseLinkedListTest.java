@@ -1,6 +1,7 @@
 package com.yt.solutions;
 
 import com.yt.solutions.help.ListNode;
+import com.yt.solutions.link.ReverseLinkedList;
 import org.testng.annotations.Test;
 
 /**
@@ -11,9 +12,8 @@ public class ReverseLinkedListTest {
     @Test
     public void testSolution() {
         ReverseLinkedList reverseLinkedList = new ReverseLinkedList();
-        ListNode header = new ListNode(4);
-        header.next = new ListNode(3);
-        reverseLinkedList.reverseList(header);
+        ListNode head = ListNode.build("4,3");
+        reverseLinkedList.reverseList(head);
 
 
     }

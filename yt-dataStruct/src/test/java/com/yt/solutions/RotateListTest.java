@@ -1,6 +1,7 @@
 package com.yt.solutions;
 
 import com.yt.solutions.help.ListNode;
+import com.yt.solutions.link.RotateList;
 import org.testng.annotations.Test;
 
 /**
@@ -11,12 +12,7 @@ public class RotateListTest {
     @Test
     public void testSolution() {
         RotateList solution = new RotateList();
-
-        ListNode head = new ListNode(1);
-        head.next = new ListNode(2);
-        head.next.next = new ListNode(3);
-        head.next.next.next = new ListNode(4);
-        head.next.next.next.next = new ListNode(5);
+        ListNode head = ListNode.build("1,2,3,4,5");
 
         solution.rotateRight(head, 2);
     }
