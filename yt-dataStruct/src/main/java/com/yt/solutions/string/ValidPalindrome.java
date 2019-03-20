@@ -21,8 +21,11 @@ public class ValidPalindrome implements LeetCode{
         return 0;
     }
 
+    //这题 看半天 没看懂，原来是 去掉 符号 空格是 回文的。。。
     public boolean isPalindrome(String s) {
-
+        if (null == s || s.isEmpty()) {
+            return false;
+        }
 
 
 
