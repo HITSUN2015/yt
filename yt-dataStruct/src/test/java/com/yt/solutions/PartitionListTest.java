@@ -1,6 +1,7 @@
 package com.yt.solutions;
 
 import com.yt.solutions.help.ListNode;
+import com.yt.solutions.link.PartitionList;
 import org.testng.annotations.Test;
 
 /**
@@ -11,12 +12,7 @@ public class PartitionListTest {
     @Test
     public void testSolution() {
 
-        ListNode header = new ListNode(1);
-        header.next = new ListNode(4);
-        header.next.next = new ListNode(3);
-        header.next.next.next = new ListNode(2);
-        header.next.next.next.next = new ListNode(5);
-        header.next.next.next.next.next = new ListNode(2);
+        ListNode header = ListNode.build("1,4,3,2,5,2");
 
         PartitionList solution = new PartitionList();
         solution.partition(header, 3);

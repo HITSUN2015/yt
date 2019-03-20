@@ -1,6 +1,7 @@
 package com.yt.solutions;
 
 import com.yt.solutions.help.ListNode;
+import com.yt.solutions.link.RemoveDuplicatesFromSortedList;
 import org.testng.annotations.Test;
 
 /**
@@ -13,9 +14,7 @@ public class RemoveDuplicatesFromSortedListTest {
 
         RemoveDuplicatesFromSortedList solution = new RemoveDuplicatesFromSortedList();
 
-        ListNode head = new ListNode(4);
-        head.next = new ListNode(3);
-        head.next.next = new ListNode(3);
+        ListNode head = ListNode.build("4,3,3");
 
         solution.deleteDuplicates(head);
     }
