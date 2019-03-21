@@ -12,6 +12,8 @@ import com.yt.arithmetic.Arithmetic;
  * 多阶段决策问题
  *
  * 阶段
+ *
+ * 关于String的dp {@link com.yt.solutions.string.LongestPalindromicSubstring}
  */
 public interface DynamicProgramming extends Arithmetic{
 
