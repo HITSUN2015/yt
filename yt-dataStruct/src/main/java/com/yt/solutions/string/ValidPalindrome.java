@@ -21,6 +21,7 @@ public class ValidPalindrome implements LeetCode{
         return 0;
     }
 
+    //这题 看半天 没看懂，原来是 去掉 符号 空格是 回文的。。。
     //alphanumeric 这个单词是 包括 文字和数字。。。
     //另外 两个index 往中间跑 别忘了 远处index 各种情况都要--
     //还有两个索引,要特殊考虑相遇的情况

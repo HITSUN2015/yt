@@ -44,6 +44,11 @@ public class StreamAPI {
         printStream(mapLongStream);
     }
 
+    /**
+     * 规约操作（reduction operation）(说规约 要能反应出是reduce 这个翻译真是。。。)
+     * 又被称作折叠操作（fold）
+     * @param constructor
+     */
     public void reduce(StreamConstructor<String> constructor) {
         //这里是按 string 排序的
         //BinaryOperator.minBy()
@@ -75,6 +80,35 @@ public class StreamAPI {
          */
         String value = makeDemo(constructor).reduce("(每个分区的初始值)", (x, y) -> "[分区外合并" + x + y + "分区外合并]");
         System.out.println(value);
+
+
+
+        /**
+         * 应用类
+         * 可以看出 reduce 也会遍历 结合，处理 每两个元素之间的关系
+         *
+         * 如果一个for循环 需要 循环体外的一个元素 用来记录最终的操作结果，并且其为最终需要的结果
+         *
+         * 这个 loop 可以替换为reduce
+         *
+         * eg:求最长的string的最值
+         */
+        List<String> list = new ArrayList<String>() {{
+            add("add");
+            add("abcd");
+        }};
+        //loop
+        String maxLengthString = null;
+        for (String s : list) {
+            int beforeLength = maxLengthString == null ? 0 : maxLengthString.length();
+            if (s.length() > beforeLength) {
+                maxLengthString = s;
+            }
+        }
+
+        //reduce
+        String result = list.stream().reduce((x, y) -> x.length() >= y.length() ? x : y).get();
+
     }
 
     public void toArray(StreamConstructor<String> constructor) {
@@ -252,6 +286,8 @@ public class StreamAPI {
      * {@link Collector} TODO
      * {@link Collectors} TODO
      * 参数二：Supplier<R> supplier,BiConsumer<R, ? super T> accumulator,BiConsumer<R, R> combiner
+     *
+     * 参见：https://www.cnblogs.com/CarpenterLee/p/6550212.html
      * @param constructor
      */
     public void collect(StreamConstructor<String> constructor) {
