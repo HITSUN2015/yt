@@ -29,6 +29,7 @@
 		<module>yt-java-collection</module>
 		<module>yt-distributed</module>
         <module>yt-breakdown</module>
+        <module>yt-linux</module>
     </modules>
 	<packaging>pom</packaging>
 
