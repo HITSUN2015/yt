@@ -7,7 +7,7 @@
     <context:component-scan base-package="com.yt.rpc.dubbo.*"  use-default-filters="true">
     </context:component-scan>
 
-    <bean class="com.yt.rpc.dubbo.provider.ServiceBeanRegist.Step1setProperties" id="stepOne">
+    <bean class="com.yt.datastructure.datastructure.rpc.dubbo.provider.ServiceBeanRegist.Step1setProperties" id="stepOne">
         <property name="name" value="测试顺序"></property>
     </bean>
 </beans>
