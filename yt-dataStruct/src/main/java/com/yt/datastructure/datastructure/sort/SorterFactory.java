@@ -25,6 +25,12 @@ public class SorterFactory {
                 return new MergeSorter();
             case QUICK:
                 return new QuickSorter();
+
+            // TODO: 2019/3/26 heap
+            case COUNTING:
+                return new CountingSorter();
+//            case BUCKET:
+//                return new BucketSorter();
         }
         throw new IllegalArgumentException("不存在对应实现,sortType:" + sortType);
     }

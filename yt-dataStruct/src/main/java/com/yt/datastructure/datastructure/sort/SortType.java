@@ -11,7 +11,7 @@ public enum SortType {
     MERGE,
     QUICK,
 //    HEAP,
-//    COUNTING,
+    COUNTING,
 //    BUCKET,
 //    RADIX
 }
