@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/yt-db/db.iml" filepath="$PROJECT_DIR$/yt-db/db.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yt-lamda/lamda.iml" filepath="$PROJECT_DIR$/yt-lamda/lamda.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yt-test/test.iml" filepath="$PROJECT_DIR$/yt-test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yt-util/util.iml" filepath="$PROJECT_DIR$/yt-util/util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yt-web/web.iml" filepath="$PROJECT_DIR$/yt-web/web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yt.iml" filepath="$PROJECT_DIR$/yt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yt-dataStruct/yt-dataStruct.iml" filepath="$PROJECT_DIR$/yt-dataStruct/yt-dataStruct.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yt-design-patterns/yt-design-patterns.iml" filepath="$PROJECT_DIR$/yt-design-patterns/yt-design-patterns.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yt-distributed/yt-distributed.iml" filepath="$PROJECT_DIR$/yt-distributed/yt-distributed.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yt-intelligence/yt-intelligence.iml" filepath="$PROJECT_DIR$/yt-intelligence/yt-intelligence.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yt-java-class/yt-java-class.iml" filepath="$PROJECT_DIR$/yt-java-class/yt-java-class.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yt-java-collection/yt-java-collection.iml" filepath="$PROJECT_DIR$/yt-java-collection/yt-java-collection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yt-jvm/yt-jvm.iml" filepath="$PROJECT_DIR$/yt-jvm/yt-jvm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yt-kafka/yt-kafka.iml" filepath="$PROJECT_DIR$/yt-kafka/yt-kafka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yt-net/yt-net.iml" filepath="$PROJECT_DIR$/yt-net/yt-net.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yt-queue/yt-queue.iml" filepath="$PROJECT_DIR$/yt-queue/yt-queue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yt-restful/yt-restful.iml" filepath="$PROJECT_DIR$/yt-restful/yt-restful.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yt-rpc/yt-rpc.iml" filepath="$PROJECT_DIR$/yt-rpc/yt-rpc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yt-serialize/yt-serialize.iml" filepath="$PROJECT_DIR$/yt-serialize/yt-serialize.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yt-spi/yt-spi.iml" filepath="$PROJECT_DIR$/yt-spi/yt-spi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yt-spring/yt-spring.iml" filepath="$PROJECT_DIR$/yt-spring/yt-spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yt-spring-redis/yt-spring-redis.iml" filepath="$PROJECT_DIR$/yt-spring-redis/yt-spring-redis.iml" />
+    </modules>
+  </component>
+</project>
