@@ -30,7 +30,8 @@
 		<module>yt-distributed</module>
         <module>yt-breakdown</module>
         <module>yt-linux</module>
-    </modules>
+		<module>yt-arithmetic</module>
+	</modules>
 	<packaging>pom</packaging>
 
 	<name>yt</name>
