@@ -15,6 +15,6 @@ package com.yt.datastructure;
  数据量较小，需要频繁增加，删除操作的场景
 
  */
-public interface Link extends DataStructure{
+public interface Link extends DataStruct{
 
 }

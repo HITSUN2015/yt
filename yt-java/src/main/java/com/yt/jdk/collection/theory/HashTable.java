@@ -3,7 +3,6 @@ package com.yt.jdk.collection.theory;/**
  */
 
 import com.yt.datastructure.SinglyLinkedList;
-import com.yt.jdk.collection.theory.datastruct.哈希表;
 import com.yt.jdk.collection.theory.tread.FailFast机制;
 import com.yt.jdk.collection.theory.tread.Sync关键字;
 
@@ -12,7 +11,7 @@ import com.yt.jdk.collection.theory.tread.Sync关键字;
  * @create 2018-03-20 下午4:56
  * @desc
  */
-public abstract class HashTable implements 哈希表,SinglyLinkedList,Sync关键字,FailFast机制 {
+public abstract class HashTable implements com.yt.datastructure.HashTable,SinglyLinkedList,Sync关键字,FailFast机制 {
 
     /**
      * 1.在桶的插入时,插入到head节点

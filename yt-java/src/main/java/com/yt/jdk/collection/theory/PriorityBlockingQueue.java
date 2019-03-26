@@ -2,7 +2,7 @@ package com.yt.jdk.collection.theory;/**
  * Created by SUN on 18/3/20.
  */
 
-import com.yt.jdk.collection.theory.datastruct.堆_狭义;
+import com.yt.datastructure.Heap;
 import com.yt.jdk.collection.theory.tread.AQS锁;
 
 /**
@@ -10,7 +10,7 @@ import com.yt.jdk.collection.theory.tread.AQS锁;
  * @create 2018-03-20 下午6:18
  * @desc
  */
-public class PriorityBlockingQueue implements 堆_狭义,AQS锁 {
+public abstract class PriorityBlockingQueue implements Heap,AQS锁 {
     /**
      * 内部的 priorityQueue属性 :A plain PriorityQueue used only for serialization
      */

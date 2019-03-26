@@ -2,7 +2,7 @@ package com.yt.jdk.collection.theory;/**
  * Created by SUN on 18/3/20.
  */
 
-import com.yt.jdk.collection.theory.datastruct.堆_狭义;
+import com.yt.datastructure.Heap;
 import com.yt.jdk.collection.theory.tread.FailFast机制;
 
 /**
@@ -10,5 +10,5 @@ import com.yt.jdk.collection.theory.tread.FailFast机制;
  * @create 2018-03-20 下午6:01
  * @desc
  */
-public class PriorityQueue implements 堆_狭义,FailFast机制 {
+public abstract class PriorityQueue implements Heap,FailFast机制 {
 }
