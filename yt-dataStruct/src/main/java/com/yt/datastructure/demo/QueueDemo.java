@@ -1,7 +1,7 @@
 package com.yt.datastructure.demo;
 
 import com.yt.datastructure.base.list.Queue;
-import com.yt.datastructure.baseModel.NodeWithNext;
+import com.yt.datastructure.baseModel.LinkNode;
 
 /**
  * Created by yantong on 2019/2/14.
@@ -13,12 +13,12 @@ public class QueueDemo<T> implements Queue<T> {
     //由于队列 常在 线性表的两端操作，所以 提供header 和 tail 效率更高
     //综合 进队 和 出队的操作，应该仅存储一个方向的link即可
 
-    private NodeWithNext<T> header;
-    private NodeWithNext<T> tail;
+    private LinkNode<T> header;
+    private LinkNode<T> tail;
 
     @Override
     public void enqueue(T t) {
-        NodeWithNext newNode = new NodeWithNext(t, null);
+        LinkNode newNode = new LinkNode(t, null);
         if (null != header) {
             header.setNext(newNode);
         }

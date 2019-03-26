@@ -2,7 +2,6 @@ package com.yt.datastructure.base.tree;/**
  * Created by SUN on 19/3/26.
  */
 
-import com.yt.datastructure.base.Tree;
 
 /**
  * @author SUN

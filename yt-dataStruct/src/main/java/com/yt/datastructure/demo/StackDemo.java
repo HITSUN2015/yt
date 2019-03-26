@@ -1,7 +1,7 @@
 package com.yt.datastructure.demo;
 
 import com.yt.datastructure.StackNormalOperation;
-import com.yt.datastructure.baseModel.NodeWithNext;
+import com.yt.datastructure.baseModel.LinkNode;
 
 /**
  * Created by yantong on 2019/2/14.
@@ -13,7 +13,7 @@ public class StackDemo<T> implements StackNormalOperation<T> {
 
     //这里 具体的存储实现，可以多种多样，但是由于栈的操作多进出元素，所以可能用链表来存储比较好
     //并且 由于 总需要在线性结构的一端 进入和排除数据 所以 最好存储下这个端的引用
-    private NodeWithNext<T> header;
+    private LinkNode<T> header;
 
     public void demo() {
         StackDemo<String> stack = new StackDemo();
@@ -30,7 +30,7 @@ public class StackDemo<T> implements StackNormalOperation<T> {
 
     @Override
     public void push(T o) {
-        NodeWithNext newNode = new NodeWithNext(o, header);
+        LinkNode newNode = new LinkNode(o, header);
         this.header = newNode;
     }
 

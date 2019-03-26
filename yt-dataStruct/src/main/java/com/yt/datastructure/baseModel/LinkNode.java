@@ -3,11 +3,12 @@ package com.yt.datastructure.baseModel;
 /**
  * Created by yantong on 2019/2/14.
  */
-public class NodeWithNext<T> {
-    private T value;
-    private NodeWithNext next;
+public class LinkNode<T> {
 
-    public NodeWithNext(T value, NodeWithNext next) {
+    private T value;
+    private LinkNode next;
+
+    public LinkNode(T value, LinkNode next) {
         this.value = value;
         this.next = next;
     }
@@ -20,11 +21,11 @@ public class NodeWithNext<T> {
         this.value = value;
     }
 
-    public NodeWithNext getNext() {
+    public LinkNode getNext() {
         return next;
     }
 
-    public void setNext(NodeWithNext next) {
+    public void setNext(LinkNode next) {
         this.next = next;
     }
 }
