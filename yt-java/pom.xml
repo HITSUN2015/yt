@@ -11,5 +11,12 @@
 
     <artifactId>yt-java-collection</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>yt</groupId>
+            <artifactId>yt-dataStruct</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>

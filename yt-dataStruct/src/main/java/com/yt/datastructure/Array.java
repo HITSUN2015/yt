@@ -15,10 +15,9 @@ package com.yt.datastructure;
  3、添加，删除的操作慢，因为要移动其他的元素。
 
  */
-public class Array implements DataStructure{
+public interface Array extends DataStructure{
 
-    @Override
-    public void demo() {
+    default void demo() {
         String[] stringArray = new String[8];
         String[] stringArray2 = new String[] {"test", "test2"};
 

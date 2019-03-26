@@ -1,8 +1,6 @@
 package com.yt.datastructure.datastruct;
 
 import com.yt.datastructure.DataStructure;
-import com.yt.datastructure.DataStructureEnum;
-import com.yt.datastructure.DataStructureFactory;
 import org.testng.annotations.Test;
 
 /**

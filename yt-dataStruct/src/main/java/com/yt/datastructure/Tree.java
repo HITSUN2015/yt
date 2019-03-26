@@ -3,5 +3,5 @@ package com.yt.datastructure;
 /**
  * Created by yantong on 2019/2/14.
  */
-public abstract class Tree implements TreeNormalOperation{
+public interface Tree extends TreeNormalOperation{
 }

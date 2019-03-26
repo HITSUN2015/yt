@@ -2,8 +2,8 @@ package com.yt.jdk.collection.theory;/**
  * Created by SUN on 18/3/20.
  */
 
-import com.yt.jdk.collection.theory.datastruct.单链表;
-import com.yt.jdk.collection.theory.datastruct.数组;
+import com.yt.datastructure.Array;
+import com.yt.datastructure.SinglyLinkedList;
 import com.yt.jdk.collection.theory.datastruct.红黑树;
 import com.yt.jdk.collection.theory.tread.CAS;
 
@@ -12,5 +12,6 @@ import com.yt.jdk.collection.theory.tread.CAS;
  * @create 2018-03-20 下午9:09
  * @desc
  */
-public class ConcurrentHashMap implements 数组,红黑树,单链表,CAS {
+public class ConcurrentHashMap implements Array,红黑树,SinglyLinkedList,CAS {
+
 }

@@ -2,7 +2,7 @@ package com.yt.jdk.collection.theory;/**
  * Created by SUN on 18/3/20.
  */
 
-import com.yt.jdk.collection.theory.datastruct.单链表;
+import com.yt.datastructure.SinglyLinkedList;
 import com.yt.jdk.collection.theory.datastruct.哈希表;
 import com.yt.jdk.collection.theory.datastruct.红黑树;
 import com.yt.jdk.collection.theory.tread.FailFast机制;
@@ -12,7 +12,7 @@ import com.yt.jdk.collection.theory.tread.FailFast机制;
  * @create 2018-03-20 下午4:04
  * @desc
  */
-public class HashMap implements 哈希表,单链表,红黑树,FailFast机制 {
+public abstract class HashMap implements 哈希表,SinglyLinkedList,红黑树,FailFast机制 {
 
     /**
      * Fields:

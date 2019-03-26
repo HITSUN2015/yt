@@ -15,9 +15,6 @@ package com.yt.datastructure;
  数据量较小，需要频繁增加，删除操作的场景
 
  */
-public class Link implements DataStructure{
-    @Override
-    public void demo() {
-        System.out.println("TODO");
-    }
+public interface Link extends DataStructure{
+
 }

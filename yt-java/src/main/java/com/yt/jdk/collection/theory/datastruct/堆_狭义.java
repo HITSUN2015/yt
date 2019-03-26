@@ -2,12 +2,14 @@ package com.yt.jdk.collection.theory.datastruct;/**
  * Created by SUN on 18/3/20.
  */
 
+import com.yt.datastructure.Array;
+
 /**
  * @author SUN
  * @create 2018-03-20 下午5:48
  * @desc
  */
-public interface 堆_狭义 extends 完全树,数组 {
+public interface 堆_狭义 extends 完全树,Array {
     /**
      * 1.定义:堆通常是一个可以被看做一棵树的数组对象
      * 2.性质:

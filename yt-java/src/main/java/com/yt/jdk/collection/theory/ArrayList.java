@@ -1,14 +1,14 @@
 package com.yt.jdk.collection.theory;
 
+import com.yt.datastructure.Array;
 import com.yt.jdk.collection.theory.tread.FailFast机制;
-import com.yt.jdk.collection.theory.datastruct.数组;
 
 /**
  * @author SUN
  * @create 2018-03-20 下午12:48
  * @desc
  */
-public class ArrayList  implements 数组,FailFast机制, 动态 {
+public class ArrayList implements Array, FailFast机制, 动态 {
 
     @Override
     public String 如何动态() {

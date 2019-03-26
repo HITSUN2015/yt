@@ -2,7 +2,7 @@ package com.yt.jdk.collection.theory;/**
  * Created by SUN on 18/3/20.
  */
 
-import com.yt.jdk.collection.theory.datastruct.跳跃表;
+import com.yt.datastructure.SkipList;
 import com.yt.jdk.collection.theory.tread.CAS;
 
 /**
@@ -10,7 +10,7 @@ import com.yt.jdk.collection.theory.tread.CAS;
  * @create 2018-03-20 下午8:22
  * @desc
  */
-public class ConcurrentSkipListMap implements 跳跃表,CAS {
+public abstract class ConcurrentSkipListMap implements SkipList,CAS {
     /**
      * 引用 : https://my.oschina.net/jingshishengxu/blog/14645
      * ConcurrentSkipListMap有几个ConcurrentHashMap 不能比拟的优点：
