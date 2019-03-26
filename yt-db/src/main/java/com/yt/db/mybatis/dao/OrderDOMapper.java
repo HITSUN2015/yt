@@ -2,8 +2,6 @@ package com.yt.db.mybatis.dao;
 
 import com.yt.db.mybatis.domain.OrderDO;
 import com.yt.db.mybatis.domain.OrderDOExample;
-import com.yt.db.mybatis.domain.OrderDO;
-import com.yt.db.mybatis.domain.OrderDOExample;
 import org.apache.ibatis.annotations.*;
 import org.apache.ibatis.type.JdbcType;
 

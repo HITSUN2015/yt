@@ -3,8 +3,8 @@ package com.yt.jvm.gc.how.collector;/**
  */
 
 import com.yt.jvm.gc.how.AimType;
-import com.yt.jvm.gc.how.acpect.Aim;
 import com.yt.jvm.gc.how.arithmetic.Copying;
+import com.yt.jvm.gc.how.acpect.Aim;
 
 /**
  * @author SUN

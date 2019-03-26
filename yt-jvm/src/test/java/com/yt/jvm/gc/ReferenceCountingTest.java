@@ -1,6 +1,5 @@
 package com.yt.jvm.gc;
 
-import com.yt.jvm.gc.source.ReferenceCounting;
 import org.testng.annotations.Test;
 
 /**

@@ -2,7 +2,6 @@ package com.yt.spring.application;/**
  * Created by SUN on 19/2/27.
  */
 
-import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.util.Assert;
 import org.testng.annotations.Test;

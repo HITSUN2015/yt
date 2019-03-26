@@ -1,8 +1,8 @@
 package com.yt.design.pattern.create.factory.simple;
 
+import com.yt.design.pattern.create.instance.Person;
 import com.yt.design.pattern.create.instance.Student;
 import com.yt.design.pattern.create.instance.Teacher;
-import com.yt.design.pattern.create.instance.Person;
 
 import java.util.Calendar;
 

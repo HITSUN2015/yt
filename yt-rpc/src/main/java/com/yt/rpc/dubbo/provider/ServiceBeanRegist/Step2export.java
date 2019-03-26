@@ -14,8 +14,8 @@ public class Step2export {
 /**
  package com.alibaba.dubbo.common.bytecode;
 
- import com.yt.rpc.dubbo.provider.ServiceBeanRegist.Test;
- import com.yt.rpc.dubbo.provider.ServiceBeanRegist.CopyClassGenerator.DC;
+ import Test;
+ import CopyClassGenerator.DC;
  import java.lang.reflect.InvocationTargetException;
  import java.util.Map;
 
@@ -53,7 +53,7 @@ public class Step2export {
             throw new IllegalArgumentException(var6);
          }
 
-        throw new NoSuchPropertyException("Not found property \"" + var2 + "\" filed or setter method in class com.yt.rpc.dubbo.provider.ServiceBeanRegist.Test.");
+        throw new NoSuchPropertyException("Not found property \"" + var2 + "\" filed or setter method in class Test.");
      }
 
      public Object getPropertyValue(Object var1, String var2) {
@@ -63,7 +63,7 @@ public class Step2export {
             throw new IllegalArgumentException(var5);
          }
 
-        throw new NoSuchPropertyException("Not found property \"" + var2 + "\" filed or setter method in class com.yt.rpc.dubbo.provider.ServiceBeanRegist.Test.");
+        throw new NoSuchPropertyException("Not found property \"" + var2 + "\" filed or setter method in class Test.");
      }
 
      public Object invokeMethod(Object var1, String var2, Class[] var3, Object[] var4) throws InvocationTargetException {
@@ -83,7 +83,7 @@ public class Step2export {
             throw new InvocationTargetException(var9);
          }
 
-        throw new NoSuchMethodException("Not found method \"" + var2 + "\" in class com.yt.rpc.dubbo.provider.ServiceBeanRegist.Test.");
+        throw new NoSuchMethodException("Not found method \"" + var2 + "\" in class Test.");
      }
 
      public Wrapper0() {
@@ -112,7 +112,7 @@ public class Step2export {
         try {
             ClassPool pool = ClassPool.getDefault();
             CtClass ctClass = null;
-            ctClass = pool.getCtClass("com.yt.rpc.dubbo.provider.ServiceBeanRegist.TestWraper");
+            ctClass = pool.getCtClass("TestWraper");
 
             //ctClass.getMethods();//这里 没有获取到 私有方法
             //无法改编 私有方法。。。

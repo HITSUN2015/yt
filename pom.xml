@@ -26,11 +26,12 @@
         <module>yt-java-class</module>
         <module>yt-spi</module>
         <module>yt-jvm</module>
-		<module>yt-java-collection</module>
+		<module>yt-java</module>
 		<module>yt-distributed</module>
         <module>yt-breakdown</module>
         <module>yt-linux</module>
-    </modules>
+		<module>yt-arithmetic</module>
+	</modules>
 	<packaging>pom</packaging>
 
 	<name>yt</name>
@@ -171,6 +172,12 @@
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
 			<version>27.0.1-jre</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.1</version>
 		</dependency>
 
 	</dependencies>

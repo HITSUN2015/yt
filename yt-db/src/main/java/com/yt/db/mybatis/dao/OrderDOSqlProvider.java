@@ -2,10 +2,6 @@ package com.yt.db.mybatis.dao;
 
 import com.yt.db.mybatis.domain.OrderDO;
 import com.yt.db.mybatis.domain.OrderDOExample;
-import com.yt.db.mybatis.domain.OrderDOExample.Criteria;
-import com.yt.db.mybatis.domain.OrderDOExample.Criterion;
-import com.yt.db.mybatis.domain.OrderDO;
-import com.yt.db.mybatis.domain.OrderDOExample;
 
 import java.util.List;
 import java.util.Map;
@@ -252,10 +248,10 @@ public class OrderDOSqlProvider {
         }
         
         StringBuilder sb = new StringBuilder();
-        List<Criteria> oredCriteria = example.getOredCriteria();
+        List<OrderDOExample.Criteria> oredCriteria = example.getOredCriteria();
         boolean firstCriteria = true;
         for (int i = 0; i < oredCriteria.size(); i++) {
-            Criteria criteria = oredCriteria.get(i);
+            OrderDOExample.Criteria criteria = oredCriteria.get(i);
             if (criteria.isValid()) {
                 if (firstCriteria) {
                     firstCriteria = false;
@@ -264,10 +260,10 @@ public class OrderDOSqlProvider {
                 }
                 
                 sb.append('(');
-                List<Criterion> criterions = criteria.getAllCriteria();
+                List<OrderDOExample.Criterion> criterions = criteria.getAllCriteria();
                 boolean firstCriterion = true;
                 for (int j = 0; j < criterions.size(); j++) {
-                    Criterion criterion = criterions.get(j);
+                    OrderDOExample.Criterion criterion = criterions.get(j);
                     if (firstCriterion) {
                         firstCriterion = false;
                     } else {

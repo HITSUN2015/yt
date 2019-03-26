@@ -1,72 +1,82 @@
 package com.yt.restful.evolution;
 
+import com.yt.datastructure.datastructure.restful.evolution.propties.*;
+import com.yt.restful.evolution.propties.*;
+import com.yt.restful.evolution.propties.modifiability.EvolvabilityProperty;
+import com.yt.restful.evolution.propties.modifiability.ConfigurabilityProperty;
+import com.yt.restful.evolution.propties.modifiability.CustomizabilityProperty;
+import com.yt.restful.evolution.propties.modifiability.ReusabilityProperty;
+import com.yt.restful.evolution.propties.performance.NetworkEfficiencyProperty;
+import com.yt.restful.evolution.propties.performance.NetworkPerformanceProperty;
+import com.yt.restful.evolution.propties.performance.UserPerceivedPerformanceProperty;
+
 /**
  * Created by yantong on 2019/2/20.
  */
 public class EvaluateResultModel {
 
     /**
-     * {@link com.yt.restful.evolution.propties.modifiability.ConfigurabilityProperty}
+     * {@link ConfigurabilityProperty}
      */
     private String configurabilityPropertyValue;
 
     /**
-     * {@link com.yt.restful.evolution.propties.modifiability.CustomizabilityProperty}
+     * {@link CustomizabilityProperty}
      */
     private String customizabilityPropertyValue;
 
     /**
-     * {@link com.yt.restful.evolution.propties.modifiability.EvolvabilityProperty}
+     * {@link EvolvabilityProperty}
      */
     private String evolvabilityPropertyValue;
 
     /**
-     * {@link com.yt.restful.evolution.propties.modifiability.ConfigurabilityProperty}
+     * {@link ConfigurabilityProperty}
      */
     private String extensibilityPropertyValue;
 
     /**
-     * {@link com.yt.restful.evolution.propties.modifiability.ReusabilityProperty}
+     * {@link ReusabilityProperty}
      */
     private String reusabilityPropertyValue;
 
     /**
-     * {@link com.yt.restful.evolution.propties.performance.NetworkEfficiencyProperty}
+     * {@link NetworkEfficiencyProperty}
      */
     private String networkEfficiencyPropertyValue;
 
     /**
-     * {@link com.yt.restful.evolution.propties.performance.NetworkPerformanceProperty}
+     * {@link NetworkPerformanceProperty}
      */
     private String networkPerformancePropertyValue;
 
     /**
-     * {@link com.yt.restful.evolution.propties.performance.UserPerceivedPerformanceProperty}
+     * {@link UserPerceivedPerformanceProperty}
      */
     private String userPerceivedPerformancePropertyValue;
 
     /**
-     * {@link com.yt.restful.evolution.propties.PortabilityProperties}
+     * {@link PortabilityProperties}
      */
     private String portabilityPropertiesValue;
 
     /**
-     * {@link com.yt.restful.evolution.propties.ReliabilityProperties}
+     * {@link ReliabilityProperties}
      */
     private String reliabilityPropertiesValue;
 
     /**
-     * {@link com.yt.restful.evolution.propties.ScalabilityProperties}
+     * {@link ScalabilityProperties}
      */
     private String scalabilityPropertiesValue;
 
     /**
-     * {@link com.yt.restful.evolution.propties.SimplicityProperties}
+     * {@link SimplicityProperties}
      */
     private String simplicityPropertiesValue;
 
     /**
-     * {@link com.yt.restful.evolution.propties.VisibilityProperties}
+     * {@link VisibilityProperties}
      */
     private String visibilityPropertiesValue;
 

@@ -13,7 +13,7 @@ import com.yt.jvm.gc.how.arithmetic.MarkCompact;
  *
  * 高吞吐可考虑优先考虑:{@link ParallelScavenge} + {@link ParallelOld}
  */
-public class ParallelOld implements MarkCompact , Aim{
+public class ParallelOld implements MarkCompact, Aim {
 
     @Override
     public AimType getAim() {

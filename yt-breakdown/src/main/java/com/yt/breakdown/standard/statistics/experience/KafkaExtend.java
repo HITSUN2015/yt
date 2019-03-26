@@ -1,7 +1,7 @@
 package com.yt.breakdown.standard.statistics.experience;
 
 import com.yt.breakdown.standard.statistics.breakdown.BaseBreakDown;
-import com.yt.breakdown.standard.statistics.breakdown.aspect.solve.*;
+import com.yt.breakdown.standard.statistics.breakdown.aspect.solve.Reason;
 
 /**
  * Created by yantong on 2019/3/18.

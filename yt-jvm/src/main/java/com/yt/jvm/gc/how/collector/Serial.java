@@ -15,6 +15,6 @@ import com.yt.jvm.gc.how.arithmetic.Copying;
  *
  * 3.几十到一两百MB的新生代,gc一次几十到一百多ms,可以接受
  */
-public class Serial implements Copying{
+public class Serial implements Copying {
 
 }

@@ -3,9 +3,13 @@ package com.yt.breakdown.standard.statistics.breakdown;
 
 import com.yt.breakdown.standard.statistics.breakdown.aspect.influence.*;
 import com.yt.breakdown.standard.statistics.breakdown.aspect.solve.*;
+import com.yt.datastructure.breakdown.standard.statistics.breakdown.aspect.influence.*;
+import com.yt.datastructure.breakdown.standard.statistics.breakdown.aspect.solve.*;
 import com.yt.breakdown.standard.statistics.breakdown.aspect.status.Result;
 import com.yt.breakdown.standard.statistics.breakdown.aspect.status.Status;
 import com.yt.breakdown.standard.statistics.breakdown.aspect.status.Time;
+import com.yt.datastructure.datastructure.breakdown.standard.statistics.breakdown.aspect.influence.*;
+import com.yt.datastructure.datastructure.breakdown.standard.statistics.breakdown.aspect.solve.*;
 
 /**
  * Created by yantong on 2019/3/18.

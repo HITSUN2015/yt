@@ -1,13 +1,14 @@
-package com.yt.design.pattern.structure.decorator;
+package com.yt.design.pattern.decorator;
 
-import com.yt.design.pattern.structure.decorator.simpler.BaseClass;
-import com.yt.design.pattern.structure.decorator.simpler.CompoundClassA;
-import com.yt.design.pattern.structure.decorator.simpler.CompoundClassB;
-import com.yt.design.pattern.structure.decorator.simpler.Interface;
-import com.yt.design.pattern.structure.decorator.simplest.SimpleBaseClass;
-import com.yt.design.pattern.structure.decorator.simplest.SimpleCompoundClassA;
-import com.yt.design.pattern.structure.decorator.simplest.SimpleInterface;
-import com.yt.design.pattern.structure.decorator.ugly.*;
+import com.yt.design.pattern.decorator.simpler.CompoundClassA;
+import com.yt.design.pattern.decorator.simpler.CompoundClassB;
+import com.yt.design.pattern.decorator.simpler.Interface;
+import com.yt.design.pattern.decorator.simplest.SimpleBaseClass;
+import com.yt.design.pattern.decorator.simplest.SimpleCompoundClassA;
+import com.yt.datastructure.datastructure.design.pattern.decorator.ugly.*;
+import com.yt.design.pattern.decorator.simplest.SimpleInterface;
+import com.yt.design.pattern.decorator.simpler.BaseClass;
+import com.yt.design.pattern.decorator.ugly.*;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;

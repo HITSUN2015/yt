@@ -1,5 +1,9 @@
-package com.yt.design.pattern.structure.decorator;
+package com.yt.design.pattern.decorator;
 
+
+import com.yt.design.pattern.decorator.simpler.CompoundClassA;
+import com.yt.design.pattern.decorator.simpler.CompoundClassB;
+import com.yt.design.pattern.decorator.simplest.SimpleInterface;
 
 /**
  * Created by yantong on 2019/2/18.
@@ -39,11 +43,11 @@ package com.yt.design.pattern.structure.decorator;
  * 2.有一个类（复合类） 持有另一个类（基类）
  * 3.复合类调用该接口时，调用基类的实现
  *
- * 根据这个 我就写了个最简单的 装饰代码 {@link com.yt.design.pattern.structure.decorator.simplest.SimpleInterface}
+ * 根据这个 我就写了个最简单的 装饰代码 {@link SimpleInterface}
  * 但是没有 灵活 选择功能的过程，所以又写了 simpler的代码
  *
- * 可以看出 {@link com.yt.design.pattern.structure.decorator.simpler.CompoundClassA}
- *       和 {@link com.yt.design.pattern.structure.decorator.simpler.CompoundClassB}
+ * 可以看出 {@link CompoundClassA}
+ *       和 {@link CompoundClassB}
  * 有重复的 持有接口的代码，和调用持有对象方法的方法，
  * 简化抽象之，就诞生了我们模式里的 Decorator 抽象类
  *

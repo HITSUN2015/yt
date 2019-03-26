@@ -12,6 +12,6 @@ import com.yt.jvm.gc.how.arithmetic.Copying;
  * 1.{@link Serial} 的并发版本
  * 2.只有{@link Serial} 和 {@link ParNew} 可与 {@link CMS} 合作
  */
-public class ParNew implements Copying{
+public class ParNew implements Copying {
 
 }

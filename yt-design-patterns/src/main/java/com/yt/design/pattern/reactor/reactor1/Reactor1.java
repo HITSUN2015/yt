@@ -1,7 +1,5 @@
 package com.yt.design.pattern.reactor.reactor1;
 
-import com.yt.design.pattern.reactor.NetHandler;
-
 /**
  * Created by yantong on 2019/3/6.
  */

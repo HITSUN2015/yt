@@ -1,6 +1,6 @@
 package com.yt.design.pattern.create.builder;
 
-import com.yt.design.pattern.create.instance.*;
+import com.yt.design.pattern.create.instance.Person;
 
 /**
  * Created by yantong on 2019/3/22.
