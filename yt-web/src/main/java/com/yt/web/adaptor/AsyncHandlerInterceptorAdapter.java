@@ -1,4 +1,4 @@
-package adaptor;
+package com.yt.web.adaptor;
 
 import org.springframework.web.context.request.async.WebAsyncManager;
 import org.springframework.web.context.request.async.WebAsyncUtils;

@@ -1,4 +1,4 @@
-package annotation;
+package com.yt.web.annotation;
 
 import org.springframework.stereotype.Component;
 

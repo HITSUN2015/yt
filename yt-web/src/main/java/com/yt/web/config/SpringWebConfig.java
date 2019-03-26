@@ -1,4 +1,4 @@
-package com.yt.datastructure.web.config;
+package com.yt.web.config;
 
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
