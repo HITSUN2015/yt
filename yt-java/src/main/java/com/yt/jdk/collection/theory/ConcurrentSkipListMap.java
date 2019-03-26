@@ -10,7 +10,7 @@ import com.yt.jdk.collection.theory.tread.CAS;
  * @create 2018-03-20 下午8:22
  * @desc
  */
-public abstract class ConcurrentSkipListMap implements SkipList,CAS {
+public class ConcurrentSkipListMap implements SkipList,CAS {
     /**
      * 引用 : https://my.oschina.net/jingshishengxu/blog/14645
      * ConcurrentSkipListMap有几个ConcurrentHashMap 不能比拟的优点：

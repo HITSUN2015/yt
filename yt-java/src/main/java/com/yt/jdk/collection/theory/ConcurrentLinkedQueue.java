@@ -10,8 +10,6 @@ import com.yt.jdk.collection.theory.tread.CAS;
  * @create 2018-03-20 下午9:00
  * @desc
  */
-public abstract class ConcurrentLinkedQueue implements CAS,SinglyLinkedList {
-    /**
-     * TODO read source
-     */
+public class ConcurrentLinkedQueue implements CAS,SinglyLinkedList {
+
 }

@@ -10,5 +10,5 @@ import com.yt.jdk.collection.theory.tread.CAS;
  * @create 2018-03-20 下午9:36
  * @desc
  */
-public abstract class LinkedTransferQueue implements SinglyLinkedList,CAS {
+public class LinkedTransferQueue implements SinglyLinkedList,CAS {
 }

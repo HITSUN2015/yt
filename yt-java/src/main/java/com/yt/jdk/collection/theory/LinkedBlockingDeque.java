@@ -10,5 +10,5 @@ import com.yt.jdk.collection.theory.tread.AQS锁;
  * @create 2018-03-20 下午9:48
  * @desc
  */
-public abstract class LinkedBlockingDeque implements DoublyLinkedList,AQS锁 {
+public class LinkedBlockingDeque implements DoublyLinkedList,AQS锁 {
 }

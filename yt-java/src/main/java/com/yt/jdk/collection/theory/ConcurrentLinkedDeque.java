@@ -10,5 +10,5 @@ import com.yt.jdk.collection.theory.tread.CAS;
  * @create 2018-03-20 下午9:01
  * @desc
  */
-public abstract class ConcurrentLinkedDeque implements CAS,DoublyLinkedList {
+public class ConcurrentLinkedDeque implements CAS,DoublyLinkedList {
 }

@@ -10,5 +10,5 @@ import com.yt.jdk.collection.theory.tread.FailFast机制;
  * @create 2018-03-20 下午9:04
  * @desc
  */
-public abstract class TreeMap implements RedBlackTree,FailFast机制 {
+public class TreeMap implements RedBlackTree,FailFast机制 {
 }

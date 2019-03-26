@@ -7,7 +7,7 @@ package com.yt.jdk.collection.theory;/**
  * @create 2018-03-20 下午5:27
  * @desc
  */
-public abstract class HashSet extends HashMap {
+public class HashSet extends HashMap {
 
     /**
      * 实际上并不严谨，也有一种构造方法，底层的实现是LinkedHashMap

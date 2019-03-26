@@ -11,7 +11,7 @@ import com.yt.jdk.collection.theory.tread.FailFast机制;
  * @create 2018-03-20 下午4:04
  * @desc
  */
-public abstract class HashMap implements com.yt.datastructure.HashTable,SinglyLinkedList,RedBlackTree,FailFast机制 {
+public class HashMap implements com.yt.datastructure.HashTable,SinglyLinkedList,RedBlackTree,FailFast机制 {
 
     /**
      * Fields:

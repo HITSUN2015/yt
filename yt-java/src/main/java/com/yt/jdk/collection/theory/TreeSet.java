@@ -7,5 +7,5 @@ package com.yt.jdk.collection.theory;/**
  * @create 2018-03-20 下午9:04
  * @desc
  */
-public abstract class TreeSet extends TreeMap {
+public class TreeSet extends TreeMap {
 }

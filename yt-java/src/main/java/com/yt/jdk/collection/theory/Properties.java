@@ -7,5 +7,5 @@ package com.yt.jdk.collection.theory;/**
  * @create 2018-03-20 下午6:24
  * @desc
  */
-public abstract class Properties extends HashTable {
+public class Properties extends HashTable {
 }
