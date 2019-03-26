@@ -26,7 +26,7 @@
         <module>yt-java-class</module>
         <module>yt-spi</module>
         <module>yt-jvm</module>
-		<module>yt-java-collection</module>
+		<module>yt-java</module>
 		<module>yt-distributed</module>
         <module>yt-breakdown</module>
         <module>yt-linux</module>
