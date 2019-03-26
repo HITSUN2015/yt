@@ -1,12 +1,7 @@
 package com.yt.datastructure.sort;
 
-import com.yt.datastructure.datastructure.sort.SortType;
-import com.yt.datastructure.datastructure.sort.Sortable;
-import com.yt.datastructure.datastructure.sort.SorterFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.util.concurrent.TimeUnit;
 
 /**
  * Created by yantong on 2019/3/25.

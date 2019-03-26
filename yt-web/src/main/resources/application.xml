@@ -5,7 +5,7 @@
 
     <import resource="classpath:beans/spring-beans.xml"/>
     <import resource="classpath:db/com.yt.db.mybatis.xml"/>
-    <import resource="classpath:com/yt/datastructure/datastructure/util/quartz/quartz.xml"/>
+    <import resource="classpath:com/yt/datastructure/util/quartz/quartz.xml"/>
 
     <!--spring:-->
     <!--profiles:-->

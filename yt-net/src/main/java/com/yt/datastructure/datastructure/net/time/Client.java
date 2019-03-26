@@ -1,9 +1,0 @@
-package com.yt.datastructure.datastructure.net.time;
-
-/**
- * Created by yantong on 2019/2/18.
- */
-public interface Client {
-
-    void send();
-}
