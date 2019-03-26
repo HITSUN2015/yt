@@ -2,7 +2,7 @@ package com.yt.web.interceptor;
 
 import com.yt.web.adaptor.AsyncHandlerInterceptorAdapter;
 import com.yt.web.annotation.TestAuthenticated;
-import com.yt.web.helper.SessionContextHolder;
+import com.yt.web.session.SessionContextHolder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.method.HandlerMethod;
@@ -16,7 +16,6 @@ import javax.servlet.http.HttpServletResponse;
 public class TestAuthenticateInterceptor extends AsyncHandlerInterceptorAdapter {
 
     private static final Logger logger = LoggerFactory.getLogger(TestAuthenticateInterceptor.class);
-}
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
@@ -45,8 +44,8 @@ public class TestAuthenticateInterceptor extends AsyncHandlerInterceptorAdapter 
             //TODO 这里如果还缺少别的信息，可以跳转到别的页面，让登录者补充
         } else {
             //如果所有验证均通过
-
-            SessionContextHolder.setOperationUserContext();
+            // TODO: 2019/3/26 userId, userIp 等信息
+            SessionContextHolder.setOperationUserContext(null, null);
         }
         return super.preHandle(request, response, handler);
     }
