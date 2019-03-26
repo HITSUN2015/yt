@@ -2,7 +2,7 @@ package com.yt.jdk.collection.theory;/**
  * Created by SUN on 18/3/20.
  */
 
-import com.yt.datastructure.Heap;
+import com.yt.datastructure.base.tree.Heap;
 import com.yt.jdk.collection.theory.tread.FailFast机制;
 
 /**

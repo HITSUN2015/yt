@@ -1,6 +1,6 @@
 package com.yt.jdk.collection.theory;
 
-import com.yt.datastructure.Array;
+import com.yt.datastructure.base.list.Array;
 import com.yt.jdk.collection.theory.tread.FailFast机制;
 
 /**

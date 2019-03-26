@@ -1,13 +1,13 @@
 package com.yt.datastructure.demo;
 
-import com.yt.datastructure.Queue;
+import com.yt.datastructure.base.list.Queue;
 import com.yt.datastructure.baseModel.NodeWithNext;
 
 /**
  * Created by yantong on 2019/2/14.
  * 线性 先进先出
  */
-public class QueueImpl<T> implements Queue<T> {
+public class QueueDemo<T> implements Queue<T> {
 
     //这里 具体的存储实现，可以多种多样，但是由于队列的操作多进出元素，所以可能用链表来存储比较好
     //由于队列 常在 线性表的两端操作，所以 提供header 和 tail 效率更高
@@ -38,7 +38,6 @@ public class QueueImpl<T> implements Queue<T> {
         return result;
     }
 
-    @Override
     public void demo() {
 
     }
