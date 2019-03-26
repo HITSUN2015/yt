@@ -1,6 +1,6 @@
-package com.yt.datastructure.sort;
+package com.yt.arithmetic.sort;
 
-import com.yt.datastructure.sort.anylisis.SortAnalysis;
+import com.yt.arithmetic.sort.anylisis.SortAnalysis;
 
 /**
  * Created by yantong on 2019/3/25.

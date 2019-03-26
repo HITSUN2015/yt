@@ -1,4 +1,4 @@
-package com.yt.datastructure.solutions.tree.recursion;
+package com.yt.arithmetic.solutions.tree.recursion;
 
 import org.testng.annotations.Test;
 

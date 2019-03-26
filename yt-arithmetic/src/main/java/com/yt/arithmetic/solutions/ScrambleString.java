@@ -1,7 +1,7 @@
-package com.yt.datastructure.solutions;
+package com.yt.arithmetic.solutions;
 
-import com.yt.datastructure.arithmetic.dynamicProgramming.DynamicProgramming;
-import com.yt.datastructure.leetcode.LeetCode;
+import com.yt.arithmetic.arithmetic.dynamicProgramming.DynamicProgramming;
+import com.yt.arithmetic.leetcode.LeetCode;
 
 /**
  * Created by yantong on 2019/2/27.

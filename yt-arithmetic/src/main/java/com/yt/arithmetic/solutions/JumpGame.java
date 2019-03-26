@@ -1,8 +1,8 @@
-package com.yt.datastructure.solutions;
+package com.yt.arithmetic.solutions;
 
-import com.yt.datastructure.arithmetic.dynamicProgramming.DynamicProgramming;
-import com.yt.datastructure.arithmetic.greedy.Greedy;
-import com.yt.datastructure.leetcode.LeetCode;
+import com.yt.arithmetic.arithmetic.dynamicProgramming.DynamicProgramming;
+import com.yt.arithmetic.arithmetic.greedy.Greedy;
+import com.yt.arithmetic.leetcode.LeetCode;
 
 
 /**

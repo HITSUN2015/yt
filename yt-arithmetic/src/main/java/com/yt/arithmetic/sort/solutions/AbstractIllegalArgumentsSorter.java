@@ -1,6 +1,6 @@
-package com.yt.datastructure.sort.solutions;
+package com.yt.arithmetic.sort.solutions;
 
-import com.yt.datastructure.sort.Sortable;
+import com.yt.arithmetic.sort.Sortable;
 
 /**
  * Created by yantong on 2019/3/25.

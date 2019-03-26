@@ -1,5 +1,6 @@
-package com.yt.datastructure;
+package com.yt.datastructure.demo;
 
+import com.yt.datastructure.Queue;
 import com.yt.datastructure.baseModel.NodeWithNext;
 
 /**

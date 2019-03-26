@@ -1,6 +1,6 @@
-package com.yt.datastructure.solutions.string;
+package com.yt.arithmetic.solutions.string;
 
-import com.yt.datastructure.arithmetic.dynamicProgramming.DynamicProgramming;
+import com.yt.arithmetic.arithmetic.dynamicProgramming.DynamicProgramming;
 
 /**
  * Created by yantong on 2019/3/21.

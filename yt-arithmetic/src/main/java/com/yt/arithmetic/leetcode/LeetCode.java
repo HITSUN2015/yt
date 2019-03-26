@@ -1,4 +1,4 @@
-package com.yt.datastructure.leetcode;
+package com.yt.arithmetic.leetcode;
 
 /**
  * Created by yantong on 2019/2/26.

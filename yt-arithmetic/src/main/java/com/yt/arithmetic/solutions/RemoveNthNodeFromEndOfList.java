@@ -1,16 +1,17 @@
-package com.yt.solutions;/**
+package com.yt.arithmetic.solutions;/**
  * Created by SUN on 19/3/19.
  */
 
-import com.yt.leetcode.LeetCode;
-import com.yt.solutions.help.ListNode;
+
+import com.yt.arithmetic.leetcode.LeetCode;
+import com.yt.arithmetic.solutions.help.ListNode;
 
 /**
  * @author SUN
  * @create 2019-03-19 下午7:59
  * @desc
  */
-public class RemoveNthNodeFromEndOfList implements LeetCode{
+public class RemoveNthNodeFromEndOfList implements LeetCode {
 
 
     @Override

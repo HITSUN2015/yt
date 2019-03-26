@@ -1,4 +1,4 @@
-package com.yt.datastructure.sort;
+package com.yt.arithmetic.sort;
 
 /**
  * Created by yantong on 2019/3/25.

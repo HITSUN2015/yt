@@ -1,7 +1,7 @@
-package com.yt.datastructure.solutions;
+package com.yt.arithmetic.solutions;
 
-import com.yt.datastructure.solutions.help.ListNode;
-import com.yt.datastructure.solutions.link.RemoveDuplicatesFromSortedListII;
+import com.yt.arithmetic.solutions.help.ListNode;
+import com.yt.arithmetic.solutions.link.RemoveDuplicatesFromSortedListII;
 import org.testng.annotations.Test;
 
 /**

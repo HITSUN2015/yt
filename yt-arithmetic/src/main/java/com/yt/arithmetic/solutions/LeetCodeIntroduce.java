@@ -1,4 +1,4 @@
-package com.yt.datastructure.solutions;
+package com.yt.arithmetic.solutions;
 
 /**
  * Created by yantong on 2019/3/19.

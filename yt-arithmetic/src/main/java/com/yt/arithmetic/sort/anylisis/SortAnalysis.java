@@ -1,4 +1,4 @@
-package com.yt.datastructure.sort.anylisis;
+package com.yt.arithmetic.sort.anylisis;
 
 /**
  * Created by yantong on 2019/3/25.

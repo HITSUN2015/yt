@@ -1,6 +1,6 @@
-package com.yt.datastructure.solutions;
+package com.yt.arithmetic.solutions;
 
-import com.yt.datastructure.arithmetic.dynamicProgramming.DynamicProgramming;
+import com.yt.arithmetic.arithmetic.dynamicProgramming.DynamicProgramming;
 import org.testng.annotations.Test;
 
 /**

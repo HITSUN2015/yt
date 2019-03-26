@@ -1,4 +1,4 @@
-package com.yt.datastructure.solutions;
+package com.yt.arithmetic.solutions;
 
 import org.testng.annotations.Test;
 

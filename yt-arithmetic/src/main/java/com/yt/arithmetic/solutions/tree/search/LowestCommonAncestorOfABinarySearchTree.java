@@ -1,7 +1,7 @@
-package com.yt.datastructure.solutions.tree.search;
+package com.yt.arithmetic.solutions.tree.search;
 
-import com.yt.datastructure.leetcode.LeetCode;
-import com.yt.datastructure.solutions.help.TreeNode;
+import com.yt.arithmetic.leetcode.LeetCode;
+import com.yt.arithmetic.solutions.help.TreeNode;
 
 import java.util.List;
 import java.util.Stack;

@@ -155,7 +155,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="yt-java-collection" />
       </profile>
       <profile default="false" name="Annotation profile for yt-distributed" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -163,6 +162,62 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="yt-distributed" />
+      </profile>
+      <profile default="false" name="Annotation profile for yt-lamda" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="yt-lamda" />
+      </profile>
+      <profile default="false" name="Annotation profile for yt-linux" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="yt-linux" />
+      </profile>
+      <profile default="false" name="Annotation profile for yt-db" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="yt-db" />
+      </profile>
+      <profile default="false" name="Annotation profile for yt-util" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="yt-util" />
+      </profile>
+      <profile default="false" name="Annotation profile for yt-test" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="yt-test" />
+      </profile>
+      <profile default="false" name="Annotation profile for yt-web" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="yt-web" />
+      </profile>
+      <profile default="false" name="Annotation profile for yt-breakdown" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="yt-breakdown" />
+      </profile>
+      <profile default="false" name="Annotation profile for yt-arithmetic" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="yt-arithmetic" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -172,7 +227,10 @@
       <module name="util" target="1.8" />
       <module name="web" target="1.8" />
       <module name="yt" target="1.8" />
+      <module name="yt-arithmetic" target="1.8" />
+      <module name="yt-breakdown" target="1.8" />
       <module name="yt-dataStruct" target="1.8" />
+      <module name="yt-db" target="1.8" />
       <module name="yt-design-patterns" target="1.8" />
       <module name="yt-distributed" target="1.8" />
       <module name="yt-intelligence" target="1.8" />
@@ -180,6 +238,8 @@
       <module name="yt-java-collection" target="1.8" />
       <module name="yt-jvm" target="1.8" />
       <module name="yt-kafka" target="1.8" />
+      <module name="yt-lamda" target="1.8" />
+      <module name="yt-linux" target="1.8" />
       <module name="yt-net" target="1.8" />
       <module name="yt-queue" target="1.8" />
       <module name="yt-restful" target="1.8" />
@@ -188,6 +248,9 @@
       <module name="yt-spi" target="1.8" />
       <module name="yt-spring" target="1.8" />
       <module name="yt-spring-redis" target="1.8" />
+      <module name="yt-test" target="1.8" />
+      <module name="yt-util" target="1.8" />
+      <module name="yt-web" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

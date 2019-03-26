@@ -1,4 +1,4 @@
-package com.yt.datastructure.sort.solutions.common;
+package com.yt.arithmetic.sort.solutions.common;
 
 /**
  * Created by yantong on 2019/3/26.

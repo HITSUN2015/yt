@@ -1,7 +1,6 @@
-package com.yt.datastructure.arithmetic.dynamicProgramming;
+package com.yt.arithmetic.arithmetic.dynamicProgramming;
 
-import com.yt.datastructure.arithmetic.Arithmetic;
-import com.yt.datastructure.solutions.string.LongestPalindromicSubstring;
+import com.yt.arithmetic.arithmetic.Arithmetic;
 
 /**
  * Created by yantong on 2019/2/20.

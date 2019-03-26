@@ -1,16 +1,17 @@
-package com.yt.solutions;/**
+package com.yt.arithmetic.solutions;/**
  * Created by SUN on 19/3/19.
  */
 
-import com.yt.leetcode.LeetCode;
-import com.yt.solutions.help.Node;
+
+import com.yt.arithmetic.leetcode.LeetCode;
+import com.yt.arithmetic.solutions.help.Node;
 
 /**
  * @author SUN
  * @create 2019-03-19 下午10:34
  * @desc TODO
  */
-public class CopyListWithRandomPointer implements LeetCode{
+public class CopyListWithRandomPointer implements LeetCode {
     @Override
     public int getProblemNumber() {
         return 138;

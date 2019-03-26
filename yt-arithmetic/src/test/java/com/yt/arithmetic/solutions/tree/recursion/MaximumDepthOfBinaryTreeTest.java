@@ -1,4 +1,4 @@
-package com.yt.datastructure.solutions.tree.recursion;
+package com.yt.arithmetic.solutions.tree.recursion;
 
 /**
  * Created by yantong on 2019/3/20.

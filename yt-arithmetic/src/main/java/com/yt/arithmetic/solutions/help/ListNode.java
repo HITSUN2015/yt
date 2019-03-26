@@ -1,4 +1,4 @@
-package com.yt.datastructure.solutions.help;
+package com.yt.arithmetic.solutions.help;
 
 import java.util.Iterator;
 import java.util.Spliterator;

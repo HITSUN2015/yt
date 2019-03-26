@@ -1,4 +1,4 @@
-package com.yt.datastructure.arithmetic.dynamicPrograming;
+package com.yt.arithmetic.arithmetic.dynamicPrograming;
 
 import org.testng.annotations.Test;
 

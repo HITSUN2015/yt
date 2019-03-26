@@ -1,6 +1,6 @@
-package com.yt.datastructure.solutions.string;
+package com.yt.arithmetic.solutions.string;
 
-import com.yt.datastructure.leetcode.LeetCode;
+import com.yt.arithmetic.leetcode.LeetCode;
 
 /**
  * Created by yantong on 2019/3/20.

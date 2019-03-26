@@ -1,9 +1,4 @@
-package com.yt.datastructure.solutions.string;
-
-import com.google.common.collect.Lists;
-
-import java.util.ArrayList;
-import java.util.Arrays;
+package com.yt.arithmetic.solutions.string;
 
 /**
  * Created by yantong on 2019/3/21.

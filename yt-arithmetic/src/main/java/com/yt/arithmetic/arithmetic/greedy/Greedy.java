@@ -1,4 +1,4 @@
-package com.yt.datastructure.arithmetic.greedy;
+package com.yt.arithmetic.arithmetic.greedy;
 
 /**
  * Created by yantong on 2019/2/26.

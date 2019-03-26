@@ -1,9 +1,9 @@
-package com.yt.datastructure.arithmetic.dynamicProgramming;
+package com.yt.arithmetic.arithmetic.dynamicProgramming;
 
 /**
  * Created by yantong on 2019/2/20.
  */
-public class InterceptMissle implements LinearDynamicProgramming{
+public class InterceptMissle implements LinearDynamicProgramming {
 
     @Override
     public String question() {

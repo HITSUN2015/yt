@@ -1,9 +1,9 @@
-package com.yt.datastructure.sort.solutions;
+package com.yt.arithmetic.sort.solutions;
 
-import com.yt.datastructure.arithmetic.DivideAndConquer;
-import com.yt.datastructure.sort.Sortable;
-import com.yt.datastructure.sort.anylisis.ComplexityType;
-import com.yt.datastructure.sort.anylisis.SortAnalysis;
+import com.yt.arithmetic.arithmetic.DivideAndConquer;
+import com.yt.arithmetic.sort.Sortable;
+import com.yt.arithmetic.sort.anylisis.ComplexityType;
+import com.yt.arithmetic.sort.anylisis.SortAnalysis;
 
 /**
  * 先将子序列排序，再merge子序列,+递归

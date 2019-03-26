@@ -1,6 +1,6 @@
-package com.yt.datastructure.solutions;
+package com.yt.arithmetic.solutions;
 
-import com.yt.datastructure.solutions.tree.traversal.BinaryTreePreorderTraversal;
+import com.yt.arithmetic.solutions.tree.traversal.BinaryTreePreorderTraversal;
 import org.testng.annotations.Test;
 
 /**

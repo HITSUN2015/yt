@@ -1,7 +1,7 @@
-package com.yt.datastructure.solutions.tree.traversal;
+package com.yt.arithmetic.solutions.tree.traversal;
 
-import com.yt.datastructure.leetcode.LeetCode;
-import com.yt.datastructure.solutions.help.TreeNode;
+import com.yt.arithmetic.leetcode.LeetCode;
+import com.yt.arithmetic.solutions.help.TreeNode;
 
 import java.util.ArrayList;
 import java.util.Collections;

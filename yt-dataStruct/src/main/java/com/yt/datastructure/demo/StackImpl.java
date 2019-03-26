@@ -1,5 +1,6 @@
-package com.yt.datastructure;
+package com.yt.datastructure.demo;
 
+import com.yt.datastructure.StackNormalOperation;
 import com.yt.datastructure.baseModel.NodeWithNext;
 
 /**
@@ -8,7 +9,7 @@ import com.yt.datastructure.baseModel.NodeWithNext;
  * 线性结果，后进先出
  * {@link java.util.Stack}
  */
-public class StackImpl<T> implements StackNormalOperation<T>{
+public class StackImpl<T> implements StackNormalOperation<T> {
 
     //这里 具体的存储实现，可以多种多样，但是由于栈的操作多进出元素，所以可能用链表来存储比较好
     //并且 由于 总需要在线性结构的一端 进入和排除数据 所以 最好存储下这个端的引用

@@ -1,4 +1,4 @@
-package com.yt.solutions.help;/**
+package com.yt.arithmetic.solutions.help;/**
  * Created by SUN on 19/3/19.
  */
 
@@ -14,7 +14,7 @@ public class Node {
 
     public Node() {}
 
-    public Node(int _val,Node _next,Node _random) {
+    public Node(int _val, Node _next, Node _random) {
         val = _val;
         next = _next;
         random = _random;

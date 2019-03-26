@@ -1,4 +1,4 @@
-package com.yt.solutions;/**
+package com.yt.arithmetic.solutions;/**
  * Created by SUN on 19/3/19.
  */
 

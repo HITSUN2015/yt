@@ -1,4 +1,4 @@
-package com.yt.datastructure.sort;
+package com.yt.arithmetic.sort;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

@@ -1,4 +1,4 @@
-package com.yt.datastructure.solutions.tree.construct;
+package com.yt.arithmetic.solutions.tree.construct;
 
 /**
  * Created by yantong on 2019/3/20.

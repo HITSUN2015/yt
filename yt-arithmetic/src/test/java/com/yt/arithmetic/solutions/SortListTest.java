@@ -1,6 +1,6 @@
-package com.yt.datastructure.solutions;
+package com.yt.arithmetic.solutions;
 
-import com.yt.datastructure.solutions.link.SortList;
+import com.yt.arithmetic.solutions.link.SortList;
 import org.testng.annotations.Test;
 
 /**

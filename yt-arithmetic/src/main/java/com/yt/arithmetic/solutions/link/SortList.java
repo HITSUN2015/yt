@@ -1,7 +1,7 @@
-package com.yt.datastructure.solutions.link;
+package com.yt.arithmetic.solutions.link;
 
-import com.yt.datastructure.leetcode.LeetCode;
-import com.yt.datastructure.solutions.help.ListNode;
+import com.yt.arithmetic.leetcode.LeetCode;
+import com.yt.arithmetic.solutions.help.ListNode;
 
 /**
  * Created by yantong on 2019/3/20.
