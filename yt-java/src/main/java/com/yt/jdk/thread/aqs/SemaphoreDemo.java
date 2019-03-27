@@ -12,8 +12,24 @@ import java.util.concurrent.TimeUnit;
  *
  * 个人理解：旋转木马，只有那几个马能坐，其他人需要等着，有人下马才能有人上马
  *
- * 每个申请者，调用 {@link Semaphore#acquire()}
- *       释放，调用 {@link Semaphore#release()}
+ * 常用方法见: {@link SyncIntroduce}
+ *
+ * 特殊方法:
+ *
+ * 获取所有资源
+ * {@link Semaphore#drainPermits()}
+ *
+ * 是否公平: true:FIFO false:TODO
+ * {@link Semaphore#Semaphore(int, boolean)}
+ *
+ * 资源个数
+ * {@link Semaphore#acquire(int)},{@link Semaphore#release(int)}
+ *
+ * 检查状态:
+ * 剩余资源个数:   {@link Semaphore#availablePermits()}
+ * 是否公平:       {@link Semaphore#isFair()}
+ * 是否存在竞争:   {@link Semaphore#hasQueuedThreads()}
+ * 有多少在竞争:   {@link Semaphore#getQueueLength()}
  */
 public class SemaphoreDemo {
 
