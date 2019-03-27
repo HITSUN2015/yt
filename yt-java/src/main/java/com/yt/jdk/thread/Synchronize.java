@@ -1,6 +1,7 @@
 package com.yt.jdk.thread;
 
-import com.yt.jdk.thread.baseModel.Info;
+
+import com.yt.jdk.thread.modal.Info;
 
 import java.util.concurrent.TimeUnit;
 

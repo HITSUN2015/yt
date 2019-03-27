@@ -1,6 +1,6 @@
 package com.yt.jdk.thread;
 
-import com.yt.jdk.thread.baseModel.PipReader;
+import com.yt.jdk.thread.modal.PipReader;
 
 import java.io.PipedInputStream;
 import java.io.PipedOutputStream;
