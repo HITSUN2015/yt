@@ -32,7 +32,7 @@
         <module>yt-linux</module>
 		<module>yt-arithmetic</module>
         <module>yt-interview</module>
-    </modules>
+	</modules>
 	<packaging>pom</packaging>
 
 	<name>yt</name>

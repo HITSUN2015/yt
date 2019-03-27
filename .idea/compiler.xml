@@ -86,6 +86,7 @@
       <module name="yt-lamda" target="1.8" />
       <module name="yt-linux" target="1.8" />
       <module name="yt-net" target="1.8" />
+      <module name="yt-nginx" target="1.8" />
       <module name="yt-queue" target="1.8" />
       <module name="yt-restful" target="1.8" />
       <module name="yt-rpc" target="1.8" />
