@@ -6,6 +6,9 @@ import com.yt.datastructure.base.tree.AVLTree;
 import com.yt.datastructure.base.tree.draw.AbstractDrawOperateTree;
 import com.yt.datastructure.baseModel.BTreeNode;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author SUN
  * @create 2019-03-26 下午11:42
@@ -22,7 +25,27 @@ public class AVLTreeDemo extends AbstractDrawOperateTree implements AVLTree{
 
     @Override
     public void add(Integer t) {
+//        BTreeNode<Integer> index = root;
+//        BTreeNode<Integer> pre = null;
+//        BTreeNode<Integer> prePre = null;
+//        while (index != null) {
+//            pre = index;
+//            if (t >=  index.value) {
+//                index = index.right;
+//            } else {
+//                index = index.left;
+//            }
+//        }
+//        if (pre == null) {
+//            root = new BTreeNode<Integer>(t);
+//            return;
+//        } else if (t >= pre.value) {
+//            pre.right = new BTreeNode<Integer>(t);
+//        } else {
+//            pre.left = new BTreeNode<Integer>(t);
+//        }
 
+        // TODO: 2019/3/27 这个单链，需要记录 好几层。。。
     }
 
     @Override
@@ -36,8 +59,27 @@ public class AVLTreeDemo extends AbstractDrawOperateTree implements AVLTree{
     }
 
     private int height(BTreeNode node) {
-        // TODO: 2019/3/27
-        return 0;
+        //这里 实现 比较 蠢
+        if (null == null) {
+            return 0;
+        }
+        int layer = 0;
+        List<BTreeNode> curLayer = new ArrayList<>();
+        curLayer.add(node);
+        while (!curLayer.isEmpty()) {
+            layer++;
+            List<BTreeNode> nextLayer = new ArrayList<>();
+            for (BTreeNode bTreeNode : curLayer) {
+                if (bTreeNode.left != null) {
+                    nextLayer.add(bTreeNode.left);
+                }
+                if (bTreeNode.right != null) {
+                    nextLayer.add(bTreeNode.right);
+                }
+            }
+            curLayer = nextLayer;
+        }
+        return layer;
     }
 
     //这里权限应该是private 不用反射就直接设置了
@@ -63,10 +105,6 @@ public class AVLTreeDemo extends AbstractDrawOperateTree implements AVLTree{
     }
 
     /**
-     6
-     3                                       7
-     2                   5                   null                null
-     null      null      4         null      null      null      null      null
      * @param rootParent
      * @param isLeft
      */
