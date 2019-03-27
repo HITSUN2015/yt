@@ -31,7 +31,8 @@
         <module>yt-breakdown</module>
         <module>yt-linux</module>
 		<module>yt-arithmetic</module>
-	</modules>
+        <module>yt-interview</module>
+    </modules>
 	<packaging>pom</packaging>
 
 	<name>yt</name>

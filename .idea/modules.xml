@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/yt-design-patterns/yt-design-patterns.iml" filepath="$PROJECT_DIR$/yt-design-patterns/yt-design-patterns.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-distributed/yt-distributed.iml" filepath="$PROJECT_DIR$/yt-distributed/yt-distributed.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-intelligence/yt-intelligence.iml" filepath="$PROJECT_DIR$/yt-intelligence/yt-intelligence.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yt-interview/yt-interview.iml" filepath="$PROJECT_DIR$/yt-interview/yt-interview.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-java/yt-java.iml" filepath="$PROJECT_DIR$/yt-java/yt-java.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-java-class/yt-java-class.iml" filepath="$PROJECT_DIR$/yt-java-class/yt-java-class.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-jvm/yt-jvm.iml" filepath="$PROJECT_DIR$/yt-jvm/yt-jvm.iml" />
