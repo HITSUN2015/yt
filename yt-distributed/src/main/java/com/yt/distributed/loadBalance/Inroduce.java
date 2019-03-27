@@ -4,6 +4,7 @@ package com.yt.distributed.loadBalance;
  * Created by yantong on 2019/3/27.
  *
  * http://www.360doc.com/content/18/0731/10/40769523_774607019.shtml
+ * https://www.cnblogs.com/yeyublog/p/6438373.html
  *
  * 说负载均衡，也可以说 调度算法
  *

@@ -51,7 +51,6 @@
         <module name="yt-lamda" />
         <module name="yt-linux" />
         <module name="yt-net" />
-        <module name="yt-queue" />
         <module name="yt-restful" />
         <module name="yt-rpc" />
         <module name="yt-serialize" />
