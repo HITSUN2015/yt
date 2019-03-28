@@ -51,6 +51,7 @@
         <module name="yt-breakdown" />
         <module name="yt-dataStruct" />
         <module name="yt-db" />
+        <module name="yt-demo-helper" />
         <module name="yt-design-patterns" />
         <module name="yt-distributed" />
         <module name="yt-intelligence" />
@@ -84,6 +85,7 @@
       <module name="yt-breakdown" target="1.8" />
       <module name="yt-dataStruct" target="1.8" />
       <module name="yt-db" target="1.8" />
+      <module name="yt-demo-helper" target="1.8" />
       <module name="yt-design-patterns" target="1.8" />
       <module name="yt-distributed" target="1.8" />
       <module name="yt-intelligence" target="1.8" />

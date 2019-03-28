@@ -9,19 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>yt-java-collection</artifactId>
+    <artifactId>yt-demo-helper</artifactId>
 
-    <dependencies>
-        <dependency>
-            <groupId>yt</groupId>
-            <artifactId>yt-dataStruct</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>yt</groupId>
-            <artifactId>yt-demo-helper</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
 
 </project>
