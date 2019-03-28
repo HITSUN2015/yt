@@ -2,8 +2,9 @@ package com.yt.arithmetic.solutions;/**
  * Created by SUN on 19/3/19.
  */
 
-import com.yt.leetcode.LeetCode;
-import com.yt.solutions.help.ListNode;
+
+import com.yt.arithmetic.leetcode.LeetCode;
+import com.yt.demo.helper.util.model.ListNode;
 
 import java.util.HashSet;
 import java.util.Set;

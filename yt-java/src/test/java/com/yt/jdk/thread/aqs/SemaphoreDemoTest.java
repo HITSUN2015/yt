@@ -1,5 +1,6 @@
 package com.yt.jdk.thread.aqs;
 
+import com.yt.jdk.thread.aqs.sync.SemaphoreDemo;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;

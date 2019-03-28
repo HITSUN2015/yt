@@ -1,5 +1,6 @@
 package com.yt.jdk.thread.aqs;
 
+import com.yt.jdk.thread.aqs.sync.PhaserDemo;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;

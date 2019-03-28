@@ -23,6 +23,8 @@ import java.util.concurrent.TimeUnit;
  */
 public class InterruptDemo {
 
+    private int test;
+
     /**
      * 没有打印信息
      */
