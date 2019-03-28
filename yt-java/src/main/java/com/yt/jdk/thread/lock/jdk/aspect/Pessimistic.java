@@ -3,7 +3,10 @@ package com.yt.jdk.thread.lock.jdk.aspect;
 /**
  * Created by yantong on 2019/3/28.
  *
- * 与 Exclusive 独享 对立
+ * 悲观的
+ *
+ * 对立：Optimistic
  */
-public interface Shared extends LockAspect {
+public interface Pessimistic {
+
 }

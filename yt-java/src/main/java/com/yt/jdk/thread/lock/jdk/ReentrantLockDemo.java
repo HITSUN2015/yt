@@ -3,9 +3,8 @@ package com.yt.jdk.thread.lock.jdk;
 import com.yt.demo.helper.util.StopWatchHelper;
 import com.yt.demo.helper.util.ThreadHelper;
 import com.yt.demo.helper.util.TimeSleepHelper;
-import org.springframework.util.StopWatch;
+import com.yt.jdk.thread.lock.jdk.aspect.ReEntrantable;
 
-import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -14,7 +13,7 @@ import java.util.concurrent.locks.ReentrantLock;
  *
  * {@link java.util.concurrent.locks.ReentrantLock}
  */
-public class ReentrantLockDemo implements LockDemo{
+public class ReentrantLockDemo implements LockDemo, ReEntrantable {
 
     @Override
     public void demo() {
