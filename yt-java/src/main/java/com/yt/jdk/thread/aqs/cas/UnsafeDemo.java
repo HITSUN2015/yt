@@ -2,6 +2,7 @@ package com.yt.jdk.thread.aqs.cas;/**
  * Created by SUN on 19/3/28.
  */
 
+import com.yt.demo.helper.util.TimeSleepHelper;
 import sun.misc.Unsafe;
 
 import java.lang.reflect.Field;
@@ -67,5 +68,64 @@ public class UnsafeDemo {
     public static boolean compareAndSet(Object instance, String fieldName, int expect, int value) {
         long offset = getFieldOffset(instance.getClass(), fieldName);
         return getUnsafeInstance().compareAndSwapInt(instance, offset, expect, value);
+    }
+
+    /**
+     * 向对象赋值的另一种方法 非CAS
+     *
+     * TODO 这种写法 未 通过测试 不知道为什么 设成了一个负值
+     */
+    public static void objectSetProperty(Object instance, String fieldName, int value) {
+        long offset = getFieldOffset(instance.getClass(), fieldName);
+        int value2 = getUnsafeInstance().getInt(instance, offset);
+        getUnsafeInstance().putObject(instance, offset, value);
+        value2 = getUnsafeInstance().getInt(instance, offset);
+    }
+
+    /**
+     * 操作线程
+
+     /**
+     * {@link Unsafe#park(boolean, long)}
+     *      参数1：boolean isAbsolute
+     *      Block current thread, returning when a balancing
+     *      <tt>unpark</tt> occurs, or a balancing <tt>unpark</tt> has
+     *      already occurred, or the thread is interrupted, or, if not
+     *       absolute and time is not zero, the given time nanoseconds have
+     *       elapsed, or if absolute, the given deadline in milliseconds
+     *       since Epoch has passed, or spuriously (i.e., returning for no
+     *       "reason"). Note: This operation is in the Unsafe class only
+     *       because <tt>unpark</tt> is, so it would be strange to place it
+     *       elsewhere.
+     *       true->isAbsolute->绝对时间->微秒
+     *       false->notAbsolute->相对时间->纳秒
+     *       TODO 为什么绝对时间反而不精确，我这里理解的是，绝对时间是能保证的，相对时间是无法保证的。。。
+     *       根据这个参数，可以给thread的hang提供定时功能
+     *       对应 {@link java.util.concurrent.locks.LockSupport#parkNanos(long)} 纳秒 isAbsolute:false
+     *            {@link java.util.concurrent.locks.LockSupport#parkUntil(long)} 毫秒 isAbsolute:true
+     *       这里还应该强调的是：如果之前调用过unpark 和 interrupt 会直接返回 TODO demo
+     *
+     * 是主动方法，谁调用就停谁
+     *
+     * {@link Unsafe#unpark(Object)}
+     *
+     * 是被动方法，传入需要唤醒的对象
+     */
+    public static void controlThread() {
+        Thread t = new Thread(() -> {
+            for (int i = 0; i < 100; i++) {
+                TimeSleepHelper.sleepSeconds(1);
+                System.out.println(i);
+                if (i % 3 == 2) {
+                    getUnsafeInstance().park(false, 0l);
+                }
+            }
+        });
+        t.start();
+
+        for (int i = 0; i < 10; i++) {
+            TimeSleepHelper.sleepSeconds(5);
+            getUnsafeInstance().unpark(t);
+        }
     }
 }

@@ -30,7 +30,7 @@ package com.yt.jdk.thread.aqs;/**
  *
  *   1、6、7   :同步器需要 支持状态维护 {@link AQSState}
  *   2、5      :同步器需要 维护等待队列 {@link WaitingQueue}
- *   3、8      :同步器需要 线程阻塞与释放
+ *   3、8      :同步器需要 线程阻塞与释放 {@link ThreadControl}
  *
  *   {@link java.util.concurrent.locks.AbstractQueuedSynchronizer}
  */

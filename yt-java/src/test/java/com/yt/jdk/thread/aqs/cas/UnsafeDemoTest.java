@@ -28,4 +28,20 @@ public class UnsafeDemoTest {
         UnsafeDemo.compareAndSet(demo, fieldName, 0, 3);
         Assert.assertEquals(demo.value, 2);
     }
+
+    @Test(dependsOnMethods = "testGetUnsafeInstance")
+    public void testObjectSetProperty() {
+        String fieldName = "value";
+        UnsafeDemo demo = new UnsafeDemo();
+        Assert.assertEquals(demo.value, 0);
+        UnsafeDemo.objectSetProperty(demo, fieldName, 2);
+        Assert.assertEquals(demo.value, 2);
+        UnsafeDemo.objectSetProperty(demo, fieldName, 3);
+        Assert.assertEquals(demo.value, 3);
+    }
+
+    @Test(dependsOnMethods = "testGetUnsafeInstance")
+    public void testControlThread() {
+        UnsafeDemo.controlThread();
+    }
 }
