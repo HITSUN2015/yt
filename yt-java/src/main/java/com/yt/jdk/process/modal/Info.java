@@ -1,4 +1,4 @@
-package com.yt.jdk.thread.modal;
+package com.yt.jdk.process.modal;
 
 /**
  * Created by yantong on 2019/2/15.

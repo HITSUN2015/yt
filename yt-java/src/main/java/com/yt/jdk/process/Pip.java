@@ -1,6 +1,8 @@
-package com.yt.jdk.thread;
+package com.yt.jdk.process;
 
-import com.yt.jdk.thread.modal.PipReader;
+import com.yt.jdk.process.modal.PipReader;
+import com.yt.jdk.thread.Join;
+import com.yt.jdk.thread.Message;
 
 import java.io.PipedInputStream;
 import java.io.PipedOutputStream;
@@ -11,7 +13,7 @@ import java.io.PipedOutputStream;
  * 并没有查到 在哪个开源项目中的应用
  * 如下 抄自 https://yq.aliyun.com/articles/624273/
  */
-public class Pip implements Message{
+public class Pip implements Message {
     //管道输出流
     private static PipedOutputStream outputStream = new PipedOutputStream();
     //管道输入流
