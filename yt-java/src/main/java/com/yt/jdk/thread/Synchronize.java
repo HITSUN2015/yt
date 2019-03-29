@@ -1,7 +1,7 @@
 package com.yt.jdk.thread;
 
 
-import com.yt.jdk.process.modal.Info;
+import com.yt.jdk.process.pipe.modal.Info;
 
 import java.util.concurrent.TimeUnit;
 

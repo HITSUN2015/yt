@@ -1,6 +1,6 @@
-package com.yt.jdk.process;
+package com.yt.jdk.process.pipe;
 
-import com.yt.jdk.process.modal.PipReader;
+import com.yt.jdk.process.pipe.modal.PipReader;
 import com.yt.jdk.thread.Join;
 import com.yt.jdk.thread.Message;
 
