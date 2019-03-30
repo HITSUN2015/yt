@@ -7,5 +7,5 @@ package com.yt.jdk.process.communicate.socket.netty;
  *
  * {@link com.yt.net.netty3.demo.Netty3Server}
  */
-public class JDKProcessCommunicateNettyDemo {
+public class IPCNettyDemo {
 }

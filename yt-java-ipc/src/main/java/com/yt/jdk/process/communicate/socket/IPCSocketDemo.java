@@ -7,6 +7,6 @@ import com.yt.net.socket.tcp.TCPSocketServer;
  *
  * {@link TCPSocketServer}
  */
-public class JDKProcessCommunicateSocketDemo {
+public class IPCSocketDemo {
 
 }

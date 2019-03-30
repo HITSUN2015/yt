@@ -5,5 +5,5 @@ package com.yt.jdk.process.communicate.mq;
  *
  * {@link com.yt.mq.MQIntroduce}
  */
-public class ProcessCommunicateMQIntroduce {
+public class IPCMQIntroduce {
 }
