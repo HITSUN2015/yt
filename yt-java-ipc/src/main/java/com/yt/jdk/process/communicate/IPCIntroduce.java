@@ -23,9 +23,15 @@ import com.yt.jdk.process.communicate.socket.netty.IPCNettyDemo;
  *      {@link com.yt.jdk.process.communicate.jmx.JMXIntroduce}
  * 5.Share Memory
  *      {@link com.yt.jdk.process.communicate.shareMemory.IPCShareMemoryIntroduce}
- * 6.
- *
+ * 6.Semphore
+ *      TODO ipc Semphore
+ * 7.Corba
+ *      TODO ipc Corba
+ * 8.PIPE
+ *      TODO ipc PIPE
+ * 9.命名管道(FIFO)
+ *      TODO ipc 命名管道
  */
-public class IPCIntroduce {
+public interface IPCIntroduce {
 
 }
