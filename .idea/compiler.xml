@@ -48,6 +48,7 @@
         <module name="yt-interview" />
         <module name="yt-java" />
         <module name="yt-java-class" />
+        <module name="yt-java-process-communicate" />
         <module name="yt-jvm" />
         <module name="yt-kafka" />
         <module name="yt-lamda" />
@@ -83,6 +84,7 @@
       <module name="yt-java" target="1.8" />
       <module name="yt-java-class" target="1.8" />
       <module name="yt-java-collection" target="1.8" />
+      <module name="yt-java-process-communicate" target="1.8" />
       <module name="yt-jvm" target="1.8" />
       <module name="yt-kafka" target="1.8" />
       <module name="yt-lamda" target="1.8" />

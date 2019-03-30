@@ -32,7 +32,8 @@
 		<module>yt-arithmetic</module>
         <module>yt-interview</module>
 		<module>yt-demo-helper</module>
-	</modules>
+        <module>yt-java-process-communicate</module>
+    </modules>
 	<packaging>pom</packaging>
 
 	<name>yt</name>
