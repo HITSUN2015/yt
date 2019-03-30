@@ -1,4 +1,4 @@
-package com.yt.kafka.exprience;
+package com.yt.mq.kafka.exprience;
 
 /**
  * Created by yantong on 2019/3/22.

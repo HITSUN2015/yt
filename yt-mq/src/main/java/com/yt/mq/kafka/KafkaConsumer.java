@@ -1,4 +1,4 @@
-package com.yt.kafka;
+package com.yt.mq.kafka;
 
 import kafka.javaapi.consumer.ConsumerConnector;
 

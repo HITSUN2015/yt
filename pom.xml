@@ -13,7 +13,7 @@
 		<module>yt-test</module>
         <module>yt-lamda</module>
 		<module>yt-intelligence</module>
-        <module>yt-kafka</module>
+        <module>yt-mq</module>
 		<module>yt-dataStruct</module>
 		<module>yt-net</module>
 		<module>yt-design-patterns</module>
