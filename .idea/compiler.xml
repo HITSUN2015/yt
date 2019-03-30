@@ -53,6 +53,7 @@
         <module name="yt-kafka" />
         <module name="yt-lamda" />
         <module name="yt-linux" />
+        <module name="yt-mq" />
         <module name="yt-net" />
         <module name="yt-restful" />
         <module name="yt-rpc" />
@@ -89,6 +90,7 @@
       <module name="yt-kafka" target="1.8" />
       <module name="yt-lamda" target="1.8" />
       <module name="yt-linux" target="1.8" />
+      <module name="yt-mq" target="1.8" />
       <module name="yt-net" target="1.8" />
       <module name="yt-nginx" target="1.8" />
       <module name="yt-queue" target="1.8" />

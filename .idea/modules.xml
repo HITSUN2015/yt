@@ -14,7 +14,7 @@
       <module fileurl="file://$PROJECT_DIR$/yt-interview/yt-interview.iml" filepath="$PROJECT_DIR$/yt-interview/yt-interview.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-java/yt-java.iml" filepath="$PROJECT_DIR$/yt-java/yt-java.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-java-class/yt-java-class.iml" filepath="$PROJECT_DIR$/yt-java-class/yt-java-class.iml" />
-      <module fileurl="file://$PROJECT_DIR$/yt-java-process-communicate/yt-java-process-communicate.iml" filepath="$PROJECT_DIR$/yt-java-process-communicate/yt-java-process-communicate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yt-java-ipc/yt-java-ipc.iml" filepath="$PROJECT_DIR$/yt-java-ipc/yt-java-ipc.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-jvm/yt-jvm.iml" filepath="$PROJECT_DIR$/yt-jvm/yt-jvm.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-lamda/yt-lamda.iml" filepath="$PROJECT_DIR$/yt-lamda/yt-lamda.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-linux/yt-linux.iml" filepath="$PROJECT_DIR$/yt-linux/yt-linux.iml" />
