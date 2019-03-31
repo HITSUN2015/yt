@@ -16,6 +16,8 @@
       <module fileurl="file://$PROJECT_DIR$/yt-java-class/yt-java-class.iml" filepath="$PROJECT_DIR$/yt-java-class/yt-java-class.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-java-ipc/yt-java-ipc.iml" filepath="$PROJECT_DIR$/yt-java-ipc/yt-java-ipc.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-jvm/yt-jvm.iml" filepath="$PROJECT_DIR$/yt-jvm/yt-jvm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yt-mq/yt-kafka.iml" filepath="$PROJECT_DIR$/yt-mq/yt-kafka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yt-knowledge-orgnization/yt-knowledge-orgnization.iml" filepath="$PROJECT_DIR$/yt-knowledge-orgnization/yt-knowledge-orgnization.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-lamda/yt-lamda.iml" filepath="$PROJECT_DIR$/yt-lamda/yt-lamda.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-linux/yt-linux.iml" filepath="$PROJECT_DIR$/yt-linux/yt-linux.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-mq/yt-mq.iml" filepath="$PROJECT_DIR$/yt-mq/yt-mq.iml" />

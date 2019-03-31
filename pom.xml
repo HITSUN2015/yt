@@ -33,7 +33,8 @@
         <module>yt-interview</module>
 		<module>yt-demo-helper</module>
         <module>yt-java-process-communicate</module>
-    </modules>
+		<module>yt-knowledge-orgnization</module>
+	</modules>
 	<packaging>pom</packaging>
 
 	<name>yt</name>
