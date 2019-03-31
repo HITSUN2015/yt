@@ -34,6 +34,7 @@
 		<module>yt-demo-helper</module>
         <module>yt-java-process-communicate</module>
 		<module>yt-knowledge-orgnization</module>
+		<module>yt-teach-qiuqiu</module>
 	</modules>
 	<packaging>pom</packaging>
 

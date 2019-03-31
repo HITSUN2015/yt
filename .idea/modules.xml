@@ -28,6 +28,7 @@
       <module fileurl="file://$PROJECT_DIR$/yt-spi/yt-spi.iml" filepath="$PROJECT_DIR$/yt-spi/yt-spi.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-spring/yt-spring.iml" filepath="$PROJECT_DIR$/yt-spring/yt-spring.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-spring-redis/yt-spring-redis.iml" filepath="$PROJECT_DIR$/yt-spring-redis/yt-spring-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yt-teach-qiuqiu/yt-teach-qiuqiu.iml" filepath="$PROJECT_DIR$/yt-teach-qiuqiu/yt-teach-qiuqiu.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-test/yt-test.iml" filepath="$PROJECT_DIR$/yt-test/yt-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-util/yt-util.iml" filepath="$PROJECT_DIR$/yt-util/yt-util.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-web/yt-web.iml" filepath="$PROJECT_DIR$/yt-web/yt-web.iml" />

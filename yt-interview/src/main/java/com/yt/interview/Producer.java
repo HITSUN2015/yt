@@ -33,8 +33,7 @@ public class Producer implements Runnable {
 
     /**
      * url请求
-     * dns协议,
-     * tcp 三次握手
+     * dns协议
      * uuid生成   扩容
      * producer 状态变更锁
      * redis
@@ -42,7 +41,6 @@ public class Producer implements Runnable {
      * table hash冲突
      * hashTable 扩容
      * hash值如何生成
-     * 进程间通信
      * kafka 对比
      * cookie、session
      * nginx 原理

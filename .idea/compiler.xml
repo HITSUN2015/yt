@@ -48,7 +48,6 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="yt-java-process-communicate" />
-        <module name="yt-mq" />
       </profile>
       <profile default="false" name="Annotation profile for yt-restful" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -232,6 +231,20 @@
         <processorPath useClasspath="true" />
         <module name="yt-rpc" />
       </profile>
+      <profile default="false" name="Annotation profile for yt-teach-qiuqiu" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="yt-teach-qiuqiu" />
+      </profile>
+      <profile default="false" name="Annotation profile for yt-mq" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="yt-mq" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="db" target="1.8" />
@@ -268,6 +281,7 @@
       <module name="yt-spi" target="1.8" />
       <module name="yt-spring" target="1.8" />
       <module name="yt-spring-redis" target="1.8" />
+      <module name="yt-teach-qiuqiu" target="1.8" />
       <module name="yt-test" target="1.8" />
       <module name="yt-util" target="1.8" />
       <module name="yt-web" target="1.8" />
