@@ -1,10 +1,7 @@
 package com.yt.lamda.jdk;
 
-import com.yt.lamda.jdk.model.Teacher;
-
 import java.util.*;
 import java.util.function.Supplier;
-import java.util.stream.Collectors;
 
 /**
  * Created by yantong on 2019/1/29.

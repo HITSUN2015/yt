@@ -85,7 +85,6 @@ public class StreamAPI {
         System.out.println(value);
 
 
-
         /**
          * 应用类
          * 可以看出 reduce 也会遍历 结合，处理 每两个元素之间的关系
