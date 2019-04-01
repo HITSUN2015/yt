@@ -269,11 +269,6 @@ public class StreamAPI {
         StreamHelper.makeDemo(constructor).sequential();
     }
 
-    public void spliterator(StreamConstructor<String> constructor) {
-        // TODO: 2019/3/16
-        StreamHelper.makeDemo(constructor).spliterator();
-    }
-
     public void unordered(StreamConstructor<String> constructor) {
         //对串行流，几乎没有影响
         //并行 流 会影响 性能、输出，如果数据源

@@ -15,7 +15,7 @@ import java.util.stream.IntStream;
  *
  * {@link CustomerCollection}
  *
- * 多线程，分区的原理：TODO {@link StreamAPISpliterator#testLamdaParallelPartitioner()}
+ * 多线程，分区的原理：TODO {@link StreamAPISpliterator#lamdaParallelPartitioner()}
  *  stack比较深，有时间再分析
  */
 public class StreamAPISpliterator {
@@ -41,6 +41,7 @@ public class StreamAPISpliterator {
 
     public void lamdaParallelPartitioner() {
         IntStream.range(0, 500).parallel().peek((x) -> {
+            //for debug
             System.out.println(x);
         }).forEach(x -> {});
     }
