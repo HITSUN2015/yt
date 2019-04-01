@@ -12,10 +12,16 @@ import java.util.stream.*;
 /**
  * Created by yantong on 2019/3/15.
  *
+ * {@link Stream}
+ *
  * streams have three parts: a data source, zero or more intermediate operations, and zero or one terminal operation.
  * All intermediate operations are lazy
- * {@link Stream}
+ *
  * 分类：并行流 parallel() 会启动多线程
+ *
+ * 一些简单的api我列在了这个类里，一些较为复杂的分别列在了
+ * {@link StreamAPISpliterator}
+ *
  */
 public class StreamAPI {
 
