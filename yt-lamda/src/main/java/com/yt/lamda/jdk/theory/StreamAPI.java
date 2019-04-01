@@ -276,23 +276,9 @@ public class StreamAPI {
     }
 
     /**
-     * 参数一：Collector<? super T, A, R> collector
-     * {@link Collector} TODO
-     * {@link Collectors} TODO
-     * 参数二：Supplier<R> supplier,BiConsumer<R, ? super T> accumulator,BiConsumer<R, R> combiner
-     *
-     * 参见：https://www.cnblogs.com/CarpenterLee/p/6550212.html
+     * todo Duplicate
      * @param constructor
      */
-    public void collect(StreamConstructor<String> constructor) {
-        //Collector<? super T, A, R> collector
-        //工具类
-//        StreamHelper.makeDemo(constructor).collect(Collectors.);
-//
-//        StreamHelper.makeDemo(constructor).collect();
-
-    }
-
     public void toArray(StreamConstructor<String> constructor) {
         Object[] objectValues = StreamHelper.makeDemo(constructor).toArray();
         /**
@@ -314,5 +300,4 @@ public class StreamAPI {
 //        });
     }
 
-    // TODO: 2019/4/1 comparators
 }
