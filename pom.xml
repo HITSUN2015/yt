@@ -32,7 +32,7 @@
 		<module>yt-arithmetic</module>
         <module>yt-interview</module>
 		<module>yt-demo-helper</module>
-        <module>yt-java-process-communicate</module>
+        <module>yt-java-ipc</module>
 		<module>yt-knowledge-orgnization</module>
 		<module>yt-teach-qiuqiu</module>
 	</modules>

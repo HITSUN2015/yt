@@ -1,4 +1,4 @@
-package com.yt.jdk.process.pipe.modal;
+package com.yt.jdk.thread.pipe.modal;
 
 import java.io.PipedInputStream;
 

@@ -1,4 +1,4 @@
-package com.yt.jdk.process.pipe;
+package com.yt.jdk.thread.pipe;
 
 /**
  * Created by yantong on 2019/3/29.
