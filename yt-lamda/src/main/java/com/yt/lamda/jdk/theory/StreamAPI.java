@@ -6,6 +6,7 @@ import com.yt.demo.helper.util.StreamHelper;
 
 import java.util.*;
 import java.util.function.BinaryOperator;
+import java.util.function.Function;
 import java.util.stream.*;
 
 /**
@@ -113,27 +114,6 @@ public class StreamAPI {
 
     }
 
-    public void toArray(StreamConstructor<String> constructor) {
-        Object[] objectValues = StreamHelper.makeDemo(constructor).toArray();
-        /**
-         * {@link java.util.function.IntFunction#apply(int)}
-         * 这个 函数 只是 输入一个数字 返回一个对象
-         *
-         * 这里是返回的 Array对象，仅用来初始化 数组
-         * 正如 demo，应该是完全用来输出 准确数组类型的
-         * 否则上面的写法 toArray需要传入 class参数
-         */
-        String[] stringValues = StreamHelper.makeDemo(constructor).toArray(String[]::new);
-        for (int i = 0; i < stringValues.length; i++) {
-            System.out.println(stringValues[i]);
-        }
-        //如下写法会报：java.lang.IllegalStateException: Begin size 3 is not equal to fixed size 0
-//        String[] stringValues = StreamHelper.makeDemo(constructor).toArray((x) -> {
-//            System.out.println(x);
-//            return new String[0];
-//        });
-    }
-
     /**
      * {@link Comparator}
      * {@link java.util.Comparators}
@@ -162,7 +142,9 @@ public class StreamAPI {
         Stream<String> nullLasAscStream = constructor.generateStream(null, "213", "fasdf").sorted(Comparator.nullsLast(Comparator.naturalOrder()));
         StreamHelper.printStream(nullLasAscStream);
 
-        // 这里的参数名称 keyExtractor key代表要比较的对象 所以一个参数是 比较对象抽取器
+        /**
+         * 这里的参数名称 {@link Comparator#comparing(Function)} keyExtractor key代表要比较的对象 所以一个参数是 比较对象抽取器
+         */
         Stream<String> comparingStream = StreamHelper.makeDemo(constructor).sorted(Comparator.comparing(String::length));
         StreamHelper.printStream(comparingStream);
 
@@ -174,12 +156,22 @@ public class StreamAPI {
         Stream<String> comparing2Int = StreamHelper.makeDemo(constructor).sorted(Comparator.comparingInt(Integer::parseInt));
         StreamHelper.printStream(comparing2Int);
 
-        // TODO: 2019/3/16   Comparators
+        //分优先级比较
+        //先按长度排序，再按第二个字母倒叙
+        Stream<String> priorityComparedStream = Stream.of(null,"s", "s1", "st2", "sr3", "a4").sorted(Comparator.nullsFirst(Comparator.comparing(String::length).thenComparing((x, y) -> {
+            // TODO: 2019/4/1 null 会不会进这里
+            if (x.length() >= 2 && y.length() >= 2) {
+                return x.substring(1,2).compareTo(y.substring(1,2));
+            } else {
+                return -(x.compareTo(y));
+            }
+        })));
+        StreamHelper.printStream(priorityComparedStream);
     }
 
     /**
-     * 参数要求：输入任意，输出是Stream类型，
-     * 可以把多个Stream或可以转换为Stream（各种集合）联合成一个Stream
+     * 参数要求：输入任意，输出是Stream类型：需要传入，可以把source stream中每个对象，转换成stream对象的方法
+     * 可以把多个Stream  或可以转换为Stream（eg:各种集合）的对象  联合成一个Stream
      * @param constructor
      */
     public void flatMap(StreamConstructor<String> constructor) {
@@ -198,7 +190,7 @@ public class StreamAPI {
         StreamHelper.printStream(flatMapStream);
     }
 
-    //[非并行模] forEach与forEachOrdered一致
+    //[非并行下] forEach与forEachOrdered一致
     public void foreach(StreamConstructor<String> constructor) {
         //[并行下]，打印顺序会 改变
         StreamHelper.makeDemo(constructor).parallel().forEach(System.out::println);
@@ -250,7 +242,7 @@ public class StreamAPI {
         //注意事项：这个是一个intermediate操作，如果没有terminal操作，懒计算不会执行，与spark一样
         //用法1：debug
         //用法2：有些映射是 将 原对象完全 映射 为另一个对象：map
-        //       有些映射是 将 原对象的一部分 映射为另一个值（原对象不变）:peek（不需要返回值）
+        //       有些映射是 将 原对象的一部分 修改值（peek不需要返回值）
         testStreamValue = StreamHelper.makeDemo(constructor).peek(String::toLowerCase);
         StreamHelper.printStream(testStreamValue);
 
@@ -301,5 +293,26 @@ public class StreamAPI {
 
     }
 
-    
+    public void toArray(StreamConstructor<String> constructor) {
+        Object[] objectValues = StreamHelper.makeDemo(constructor).toArray();
+        /**
+         * {@link java.util.function.IntFunction#apply(int)}
+         * 这个 函数 只是 输入一个数字 返回一个对象
+         *
+         * 这里是返回的 Array对象，仅用来初始化 数组
+         * 正如 demo，应该是完全用来输出 准确数组类型的
+         * 否则上面的写法 toArray需要传入 class参数
+         */
+        String[] stringValues = StreamHelper.makeDemo(constructor).toArray(String[]::new);
+        for (int i = 0; i < stringValues.length; i++) {
+            System.out.println(stringValues[i]);
+        }
+        //如下写法会报：java.lang.IllegalStateException: Begin size 3 is not equal to fixed size 0
+//        String[] stringValues = StreamHelper.makeDemo(constructor).toArray((x) -> {
+//            System.out.println(x);
+//            return new String[0];
+//        });
+    }
+
+    // TODO: 2019/4/1 comparators
 }

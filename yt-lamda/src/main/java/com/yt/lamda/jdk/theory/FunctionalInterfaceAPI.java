@@ -87,8 +87,5 @@ public class FunctionalInterfaceAPI {
      * 与 或 非 equal
      * 略
      */
-    public void testPredicate() {
-
-    }
 
 }
