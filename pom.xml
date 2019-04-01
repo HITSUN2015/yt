@@ -35,7 +35,8 @@
         <module>yt-java-ipc</module>
 		<module>yt-knowledge-orgnization</module>
 		<module>yt-teach-qiuqiu</module>
-	</modules>
+        <module>yt-practise</module>
+    </modules>
 	<packaging>pom</packaging>
 
 	<name>yt</name>

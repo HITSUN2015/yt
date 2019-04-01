@@ -48,6 +48,7 @@
         <module name="yt-interview" />
         <module name="yt-java" />
         <module name="yt-java-class" />
+        <module name="yt-java-ipc" />
         <module name="yt-java-process-communicate" />
         <module name="yt-jvm" />
         <module name="yt-knowledge-orgnization" />
@@ -55,6 +56,7 @@
         <module name="yt-linux" />
         <module name="yt-mq" />
         <module name="yt-net" />
+        <module name="yt-practise" />
         <module name="yt-restful" />
         <module name="yt-rpc" />
         <module name="yt-serialize" />
@@ -92,6 +94,7 @@
       <module name="yt-java" target="1.8" />
       <module name="yt-java-class" target="1.8" />
       <module name="yt-java-collection" target="1.8" />
+      <module name="yt-java-ipc" target="1.8" />
       <module name="yt-java-process-communicate" target="1.8" />
       <module name="yt-jvm" target="1.8" />
       <module name="yt-kafka" target="1.8" />
@@ -101,6 +104,7 @@
       <module name="yt-mq" target="1.8" />
       <module name="yt-net" target="1.8" />
       <module name="yt-nginx" target="1.8" />
+      <module name="yt-practise" target="1.8" />
       <module name="yt-queue" target="1.8" />
       <module name="yt-restful" target="1.8" />
       <module name="yt-rpc" target="1.8" />
