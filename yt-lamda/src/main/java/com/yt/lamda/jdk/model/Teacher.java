@@ -1,4 +1,4 @@
-package com.yt.lamda.model;
+package com.yt.lamda.jdk.model;
 
 import java.util.HashMap;
 import java.util.Map;

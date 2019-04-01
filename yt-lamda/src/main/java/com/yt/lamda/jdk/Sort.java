@@ -1,6 +1,6 @@
-package com.yt.lamda;
+package com.yt.lamda.jdk;
 
-import com.yt.lamda.model.Teacher;
+import com.yt.lamda.jdk.model.Teacher;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

@@ -1,4 +1,4 @@
-package com.yt.lamda;
+package com.yt.lamda.jdk.customerLamda;
 
 /**
  * Created by yantong on 2019/1/7.
@@ -7,7 +7,7 @@ package com.yt.lamda;
  * 见：Learning.testInterfaceForLamda
  */
 @FunctionalInterface
-public interface FuncationalInterfaceTest {
+public interface CustomerFunctionalInterfaceForLamda {
 
-    int test1();
+    double getDouble(int source);
 }
