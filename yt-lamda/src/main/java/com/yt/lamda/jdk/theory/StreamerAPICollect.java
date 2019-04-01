@@ -2,12 +2,15 @@ package com.yt.lamda.jdk.theory;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
+import com.yt.lamda.jdk.theory.demo.CustomerCollector;
 import com.yt.lamda.jdk.theory.demo.People;
 
 import java.util.*;
+import java.util.function.BiConsumer;
 import java.util.function.BinaryOperator;
 import java.util.function.Function;
 import java.util.function.Supplier;
+import java.util.stream.Collector;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -27,11 +30,17 @@ public class StreamerAPICollect {
      */
 
     /**
-     * 参数一：Collector<? super T, A, R> collector
-     * 参数二：Supplier<R> supplier,BiConsumer<R, ? super T> accumulator,BiConsumer<R, R> combiner
+     * {@link Stream#collect(Collector)}
+     *      Collector是一个接口，但并不是函数式接口
+     *      这个接口在jdk 里只有 {@link Collectors}实现过
+     *      自定义实现:{@link CustomerCollector}
+     * {@link Stream#collect(Supplier, BiConsumer, BiConsumer)}
      * todo
      */
     public void collect() {
+        List list = Lists.newArrayList();
+        list.stream().collect(CustomerCollector.of());
+
 
     }
 
