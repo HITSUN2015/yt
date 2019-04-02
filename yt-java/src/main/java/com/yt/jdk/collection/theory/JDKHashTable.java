@@ -2,6 +2,7 @@ package com.yt.jdk.collection.theory;/**
  * Created by SUN on 18/3/20.
  */
 
+import com.yt.datastructure.HashTable;
 import com.yt.datastructure.base.list.SinglyLinkedList;
 import com.yt.jdk.collection.theory.tread.FailFast机制;
 import com.yt.jdk.collection.theory.tread.Sync关键字;
@@ -11,7 +12,7 @@ import com.yt.jdk.collection.theory.tread.Sync关键字;
  * @create 2018-03-20 下午4:56
  * @desc
  */
-public class JDKHashTable implements com.yt.datastructure.HashTable,SinglyLinkedList,Sync关键字,FailFast机制 {
+public class JDKHashTable implements HashTable,SinglyLinkedList,Sync关键字,FailFast机制 {
 
     /**
      * 1.在桶的插入时,插入到head节点
