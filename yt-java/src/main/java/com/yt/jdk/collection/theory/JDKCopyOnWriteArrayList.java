@@ -3,11 +3,12 @@ package com.yt.jdk.collection.theory;/**
  */
 
 import com.yt.datastructure.base.list.Array;
+import com.yt.jdk.collection.theory.tread.AQS锁;
 
 /**
  * @author SUN
- * @create 2018-03-20 下午9:44
+ * @create 2018-03-20 下午9:53
  * @desc
  */
-public class ArrayDeque implements Array {
+public class JDKCopyOnWriteArrayList implements Array,AQS锁 {
 }

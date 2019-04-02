@@ -4,8 +4,8 @@ package com.yt.jdk.collection.theory;/**
 
 /**
  * @author SUN
- * @create 2018-03-20 下午6:24
+ * @create 2018-03-20 下午3:52
  * @desc
  */
-public class Properties extends HashTable {
+public class JDKStack extends JDKVector {
 }

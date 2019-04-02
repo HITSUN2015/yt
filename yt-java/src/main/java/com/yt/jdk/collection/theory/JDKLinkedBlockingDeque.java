@@ -3,12 +3,12 @@ package com.yt.jdk.collection.theory;/**
  */
 
 import com.yt.datastructure.base.list.DoublyLinkedList;
-import com.yt.jdk.collection.theory.tread.CAS;
+import com.yt.jdk.collection.theory.tread.AQS锁;
 
 /**
  * @author SUN
- * @create 2018-03-20 下午9:01
+ * @create 2018-03-20 下午9:48
  * @desc
  */
-public class ConcurrentLinkedDeque implements CAS,DoublyLinkedList {
+public class JDKLinkedBlockingDeque implements DoublyLinkedList,AQS锁 {
 }

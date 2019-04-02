@@ -9,9 +9,9 @@ import com.yt.jdk.collection.theory.tread.FailFast机制;
 /**
  * @author SUN
  * @create 2018-03-20 下午4:04
- * @desc
+ * @desc {@link java.util.HashMap}
  */
-public class HashMap implements com.yt.datastructure.HashTable,SinglyLinkedList,RedBlackTree,FailFast机制 {
+public class JDKHashMap implements com.yt.datastructure.HashTable,SinglyLinkedList,RedBlackTree,FailFast机制 {
 
     /**
      * Fields:
@@ -30,4 +30,6 @@ public class HashMap implements com.yt.datastructure.HashTable,SinglyLinkedList,
      *
      * 这个类还需要看TODO http://blog.csdn.net/u010498696/article/details/45888613
      */
+
+
 }

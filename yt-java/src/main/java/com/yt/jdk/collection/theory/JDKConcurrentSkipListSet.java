@@ -7,5 +7,5 @@ package com.yt.jdk.collection.theory;/**
  * @create 2018-03-20 下午8:45
  * @desc
  */
-public class ConcurrentSkipListSet extends ConcurrentSkipListMap {
+public class JDKConcurrentSkipListSet extends JDKConcurrentSkipListMap {
 }

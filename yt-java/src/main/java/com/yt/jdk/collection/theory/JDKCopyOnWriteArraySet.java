@@ -4,8 +4,8 @@ package com.yt.jdk.collection.theory;/**
 
 /**
  * @author SUN
- * @create 2018-03-20 下午9:04
+ * @create 2018-03-20 下午9:54
  * @desc
  */
-public class TreeSet extends TreeMap {
+public class JDKCopyOnWriteArraySet extends JDKCopyOnWriteArrayList {
 }

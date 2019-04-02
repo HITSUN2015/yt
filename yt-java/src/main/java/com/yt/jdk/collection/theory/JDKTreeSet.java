@@ -4,8 +4,8 @@ package com.yt.jdk.collection.theory;/**
 
 /**
  * @author SUN
- * @create 2018-03-20 下午3:52
+ * @create 2018-03-20 下午9:04
  * @desc
  */
-public class Stack extends Vector {
+public class JDKTreeSet extends JDKTreeMap {
 }

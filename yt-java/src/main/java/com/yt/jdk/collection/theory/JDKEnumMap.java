@@ -9,5 +9,5 @@ import com.yt.datastructure.base.list.Array;
  * @create 2018-03-20 下午10:02
  * @desc
  */
-public class EnumMap implements Array {
+public class JDKEnumMap implements Array {
 }

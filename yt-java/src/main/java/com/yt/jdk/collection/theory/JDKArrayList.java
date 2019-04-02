@@ -8,7 +8,7 @@ import com.yt.jdk.collection.theory.tread.FailFast机制;
  * @create 2018-03-20 下午12:48
  * @desc
  */
-public class ArrayList implements Array, FailFast机制, 动态 {
+public class JDKArrayList implements Array, FailFast机制, 动态 {
 
     @Override
     public String 如何动态() {

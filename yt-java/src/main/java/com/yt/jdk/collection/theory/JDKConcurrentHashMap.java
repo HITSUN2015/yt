@@ -12,6 +12,6 @@ import com.yt.jdk.collection.theory.tread.CAS;
  * @create 2018-03-20 下午9:09
  * @desc
  */
-public class ConcurrentHashMap implements Array,RedBlackTree,SinglyLinkedList,CAS {
+public class JDKConcurrentHashMap implements Array,RedBlackTree,SinglyLinkedList,CAS {
 
 }

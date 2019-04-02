@@ -10,5 +10,5 @@ import com.yt.jdk.collection.theory.tread.FailFast机制;
  * @create 2018-03-20 下午9:59
  * @desc
  */
-public class IdentityHashMap implements CircularArray, FailFast机制 {
+public class JDKIdentityHashMap implements CircularArray, FailFast机制 {
 }

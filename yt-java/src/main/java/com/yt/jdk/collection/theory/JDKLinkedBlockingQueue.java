@@ -10,7 +10,7 @@ import com.yt.jdk.collection.theory.tread.AQS锁;
  * @create 2018-03-20 下午9:15
  * @desc
  */
-public class LinkedBlockingQueue implements SinglyLinkedList,AQS锁 {
+public class JDKLinkedBlockingQueue implements SinglyLinkedList,AQS锁 {
     /**
      * 这里 是 两把AQS锁
      */

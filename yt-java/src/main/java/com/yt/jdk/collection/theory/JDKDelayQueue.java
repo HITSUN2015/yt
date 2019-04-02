@@ -9,7 +9,7 @@ import com.yt.jdk.collection.theory.tread.AQS锁;
  * @create 2018-03-20 下午6:05
  * @desc
  */
-public class DelayQueue extends PriorityQueue implements AQS锁 {
+public class JDKDelayQueue extends JDKPriorityQueue implements AQS锁 {
     /**
      * TODO https://www.jianshu.com/p/e0bcc9eae0ae
      */
