@@ -11,6 +11,8 @@ import java.util.stream.Collector;
  * Created by yantong on 2019/4/1.
  *
  * https://happyer.github.io/2016/12/09/2016-12-09-java8%20collector/
+ *
+ * todo
  */
 public class CustomerCollector implements Collector {
 
