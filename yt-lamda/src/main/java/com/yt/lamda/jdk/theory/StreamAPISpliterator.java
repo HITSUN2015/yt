@@ -17,6 +17,7 @@ import java.util.stream.IntStream;
  *
  * 多线程，分区的原理：TODO {@link StreamAPISpliterator#lamdaParallelPartitioner()}
  *  stack比较深，有时间再分析
+ *  TODO    https://blog.csdn.net/anLA_/article/details/78185773
  */
 public class StreamAPISpliterator {
 
