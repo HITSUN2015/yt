@@ -23,12 +23,12 @@
       <module fileurl="file://$PROJECT_DIR$/yt-mq/yt-mq.iml" filepath="$PROJECT_DIR$/yt-mq/yt-mq.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-net/yt-net.iml" filepath="$PROJECT_DIR$/yt-net/yt-net.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-practise/yt-practise.iml" filepath="$PROJECT_DIR$/yt-practise/yt-practise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yt-redis/yt-redis.iml" filepath="$PROJECT_DIR$/yt-redis/yt-redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-restful/yt-restful.iml" filepath="$PROJECT_DIR$/yt-restful/yt-restful.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-rpc/yt-rpc.iml" filepath="$PROJECT_DIR$/yt-rpc/yt-rpc.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-serialize/yt-serialize.iml" filepath="$PROJECT_DIR$/yt-serialize/yt-serialize.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-spi/yt-spi.iml" filepath="$PROJECT_DIR$/yt-spi/yt-spi.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-spring/yt-spring.iml" filepath="$PROJECT_DIR$/yt-spring/yt-spring.iml" />
-      <module fileurl="file://$PROJECT_DIR$/yt-spring-redis/yt-spring-redis.iml" filepath="$PROJECT_DIR$/yt-spring-redis/yt-spring-redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-teach-qiuqiu/yt-teach-qiuqiu.iml" filepath="$PROJECT_DIR$/yt-teach-qiuqiu/yt-teach-qiuqiu.iml" />
       <module fileurl="file://D:\document\yt\yt-teach-qiuqiu\yt-teach-qiuqiu.iml" filepath="D:\document\yt\yt-teach-qiuqiu\yt-teach-qiuqiu.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-test/yt-test.iml" filepath="$PROJECT_DIR$/yt-test/yt-test.iml" />
