@@ -47,6 +47,8 @@ public class Dict {
      * 在每次对数据库进行 增删改查时，触发这个动作
      * 这样触发的迁移 服务必须在一定时间内不可用
      * 总效果是，遍历dictht[0].table
+     *
+     * 同时进行的查找会在两个表里查找，新增操作，都会插入到dictht[1]
      */
     private void move() {
         if (rehashidx == -1) {
