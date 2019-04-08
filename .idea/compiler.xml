@@ -1,78 +1,263 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <resourceExtensions />
     <wildcardResourcePatterns />
     <annotationProcessing>
-      <profile name="Annotation profile for db" enabled="true">
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+      <profile default="false" name="Annotation profile for db" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
         <module name="db" />
       </profile>
-      <profile name="Annotation profile for lamda" enabled="true">
+      <profile default="false" name="Annotation profile for lamda" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
         <module name="lamda" />
       </profile>
-      <profile name="Annotation profile for util" enabled="true">
+      <profile default="false" name="Annotation profile for util" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
         <module name="util" />
       </profile>
-      <profile name="Annotation profile for test" enabled="true">
+      <profile default="false" name="Annotation profile for test" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
         <module name="test" />
       </profile>
-      <profile name="Annotation profile for web" enabled="true">
+      <profile default="false" name="Annotation profile for web" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
         <module name="web" />
       </profile>
-      <profile name="Maven default annotation processors profile" enabled="true">
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="yt-arithmetic" />
-        <module name="yt-breakdown" />
-        <module name="yt-dataStruct" />
-        <module name="yt-db" />
-        <module name="yt-demo-helper" />
-        <module name="yt-design-patterns" />
-        <module name="yt-distributed" />
-        <module name="yt-intelligence" />
-        <module name="yt-interview" />
-        <module name="yt-java" />
-        <module name="yt-java-class" />
+        <processorPath useClasspath="true" />
         <module name="yt-java-ipc" />
-        <module name="yt-java-process-communicate" />
-        <module name="yt-jvm" />
-        <module name="yt-knowledge-orgnization" />
-        <module name="yt-lamda" />
-        <module name="yt-linux" />
-        <module name="yt-mq" />
-        <module name="yt-net" />
-        <module name="yt-practise" />
+      </profile>
+      <profile default="false" name="Annotation profile for yt-kafka" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="yt-kafka" />
+      </profile>
+      <profile default="false" name="Annotation profile for yt-restful" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
         <module name="yt-restful" />
-        <module name="yt-rpc" />
-        <module name="yt-serialize" />
-        <module name="yt-spi" />
-        <module name="yt-spring" />
-        <module name="yt-spring-redis" />
+      </profile>
+      <profile default="false" name="Annotation profile for yt-teach-qiuqiu" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
         <module name="yt-teach-qiuqiu" />
-        <module name="yt-test" />
+      </profile>
+      <profile default="false" name="Annotation profile for yt-spring" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="yt-spring" />
+      </profile>
+      <profile default="false" name="Annotation profile for yt-demo-helper" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="yt-demo-helper" />
+      </profile>
+      <profile default="false" name="Annotation profile for yt-knowledge-orgnization" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="yt-knowledge-orgnization" />
+      </profile>
+      <profile default="false" name="Annotation profile for yt-lamda" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="yt-lamda" />
+      </profile>
+      <profile default="false" name="Annotation profile for yt-linux" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="yt-linux" />
+      </profile>
+      <profile default="false" name="Annotation profile for yt-design-patterns" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="yt-design-patterns" />
+      </profile>
+      <profile default="false" name="Annotation profile for yt-intelligence" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="yt-intelligence" />
+      </profile>
+      <profile default="false" name="Annotation profile for yt-interview" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="yt-interview" />
+      </profile>
+      <profile default="false" name="Annotation profile for yt-spring-redis" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="yt-spring-redis" />
+      </profile>
+      <profile default="false" name="Annotation profile for yt-practise" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="yt-practise" />
+      </profile>
+      <profile default="false" name="Annotation profile for yt-dataStruct" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="yt-dataStruct" />
+      </profile>
+      <profile default="false" name="Annotation profile for yt-serialize" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="yt-serialize" />
+      </profile>
+      <profile default="false" name="Annotation profile for yt-java-class" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="yt-java-class" />
+      </profile>
+      <profile default="false" name="Annotation profile for yt-jvm" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="yt-jvm" />
+      </profile>
+      <profile default="false" name="Annotation profile for yt-mq" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="yt-mq" />
+      </profile>
+      <profile default="false" name="Annotation profile for yt-net" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="yt-net" />
+      </profile>
+      <profile default="false" name="Annotation profile for yt-db" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="yt-db" />
+      </profile>
+      <profile default="false" name="Annotation profile for yt-distributed" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="yt-distributed" />
+      </profile>
+      <profile default="false" name="Annotation profile for yt-spi" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="yt-spi" />
+      </profile>
+      <profile default="false" name="Annotation profile for yt-util" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
         <module name="yt-util" />
+      </profile>
+      <profile default="false" name="Annotation profile for yt-java-process-communicate" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="yt-java-process-communicate" />
+      </profile>
+      <profile default="false" name="Annotation profile for yt-test" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="yt-test" />
+      </profile>
+      <profile default="false" name="Annotation profile for yt-java" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="yt-java" />
+      </profile>
+      <profile default="false" name="Annotation profile for yt-web" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
         <module name="yt-web" />
       </profile>
-      <profile name="Annotation profile for yt-kafka" enabled="true">
+      <profile default="false" name="Annotation profile for yt-breakdown" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="yt-kafka" />
+        <processorPath useClasspath="true" />
+        <module name="yt-breakdown" />
+      </profile>
+      <profile default="false" name="Annotation profile for yt-arithmetic" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="yt-arithmetic" />
+      </profile>
+      <profile default="false" name="Annotation profile for yt-rpc" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="yt-rpc" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
