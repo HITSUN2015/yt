@@ -57,6 +57,7 @@
         <module name="yt-mq" />
         <module name="yt-net" />
         <module name="yt-practise" />
+        <module name="yt-redis" />
         <module name="yt-restful" />
         <module name="yt-rpc" />
         <module name="yt-serialize" />
@@ -106,6 +107,7 @@
       <module name="yt-nginx" target="1.8" />
       <module name="yt-practise" target="1.8" />
       <module name="yt-queue" target="1.8" />
+      <module name="yt-redis" target="1.8" />
       <module name="yt-restful" target="1.8" />
       <module name="yt-rpc" target="1.8" />
       <module name="yt-serialize" target="1.8" />

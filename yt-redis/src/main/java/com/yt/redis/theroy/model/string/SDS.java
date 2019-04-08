@@ -22,6 +22,7 @@ public class SDS {
     private int len;    //实际字符长度，不计结尾符'\0'
     private int free;   //剩余空间，不计结尾符'\0'
     private char[] buf; //占用的存储
+    public static final int ONE_MB = 1 << 20;
 
     public int getLen() {
         return len;
@@ -47,8 +48,10 @@ public class SDS {
         this.buf = buf;
     }
 
-    public static final int ONE_MB = 1 << 20;
-
+    /**
+     * 分配空间的策略 分段分配 小的时候二倍，大的时候多分一兆
+     * @param inputStringLength
+     */
     public void allocateBuf(int inputStringLength) {
         if (inputStringLength < ONE_MB) {
             buf = new char[2 * inputStringLength + 1];// +1 for '\0'

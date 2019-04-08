@@ -16,6 +16,19 @@
             <artifactId>spring-data-redis</artifactId>
             <version>2.1.2.RELEASE</version>
         </dependency>
+
+        <dependency>
+            <groupId>yt</groupId>
+            <artifactId>yt-dataStruct</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <dependency>
+            <groupId>yt</groupId>
+            <artifactId>yt-arithmetic</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
     </dependencies>
 
 

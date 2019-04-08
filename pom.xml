@@ -20,7 +20,7 @@
 		<module>yt-serialize</module>
 		<module>yt-spring</module>
 		<module>yt-restful</module>
-        <module>yt-spring-redis</module>
+        <module>yt-redis</module>
         <module>yt-rpc</module>
         <module>yt-java-class</module>
         <module>yt-spi</module>

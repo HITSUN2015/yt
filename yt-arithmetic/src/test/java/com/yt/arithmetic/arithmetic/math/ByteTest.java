@@ -1,4 +1,4 @@
-package com.yt.jdk.math;
+package com.yt.arithmetic.arithmetic.math;
 
 import org.testng.annotations.Test;
 

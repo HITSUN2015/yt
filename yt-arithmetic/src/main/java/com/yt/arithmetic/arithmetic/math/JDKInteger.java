@@ -1,4 +1,4 @@
-package com.yt.jdk.math;
+package com.yt.arithmetic.arithmetic.math;
 
 /**
  * Created by yantong on 2019/4/2.

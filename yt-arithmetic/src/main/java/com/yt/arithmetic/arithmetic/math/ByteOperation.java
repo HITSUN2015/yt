@@ -1,4 +1,4 @@
-package com.yt.jdk.math;
+package com.yt.arithmetic.arithmetic.math;
 
 /**
  * Created by yantong on 2019/4/2.
@@ -13,6 +13,7 @@ public class ByteOperation {
      * {@link JDKInteger#integerDefaultValue}
      */
     private static final int MAXIMUM_CAPACITY = 1 << 30;
+
     /**
      * 求 比某个数大的最小的2的指数
      *
@@ -25,7 +26,7 @@ public class ByteOperation {
      *       关于为什么 先减1，如果data本身是2的倍数，则再+1会大于结果
      *                         如果data本身不是2的倍数，减1不会导致数据降位，也符合结果
      */
-    public int findNearestPow2(int data) {
+    public static int findNearestPow2(int data) {
         if (data > MAXIMUM_CAPACITY) {
             return -1;
         }
@@ -37,4 +38,5 @@ public class ByteOperation {
         n |= n >>> 16;
         return (n < 0) ? 1 : (n >= MAXIMUM_CAPACITY) ? MAXIMUM_CAPACITY : n + 1;//后面可以直接返回n + 1
     }
+
 }
