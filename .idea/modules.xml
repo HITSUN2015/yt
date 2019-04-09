@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/yt.iml" filepath="$PROJECT_DIR$/yt.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-arithmetic/yt-arithmetic.iml" filepath="$PROJECT_DIR$/yt-arithmetic/yt-arithmetic.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-breakdown/yt-breakdown.iml" filepath="$PROJECT_DIR$/yt-breakdown/yt-breakdown.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yt-business-project/yt-business-project.iml" filepath="$PROJECT_DIR$/yt-business-project/yt-business-project.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-dataStruct/yt-dataStruct.iml" filepath="$PROJECT_DIR$/yt-dataStruct/yt-dataStruct.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-db/yt-db.iml" filepath="$PROJECT_DIR$/yt-db/yt-db.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-demo-helper/yt-demo-helper.iml" filepath="$PROJECT_DIR$/yt-demo-helper/yt-demo-helper.iml" />

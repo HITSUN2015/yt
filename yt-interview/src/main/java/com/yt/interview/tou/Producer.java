@@ -32,8 +32,6 @@ public class Producer implements Runnable {
     }
 
     /**
-     * url请求
-     * dns协议
      * uuid生成   扩容
      * producer 状态变更锁
      * redis

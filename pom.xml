@@ -36,6 +36,7 @@
 		<module>yt-knowledge-orgnization</module>
 		<module>yt-teach-qiuqiu</module>
         <module>yt-practise</module>
+        <module>yt-business-project</module>
     </modules>
 	<packaging>pom</packaging>
 

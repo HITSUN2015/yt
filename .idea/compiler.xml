@@ -39,6 +39,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="yt-arithmetic" />
         <module name="yt-breakdown" />
+        <module name="yt-business-project" />
         <module name="yt-dataStruct" />
         <module name="yt-db" />
         <module name="yt-demo-helper" />
@@ -85,6 +86,7 @@
       <module name="yt" target="1.8" />
       <module name="yt-arithmetic" target="1.8" />
       <module name="yt-breakdown" target="1.8" />
+      <module name="yt-business-project" target="1.8" />
       <module name="yt-dataStruct" target="1.8" />
       <module name="yt-db" target="1.8" />
       <module name="yt-demo-helper" target="1.8" />
