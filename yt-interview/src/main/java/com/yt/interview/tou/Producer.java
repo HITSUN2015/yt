@@ -32,9 +32,6 @@ public class Producer implements Runnable {
     }
 
     /**
-     * uuid生成   扩容
-     * producer 状态变更锁
-     * redis
      * 交付机制
      * table hash冲突
      * hashTable 扩容
