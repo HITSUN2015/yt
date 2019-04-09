@@ -1,4 +1,4 @@
-package com.yt.db.mysql;
+package com.yt.db.theory.mysql;
 
 /**
  * Created by yantong on 2019/4/4.
@@ -8,8 +8,6 @@ public class PiecesKnowdge {
     //WAL（Write-Ahead Logging）：解决内存和硬盘的随机读写速度差异问题
     //将随机写 改成 顺序写提升效率
     //关于 缓存未刷新到 内存的时间 数据不一致问题 TODO
-
-    //ACID，的保证：A：undo D:redo
 
     //Double write 一页大小是16k 但是磁盘是512k，为什么会有写一半写不下的情况 TODO
     //这种方法已废弃，由硬盘解决，硬盘支持32k的块写入
