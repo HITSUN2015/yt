@@ -26,6 +26,7 @@ package com.yt.business.project.uuid;
  *      41位：距离机器启动的时间戳：69年
  *      10位：数据标记位[5]+机器标记位[5]:集群最大2<<10=1024台
  *      12位：计数：支持每个节点每毫秒（同一台机器，同一时刻）最多生成 1 << 12 = 4096个ID 加起来刚好64位，为一个Long型
+ *      缺点：依赖机器时钟（可变）：TODO 尝试解决：https://juejin.im/post/5bb0217ef265da0ac2567b42
  *  UidGenerator：[Baidu] based on Snowflake
  *  Leaf：[美团] TODO https://link.juejin.im/?target=https%3A%2F%2Ftech.meituan.com%2FMT_Leaf.html
  */
