@@ -37,6 +37,6 @@ public class ThreeTimesHandshake {
          *
          */
 
-        // TODO: 19/3/31 tcp  three times handshake
+        // TODO: 19/3/31 tcp  three times handshake demo
     }
 }
