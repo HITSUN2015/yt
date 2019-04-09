@@ -1,4 +1,4 @@
-package com.yt.intelligence;
+package com.yt.intelligence.pieces;
 
 import java.io.Serializable;
 

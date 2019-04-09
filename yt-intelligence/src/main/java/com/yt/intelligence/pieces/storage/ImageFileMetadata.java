@@ -1,4 +1,4 @@
-package com.yt.intelligence.storage;
+package com.yt.intelligence.pieces.storage;
 
 import java.util.Date;
 

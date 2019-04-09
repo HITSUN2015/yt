@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://D:\document\yt\yt-knowledge-orgnization\yt-knowledge-orgnization.iml" filepath="D:\document\yt\yt-knowledge-orgnization\yt-knowledge-orgnization.iml" />
+      <module fileurl="file://D:\document\yt\yt-teach-qiuqiu\yt-teach-qiuqiu.iml" filepath="D:\document\yt\yt-teach-qiuqiu\yt-teach-qiuqiu.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt.iml" filepath="$PROJECT_DIR$/yt.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-arithmetic/yt-arithmetic.iml" filepath="$PROJECT_DIR$/yt-arithmetic/yt-arithmetic.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-breakdown/yt-breakdown.iml" filepath="$PROJECT_DIR$/yt-breakdown/yt-breakdown.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yt-business-project/yt-business-project.iml" filepath="$PROJECT_DIR$/yt-business-project/yt-business-project.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-business-project/yt-business-project.iml" filepath="$PROJECT_DIR$/yt-business-project/yt-business-project.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-dataStruct/yt-dataStruct.iml" filepath="$PROJECT_DIR$/yt-dataStruct/yt-dataStruct.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-db/yt-db.iml" filepath="$PROJECT_DIR$/yt-db/yt-db.iml" />
@@ -18,7 +21,6 @@
       <module fileurl="file://$PROJECT_DIR$/yt-java-ipc/yt-java-ipc.iml" filepath="$PROJECT_DIR$/yt-java-ipc/yt-java-ipc.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-jvm/yt-jvm.iml" filepath="$PROJECT_DIR$/yt-jvm/yt-jvm.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-knowledge-orgnization/yt-knowledge-orgnization.iml" filepath="$PROJECT_DIR$/yt-knowledge-orgnization/yt-knowledge-orgnization.iml" />
-      <module fileurl="file://D:\document\yt\yt-knowledge-orgnization\yt-knowledge-orgnization.iml" filepath="D:\document\yt\yt-knowledge-orgnization\yt-knowledge-orgnization.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-lamda/yt-lamda.iml" filepath="$PROJECT_DIR$/yt-lamda/yt-lamda.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-linux/yt-linux.iml" filepath="$PROJECT_DIR$/yt-linux/yt-linux.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-mq/yt-mq.iml" filepath="$PROJECT_DIR$/yt-mq/yt-mq.iml" />
@@ -31,7 +33,6 @@
       <module fileurl="file://$PROJECT_DIR$/yt-spi/yt-spi.iml" filepath="$PROJECT_DIR$/yt-spi/yt-spi.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-spring/yt-spring.iml" filepath="$PROJECT_DIR$/yt-spring/yt-spring.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-teach-qiuqiu/yt-teach-qiuqiu.iml" filepath="$PROJECT_DIR$/yt-teach-qiuqiu/yt-teach-qiuqiu.iml" />
-      <module fileurl="file://D:\document\yt\yt-teach-qiuqiu\yt-teach-qiuqiu.iml" filepath="D:\document\yt\yt-teach-qiuqiu\yt-teach-qiuqiu.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-test/yt-test.iml" filepath="$PROJECT_DIR$/yt-test/yt-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-util/yt-util.iml" filepath="$PROJECT_DIR$/yt-util/yt-util.iml" />
       <module fileurl="file://$PROJECT_DIR$/yt-web/yt-web.iml" filepath="$PROJECT_DIR$/yt-web/yt-web.iml" />

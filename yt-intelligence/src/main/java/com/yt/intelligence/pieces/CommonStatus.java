@@ -1,4 +1,4 @@
-package com.yt.intelligence;
+package com.yt.intelligence.pieces;
 
 /**
  * Created by yantong on 2019/1/8.

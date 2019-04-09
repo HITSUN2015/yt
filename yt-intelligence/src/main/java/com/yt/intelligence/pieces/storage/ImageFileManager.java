@@ -1,6 +1,6 @@
-package com.yt.intelligence.storage;
+package com.yt.intelligence.pieces.storage;
 
-import com.yt.intelligence.CommonResponse;
+import com.yt.intelligence.pieces.CommonResponse;
 
 /**
  * Created by yantong on 2019/1/8.

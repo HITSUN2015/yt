@@ -1,6 +1,6 @@
-package com.yt.intelligence.member;
+package com.yt.intelligence.pieces.member;
 
-import com.yt.intelligence.CommonStatus;
+import com.yt.intelligence.pieces.CommonStatus;
 
 /**
  * Created by yantong on 2019/1/8.

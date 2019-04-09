@@ -11,5 +11,12 @@
 
     <artifactId>yt-intelligence</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.baidu.aip</groupId>
+            <artifactId>java-sdk</artifactId>
+            <version>4.4.0</version>
+        </dependency>
+    </dependencies>
 
 </project>
