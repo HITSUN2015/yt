@@ -9,7 +9,6 @@
     <file url="file://$PROJECT_DIR$/yt-dataStruct" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/yt-db" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/yt-demo-helper" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/yt-design-patterns" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/yt-distributed" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/yt-intelligence" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/yt-interview" charset="UTF-8" />
@@ -24,6 +23,8 @@
     <file url="file://$PROJECT_DIR$/yt-net" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/yt-practise" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/yt-redis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/yt-refactoring" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/yt-refactoring-pattern" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/yt-restful" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/yt-rpc" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/yt-serialize" charset="UTF-8" />

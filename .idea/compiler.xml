@@ -37,18 +37,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="yt-spring-redis" />
-      </profile>
-      <profile name="Annotation profile for yt-kafka" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="yt-kafka" />
-      </profile>
-      <profile name="Annotation profile for yt" enabled="true">
-        <sourceOutputDir name="../target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
         <module name="yt-arithmetic" />
         <module name="yt-breakdown" />
         <module name="yt-business-project" />
@@ -71,15 +59,23 @@
         <module name="yt-net" />
         <module name="yt-practise" />
         <module name="yt-redis" />
+        <module name="yt-refactoring" />
         <module name="yt-restful" />
         <module name="yt-rpc" />
         <module name="yt-serialize" />
         <module name="yt-spi" />
         <module name="yt-spring" />
+        <module name="yt-spring-redis" />
         <module name="yt-teach-qiuqiu" />
         <module name="yt-test" />
         <module name="yt-util" />
         <module name="yt-web" />
+      </profile>
+      <profile name="Annotation profile for yt-kafka" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="yt-kafka" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -92,7 +88,7 @@
       <module name="yt-arithmetic" target="1.8" />
       <module name="yt-breakdown" target="1.8" />
       <module name="yt-business-project" target="1.8" />
-      <module name="yt-consistency" target="1.5" />
+      <module name="yt-consistency" target="1.8" />
       <module name="yt-dataStruct" target="1.8" />
       <module name="yt-db" target="1.8" />
       <module name="yt-demo-helper" target="1.8" />
@@ -116,6 +112,7 @@
       <module name="yt-practise" target="1.8" />
       <module name="yt-queue" target="1.8" />
       <module name="yt-redis" target="1.8" />
+      <module name="yt-refactoring" target="1.8" />
       <module name="yt-restful" target="1.8" />
       <module name="yt-rpc" target="1.8" />
       <module name="yt-serialize" target="1.8" />

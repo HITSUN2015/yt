@@ -16,7 +16,6 @@
         <module>yt-mq</module>
 		<module>yt-dataStruct</module>
 		<module>yt-net</module>
-		<module>yt-design-patterns</module>
 		<module>yt-serialize</module>
 		<module>yt-spring</module>
 		<module>yt-restful</module>
@@ -38,6 +37,7 @@
         <module>yt-practise</module>
         <module>yt-business-project</module>
         <module>yt-consistency</module>
+        <module>yt-refactoring-pattern</module>
     </modules>
 	<packaging>pom</packaging>
 
