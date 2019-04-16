@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>yt-java-process-communicate</artifactId>
+    <artifactId>yt-java-ipc</artifactId>
     <dependencies>
         <dependency>
             <groupId>yt</groupId>
@@ -18,7 +18,7 @@
         </dependency>
         <dependency>
             <groupId>yt</groupId>
-            <artifactId>yt-kafka</artifactId>
+            <artifactId>yt-mq</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>

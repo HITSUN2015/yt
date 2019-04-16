@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>yt-kafka</artifactId>
+    <artifactId>yt-mq</artifactId>
 
     <dependencies>
         <dependency>
