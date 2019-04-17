@@ -11,7 +11,16 @@ public interface Refactorable {
 
     String motivation();
 
-    Object badCode(Object...params);
+    /**
+     * 写在注解上吧
+     */
+    void action();
 
-    Object goodCode(Object...params);
+    Object badCode(Object... params);
+
+    Object goodCode(Object... params);
+
+    int page();
+
+    boolean isFinished();
 }

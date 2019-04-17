@@ -15,6 +15,11 @@ public class RemoveAssignmentsToParameters implements Refactorable{
     }
 
     @Override
+    public void action() {
+
+    }
+
+    @Override
     public Object badCode(Object... params) {
         params = new Object[2];//java 按值传递,改变对象的引用,不会改变调用方的变量
         badCodeIntInput(1);
@@ -30,6 +35,16 @@ public class RemoveAssignmentsToParameters implements Refactorable{
     public Object goodCode(Object... params) {
         goodCodeIntInput(1);
         return null;
+    }
+
+    @Override
+    public int page() {
+        return 131;
+    }
+
+    @Override
+    public boolean isFinished() {
+        return true;
     }
 
     private void goodCodeIntInput(int input) {
