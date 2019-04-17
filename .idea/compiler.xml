@@ -1,52 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <resourceExtensions />
     <wildcardResourcePatterns />
     <annotationProcessing>
-      <profile default="true" name="Default" enabled="false">
-        <processorPath useClasspath="true" />
-      </profile>
-      <profile default="false" name="Annotation profile for db" enabled="true">
+      <profile name="Annotation profile for lamda" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
-        <module name="db" />
-      </profile>
-      <profile default="false" name="Annotation profile for lamda" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
         <module name="lamda" />
       </profile>
-      <profile default="false" name="Annotation profile for util" enabled="true">
+      <profile name="Annotation profile for util" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
         <module name="util" />
       </profile>
-      <profile default="false" name="Annotation profile for test" enabled="true">
+      <profile name="Annotation profile for test" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
         <module name="test" />
       </profile>
-      <profile default="false" name="Annotation profile for web" enabled="true">
+      <profile name="Annotation profile for web" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
         <module name="web" />
       </profile>
-      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+      <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
+        <module name="db" />
         <module name="yt-arithmetic" />
         <module name="yt-breakdown" />
         <module name="yt-business-project" />
@@ -70,6 +55,7 @@
         <module name="yt-practise" />
         <module name="yt-redis" />
         <module name="yt-refactoring" />
+        <module name="yt-refactoring-pattern" />
         <module name="yt-restful" />
         <module name="yt-rpc" />
         <module name="yt-serialize" />
@@ -81,11 +67,10 @@
         <module name="yt-util" />
         <module name="yt-web" />
       </profile>
-      <profile default="false" name="Annotation profile for yt-kafka" enabled="true">
+      <profile name="Annotation profile for yt-kafka" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <processorPath useClasspath="true" />
         <module name="yt-kafka" />
       </profile>
     </annotationProcessing>
@@ -124,6 +109,7 @@
       <module name="yt-queue" target="1.8" />
       <module name="yt-redis" target="1.8" />
       <module name="yt-refactoring" target="1.8" />
+      <module name="yt-refactoring-pattern" target="1.8" />
       <module name="yt-restful" target="1.8" />
       <module name="yt-rpc" target="1.8" />
       <module name="yt-serialize" target="1.8" />
