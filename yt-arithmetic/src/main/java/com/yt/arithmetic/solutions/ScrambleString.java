@@ -72,7 +72,7 @@ public class ScrambleString implements LeetCode, DynamicProgramming {
     }
 
     @Override
-    public void danamicProgrammingSolution() {
+    public void dynamicProgrammingSolution() {
         //想了一会 没想出来
         //树：具有的性质：递归（子节点）、分开（多个子树）
         //所以应该能联想起，存在同一个划分，将source 和 target 都分成两个互相可爬的子串

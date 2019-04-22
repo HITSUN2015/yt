@@ -17,5 +17,5 @@ import com.yt.arithmetic.arithmetic.Arithmetic;
  */
 public interface DynamicProgramming extends Arithmetic {
 
-    void danamicProgrammingSolution();
+    void dynamicProgrammingSolution();
 }

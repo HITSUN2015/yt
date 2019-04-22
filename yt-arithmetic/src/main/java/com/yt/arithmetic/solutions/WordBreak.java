@@ -52,7 +52,7 @@ public class WordBreak implements LeetCode, DynamicProgramming {
     }
 
     @Override
-    public void danamicProgrammingSolution() {
+    public void dynamicProgrammingSolution() {
         //这道题 想半天 没想出来，怎么用dp
         //后来回到这个问题本身，bf递归可以解
         //然后就回到，dp的本意是 找到子问题，化简重复计算

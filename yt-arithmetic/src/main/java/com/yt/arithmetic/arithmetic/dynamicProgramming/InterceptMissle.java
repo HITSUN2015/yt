@@ -30,7 +30,7 @@ public class InterceptMissle implements LinearDynamicProgramming {
     }
 
     @Override
-    public void danamicProgrammingSolution() {
+    public void dynamicProgrammingSolution() {
 
     }
 }

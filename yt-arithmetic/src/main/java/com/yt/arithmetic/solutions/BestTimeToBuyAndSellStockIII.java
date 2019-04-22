@@ -52,7 +52,7 @@ public class BestTimeToBuyAndSellStockIII implements LeetCode, DynamicProgrammin
     }
 
     @Override
-    public void danamicProgrammingSolution() {
+    public void dynamicProgrammingSolution() {
         /**
          * 想半天 没想出咋动态规划
          * 但是想出了个球。。。f[i,j]表示第i天进 第j天卖的赚钱

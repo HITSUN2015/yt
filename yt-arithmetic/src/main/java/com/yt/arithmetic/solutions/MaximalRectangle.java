@@ -57,7 +57,7 @@ public class MaximalRectangle implements LeetCode, DynamicProgramming {
     }
 
     @Override
-    public void danamicProgrammingSolution() {
+    public void dynamicProgrammingSolution() {
 
         // TODO: 2019/2/26 看网上 思路 好像 和我这个差不都
         int[][] matrix = new int[][]{

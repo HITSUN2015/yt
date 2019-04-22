@@ -12,7 +12,7 @@ public class JumpGameTest {
     @Test
     public void testDynamicSolution() {
         DynamicProgramming jg = new JumpGame();
-        jg.danamicProgrammingSolution();
+        jg.dynamicProgrammingSolution();
     }
 
     @Test

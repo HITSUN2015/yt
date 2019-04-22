@@ -12,7 +12,7 @@ public class MaximumSubarrayTest {
     @Test
     public void testDynamicSolution() {
         DynamicProgramming jg = new MaximumSubarray();
-        jg.danamicProgrammingSolution();
+        jg.dynamicProgrammingSolution();
 
 
     }

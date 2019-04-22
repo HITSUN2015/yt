@@ -43,7 +43,7 @@ public class JumpGame  implements LeetCode, DynamicProgramming, Greedy {
      * 再来考虑下别人的动态规划的思想，从而总结下，都可能有什么样的维度来想问题
      */
     @Override
-    public void danamicProgrammingSolution() {
+    public void dynamicProgrammingSolution() {
         int[] nums = new int[]{2,3,1,1,4};
 
         //第一反应是，能否跳到某一步，作为f(n)

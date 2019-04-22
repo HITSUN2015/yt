@@ -3,7 +3,7 @@ package com.yt.arithmetic.arithmetic.math;
 /**
  * Created by yantong on 2019/4/2.
  */
-public class JDKInteger {
+public class  JDKInteger {
 
     public void integerDefaultValue() {
         //最高位是0：正数

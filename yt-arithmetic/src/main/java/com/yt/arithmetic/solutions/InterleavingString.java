@@ -39,7 +39,7 @@ public class InterleavingString implements LeetCode, DynamicProgramming {
     }
 
     @Override
-    public void danamicProgrammingSolution() {
+    public void dynamicProgrammingSolution() {
         //这道题 拿到 就开始 想 各种以什么结尾了。。。
         //f(i,j)代表 以S1[i],S2[j]两个子串，可以构成S3[i+j]
 

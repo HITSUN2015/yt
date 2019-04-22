@@ -37,7 +37,7 @@ public class PalindromePartitioningII implements LeetCode, DynamicProgramming {
     }
 
     @Override
-    public void danamicProgrammingSolution() {
+    public void dynamicProgrammingSolution() {
         //这个问题 想了半天，什么以什么结束的回文啊、回文总和是0啊。。。都连不起来n与n-1
         //后来想起 回文类似 圆，我先统计出所有最大半径的圆，然后看一最少方几个圆，感觉可以解这个问题。。。
         //感觉论据有点不足。。。偏贪婪。。。？

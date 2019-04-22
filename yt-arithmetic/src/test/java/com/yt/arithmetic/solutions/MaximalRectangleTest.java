@@ -12,6 +12,6 @@ public class MaximalRectangleTest {
     @Test
     void testDPSolution() {
         DynamicProgramming leetCode = new MaximalRectangle();
-        leetCode.danamicProgrammingSolution();
+        leetCode.dynamicProgrammingSolution();
     }
 }

@@ -31,41 +31,41 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="db" />
-        <module name="yt-arithmetic" />
-        <module name="yt-breakdown" />
-        <module name="yt-business-project" />
-        <module name="yt-consistency" />
-        <module name="yt-dataStruct" />
-        <module name="yt-db" />
-        <module name="yt-demo-helper" />
-        <module name="yt-design-patterns" />
-        <module name="yt-distributed" />
-        <module name="yt-intelligence" />
-        <module name="yt-interview" />
-        <module name="yt-java" />
-        <module name="yt-java-class" />
-        <module name="yt-java-ipc" />
-        <module name="yt-jvm" />
         <module name="yt-knowledge-orgnization" />
-        <module name="yt-lamda" />
-        <module name="yt-linux" />
-        <module name="yt-mq" />
-        <module name="yt-net" />
-        <module name="yt-practise" />
-        <module name="yt-redis" />
-        <module name="yt-refactoring" />
-        <module name="yt-refactoring-pattern" />
-        <module name="yt-restful" />
-        <module name="yt-rpc" />
-        <module name="yt-serialize" />
-        <module name="yt-spi" />
-        <module name="yt-spring" />
-        <module name="yt-spring-redis" />
+        <module name="yt-java-ipc" />
+        <module name="db" />
         <module name="yt-teach-qiuqiu" />
+        <module name="yt-demo-helper" />
+        <module name="yt-java-class" />
+        <module name="yt-practise" />
+        <module name="yt-consistency" />
         <module name="yt-test" />
+        <module name="yt-jvm" />
+        <module name="yt-distributed" />
+        <module name="yt-serialize" />
+        <module name="yt-interview" />
+        <module name="yt-arithmetic" />
+        <module name="yt-rpc" />
+        <module name="yt-spi" />
+        <module name="yt-dataStruct" />
+        <module name="yt-lamda" />
+        <module name="yt-intelligence" />
+        <module name="yt-redis" />
+        <module name="yt-linux" />
+        <module name="yt-db" />
+        <module name="yt-refactoring-pattern" />
         <module name="yt-util" />
+        <module name="yt-business-project" />
+        <module name="yt-net" />
+        <module name="yt-spring-redis" />
+        <module name="yt-restful" />
+        <module name="yt-mq" />
         <module name="yt-web" />
+        <module name="yt-design-patterns" />
+        <module name="yt-spring" />
+        <module name="yt-java" />
+        <module name="yt-breakdown" />
+        <module name="yt-refactoring" />
       </profile>
       <profile name="Annotation profile for yt-kafka" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -121,5 +121,39 @@
       <module name="yt-util" target="1.8" />
       <module name="yt-web" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="yt-arithmetic" options="-parameters" />
+      <module name="yt-breakdown" options="-parameters" />
+      <module name="yt-business-project" options="-parameters" />
+      <module name="yt-consistency" options="-parameters" />
+      <module name="yt-dataStruct" options="-parameters" />
+      <module name="yt-db" options="-parameters" />
+      <module name="yt-demo-helper" options="-parameters" />
+      <module name="yt-distributed" options="-parameters" />
+      <module name="yt-intelligence" options="-parameters" />
+      <module name="yt-interview" options="-parameters" />
+      <module name="yt-java" options="-parameters" />
+      <module name="yt-java-class" options="-parameters" />
+      <module name="yt-jvm" options="-parameters" />
+      <module name="yt-knowledge-orgnization" options="-parameters" />
+      <module name="yt-lamda" options="-parameters" />
+      <module name="yt-linux" options="-parameters" />
+      <module name="yt-mq" options="-parameters" />
+      <module name="yt-net" options="-parameters" />
+      <module name="yt-practise" options="-parameters" />
+      <module name="yt-redis" options="-parameters" />
+      <module name="yt-refactoring-pattern" options="-parameters" />
+      <module name="yt-restful" options="-parameters" />
+      <module name="yt-rpc" options="-parameters" />
+      <module name="yt-serialize" options="-parameters" />
+      <module name="yt-spi" options="-parameters" />
+      <module name="yt-spring" options="-parameters" />
+      <module name="yt-teach-qiuqiu" options="-parameters" />
+      <module name="yt-test" options="-parameters" />
+      <module name="yt-util" options="-parameters" />
+      <module name="yt-web" options="-parameters" />
+    </option>
   </component>
 </project>

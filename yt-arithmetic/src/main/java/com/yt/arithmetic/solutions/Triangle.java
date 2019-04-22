@@ -39,7 +39,7 @@ public class Triangle implements LeetCode, DynamicProgramming {
     }
 
     @Override
-    public void danamicProgrammingSolution() {
+    public void dynamicProgrammingSolution() {
         //这道题 感觉 暴力解 比较好。。。
         //f(n) =
         int pow = 2;

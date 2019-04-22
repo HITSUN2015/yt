@@ -76,7 +76,7 @@ public class LongestPalindromicSubstring implements DynamicProgramming {
     }
 
     @Override
-    public void danamicProgrammingSolution() {
+    public void dynamicProgrammingSolution() {
 
     }
 }

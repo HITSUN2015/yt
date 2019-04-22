@@ -12,6 +12,6 @@ public class WordBreakTest {
     @Test
     public void testDyanamic() {
         DynamicProgramming dp = new WordBreak();
-        dp.danamicProgrammingSolution();
+        dp.dynamicProgrammingSolution();
     }
 }

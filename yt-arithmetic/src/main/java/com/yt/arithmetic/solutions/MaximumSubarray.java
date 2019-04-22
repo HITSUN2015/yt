@@ -37,7 +37,7 @@ public class MaximumSubarray implements LeetCode, DynamicProgramming {
 
     //TODO 一些其他的设计 https://blog.csdn.net/seagal890/article/details/79439201
     @Override
-    public void danamicProgrammingSolution() {
+    public void dynamicProgrammingSolution() {
         int[] nums = new int[]{-2,1,-3,4,-1,2,1,-5,4};
         //f(n) 表示 以n 结尾的 Max(sum)
         //f(n) = f(n - 1) > 0? f(n-1) + nums[n] : nums[n]

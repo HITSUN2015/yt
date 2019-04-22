@@ -12,6 +12,6 @@ public class InterleavingStringTest {
     @Test
     public void testPDSolution() {
         DynamicProgramming dp = new InterleavingString();
-        dp.danamicProgrammingSolution();
+        dp.dynamicProgrammingSolution();
     }
 }

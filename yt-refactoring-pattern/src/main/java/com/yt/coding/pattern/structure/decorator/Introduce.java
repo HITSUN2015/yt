@@ -1,9 +1,6 @@
 package com.yt.coding.pattern.structure.decorator;
 
 
-import com.yt.design.pattern.decorator.simpler.CompoundClassA;
-import com.yt.design.pattern.decorator.simpler.CompoundClassB;
-import com.yt.design.pattern.decorator.simplest.SimpleInterface;
 
 /**
  * Created by yantong on 2019/2/18.

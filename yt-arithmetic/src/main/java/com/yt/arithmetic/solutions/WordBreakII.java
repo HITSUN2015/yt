@@ -68,7 +68,7 @@ public class WordBreakII implements LeetCode, DynamicProgramming {
     }
 
     @Override
-    public void danamicProgrammingSolution() {
+    public void dynamicProgrammingSolution() {
         //这里 拿过来了 word break的代码
 
         String s = "leetcode";
