@@ -1,5 +1,6 @@
 package com.yt.coding.idea.keymap;
 
+import com.yt.coding.idea.keymap.demo.frequently.ExtractFieldDemo;
 import com.yt.coding.idea.keymap.dimension.Frequently;
 import com.yt.coding.idea.keymap.dimension.IdeaMostPopular;
 
@@ -12,7 +13,7 @@ public class ExtractField extends AbstractIdeaRefactoralbe implements Frequently
 
     private String extractField = "str";
     /**
-     * {@link com.yt.coding.idea.keymap.demo.ExtractFieldDemo#extractField()}
+     * {@link ExtractFieldDemo#extractField()}
      * 可以选择初始化位置 值为当前表达式的值
      *  如果表达式是变量，
      *      1）当前方法体里

@@ -1,5 +1,6 @@
 package com.yt.coding.idea.keymap;
 
+import com.yt.coding.idea.keymap.demo.frequently.ExtractVariableDemo;
 import com.yt.coding.idea.keymap.dimension.Frequently;
 
 /**
@@ -8,7 +9,7 @@ import com.yt.coding.idea.keymap.dimension.Frequently;
  * @desc 当前方法内提取变量
  *          1.如果没有选定，则在光标所在行，选择变量
  *          2.确定查找到的所有相同值，是否全部替换为变量
- * {@link com.yt.coding.idea.keymap.demo.ExtractVariableDemo}
+ * {@link ExtractVariableDemo}
  */
 public class ExtractVariable extends AbstractIdeaRefactoralbe implements Frequently {
     @Override

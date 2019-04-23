@@ -1,5 +1,7 @@
 package com.yt.coding.idea.keymap;
 
+import com.yt.coding.idea.keymap.demo.frequently.ExtractMethodDemo;
+
 /**
  * @author SUN
  * @create 2019-04-22 下午1:31
@@ -7,7 +9,7 @@ package com.yt.coding.idea.keymap;
  *
  * 暂时没去想 他的实现规则，demo里我给出了优先级
  *
- * {@link com.yt.coding.idea.keymap.demo.ExtractMethodDemo}
+ * {@link ExtractMethodDemo}
  */
 public class ExtractMethod extends AbstractIdeaRefactoralbe {
 

@@ -1,9 +1,11 @@
 package com.yt.coding.idea.keymap;
 
+import com.yt.coding.idea.keymap.demo.frequently.ExtractIntoClassMethodObjectDemo;
+
 /**
  * @author SUN
  * @create 2019-04-22 下午3:49
- * @desc {@link com.yt.coding.idea.keymap.demo.ExtractIntoClassMethodObjectDemo}
+ * @desc {@link ExtractIntoClassMethodObjectDemo}
  */
 public class ExtractIntoClassMethodObject extends AbstractIdeaRefactoralbe{
 

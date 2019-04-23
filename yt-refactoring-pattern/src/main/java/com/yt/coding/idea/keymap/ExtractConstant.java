@@ -1,6 +1,6 @@
 package com.yt.coding.idea.keymap;
 
-import com.yt.coding.idea.keymap.demo.ExtractConstantDemo;
+import com.yt.coding.idea.keymap.demo.frequently.ExtractConstantDemo;
 import com.yt.coding.idea.keymap.dimension.IdeaMostPopular;
 
 /**

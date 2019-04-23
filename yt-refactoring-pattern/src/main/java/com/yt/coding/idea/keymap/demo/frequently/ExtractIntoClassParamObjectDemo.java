@@ -1,4 +1,4 @@
-package com.yt.coding.idea.keymap.demo;
+package com.yt.coding.idea.keymap.demo.frequently;
 
 /**
  * @author SUN

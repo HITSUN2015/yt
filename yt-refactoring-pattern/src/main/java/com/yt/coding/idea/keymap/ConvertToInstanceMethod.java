@@ -1,5 +1,6 @@
 package com.yt.coding.idea.keymap;
 
+import com.yt.coding.idea.keymap.demo.frequently.ConvertToInstanceMethodDemo;
 import com.yt.coding.idea.keymap.dimension.MaybeImportant;
 
 /**
@@ -7,7 +8,7 @@ import com.yt.coding.idea.keymap.dimension.MaybeImportant;
  * @create 2019-04-21 21:21
  * @desc
  *      将静态方法 归属于本类或入参对象里
- *      {@link com.yt.coding.idea.keymap.demo.ConvertToInstanceMethodDemo}
+ *      {@link ConvertToInstanceMethodDemo}
  */
 public class ConvertToInstanceMethod extends AbstractIdeaRefactoralbe implements MaybeImportant {
 

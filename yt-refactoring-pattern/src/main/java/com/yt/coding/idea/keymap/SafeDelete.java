@@ -1,12 +1,13 @@
 package com.yt.coding.idea.keymap;
 
+import com.yt.coding.idea.keymap.demo.frequently.SafeDeleteDemo;
 import com.yt.coding.idea.keymap.dimension.Frequently;
 import com.yt.coding.idea.keymap.dimension.IdeaMostPopular;
 
 /**
  * @author SUN
  * @create 2019-04-21 20:57
- * @desc {@link com.yt.coding.idea.keymap.demo.SafeDeleteDemo}
+ * @desc {@link SafeDeleteDemo}
  *  object can be methodParameter,method,class
  */
 public class SafeDelete extends AbstractIdeaRefactoralbe implements Frequently, IdeaMostPopular {

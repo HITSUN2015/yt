@@ -1,5 +1,6 @@
 package com.yt.coding.idea.keymap;
 
+import com.yt.coding.idea.keymap.demo.frequently.ChangeSignatureDemo;
 import com.yt.coding.idea.keymap.dimension.Frequently;
 import com.yt.coding.idea.keymap.dimension.IdeaMostPopular;
 
@@ -18,7 +19,7 @@ import com.yt.coding.idea.keymap.dimension.IdeaMostPopular;
  *
  * 除了修改，还可以选择委托给一个新生成的方法 delegate
  *
- * {@link com.yt.coding.idea.keymap.demo.ChangeSignatureDemo}
+ * {@link ChangeSignatureDemo}
  */
 public class ChangeSignature extends AbstractIdeaRefactoralbe implements Frequently, IdeaMostPopular {
 

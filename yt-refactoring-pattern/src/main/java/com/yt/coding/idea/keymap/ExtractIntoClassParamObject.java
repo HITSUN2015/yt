@@ -1,11 +1,12 @@
 package com.yt.coding.idea.keymap;
 
+import com.yt.coding.idea.keymap.demo.frequently.ExtractIntoClassMethodObjectDemo;
 import com.yt.coding.idea.keymap.dimension.Frequently;
 
 /**
  * @author SUN
  * @create 2019-04-22 下午4:12
- * @desc {@link com.yt.coding.idea.keymap.demo.ExtractIntoClassMethodObjectDemo}
+ * @desc {@link ExtractIntoClassMethodObjectDemo}
  */
 public class ExtractIntoClassParamObject extends AbstractIdeaRefactoralbe implements Frequently {
     @Override
