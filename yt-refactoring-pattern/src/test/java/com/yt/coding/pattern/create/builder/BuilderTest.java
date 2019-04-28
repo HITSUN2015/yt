@@ -1,6 +1,5 @@
 package com.yt.coding.pattern.create.builder;
 
-import com.yt.coding.pattern.create.instance.Person;
 import org.testng.annotations.Test;
 
 /**
@@ -10,8 +9,6 @@ public class BuilderTest {
 
     @Test
     public void build() {
-        PersonDirector pd = new PersonDirector();
-        Person person = pd.constructPerson(new StudentFactory());
-        System.out.println(person.toString());
+
     }
 }
