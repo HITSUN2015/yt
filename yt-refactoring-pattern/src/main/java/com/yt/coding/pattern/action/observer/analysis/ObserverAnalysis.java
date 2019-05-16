@@ -1,5 +1,7 @@
 package com.yt.coding.pattern.action.observer.analysis;
 
+import java.util.List;
+
 /**
  * @author SUN
  * @create 2019-04-28 下午6:05
@@ -110,7 +112,11 @@ package com.yt.coding.pattern.action.observer.analysis;
  *
  *  综上，在数量关系严格不确定、依赖关系也无法确定时，找一个更像1的一方，用1：n + dependency + 方法放在主语类中的实现方式实现
  *
- *
+ * 根据{@link ObserverAnalysisSender#sendMessage(List, ObserverAnalysisMessage)}的分析
+ * 得出常用的观察者模式模型：
+ * A dependOn B：1：1
+ * A dependOn C：1：n
+ * C dependOn B：1：1
  *
  *
  */

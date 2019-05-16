@@ -14,12 +14,5 @@ public class TemplateTest {
     @Test
     public void test() {
 
-        Template template = new Cricket();
-        template.play();
-
-        System.out.println();
-
-        template = new Football();
-        template.play();
     }
 }

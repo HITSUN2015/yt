@@ -16,5 +16,5 @@ public abstract class AbstractIdeaRefactoralbe implements IdeaRefactorable {
         return String.format("https://www.jetbrains.com/help/idea/%s/%s.html", version, getRefactoringMethod());
     }
 
-    abstract String getRefactoringMethod();
+    protected abstract String getRefactoringMethod();
 }
