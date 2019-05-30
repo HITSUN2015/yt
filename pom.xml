@@ -38,6 +38,7 @@
         <module>yt-business-project</module>
         <module>yt-consistency</module>
         <module>yt-refactoring-pattern</module>
+        <module>yt-pdf</module>
     </modules>
 	<packaging>pom</packaging>
 
