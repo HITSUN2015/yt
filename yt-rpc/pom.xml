@@ -16,7 +16,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>dubbo</artifactId>
-            <version>2.5.3</version>
+            <version>2.6.12</version>
             <!-- 不加入这个exclude会直接导入的一个已知问题是：component-scan报java version 不支持
              Context namespace element 'component-scan' and its parser class [org.springframework.context.annotation.ComponentScanBeanDefinitionParser] are only available on JDK 1.5 and higher -->
             <exclusions>
